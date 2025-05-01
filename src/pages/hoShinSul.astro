@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ButtonMenu from '../components/ButtonMenu.astro';
+import TechniquesByGrade from '../components/TechniquesByGrade.astro';
+---
+
+<Layout>  
+  <section class="p-2">
+    <article class="flex items-center justify-between">
+      <ButtonMenu title="Back" href="/"  />
+      <h1 class="text-3xl font-bold ">Ho Shin Sul</h1>
+    </article>
+    <div class="bg-zinc-800 my-2 rounded-md p-2">
+      <p class="mt-4 text-center">Here you can find all the Ho Shin Sul of the LQH program.</p>
+    </div>
+    
+    <article class="flex flex-col gap-3">
+      <ButtonMenu title="Blanco" href="/hoShinSul/blanco" />
+      <ButtonMenu title="Amarillo" href="/hoShinSul/amarillo" />
+      <ButtonMenu title="Naranja" href="/hoShinSul/naranja" />
+      <ButtonMenu title="Verde" href="/hoShinSul/verde" />
+      <ButtonMenu title="Azul" href="/hoShinSul/azul" />
+      <ButtonMenu title="Purpura" href="/hoShinSul/purpura" />
+      <ButtonMenu title="Rojo" href="/hoShinSul/rojo" />
+      <ButtonMenu title="Rojo Marrón" href="/hoShinSul/rojoMarron" />
+      <ButtonMenu title="Marrón" href="/hoShinSul/marron" />
+      <ButtonMenu title="Marrón Negro" href="/hoShinSul/marronNegro" />
+      <ButtonMenu title="Negro 1 Dan" href="/hoShinSul/negro1Dan" />
+    </article>
+  </section>
+</Layout>
+

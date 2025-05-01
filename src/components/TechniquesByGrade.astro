@@ -1,0 +1,33 @@
+---
+import { hoShinSulData } from '../data/hoShinSul';
+
+const { grade } = Astro.props;
+const selected = hoShinSulData.find(item => item.grade === grade);
+---
+
+<h2>Técnicas del grado {grade}</h2>
+
+{selected && selected.groups.map(group => (
+  <section>
+    <h3>{group.group}</h3>
+
+    {group.subgroups?.map(subgroup => (
+      <div>
+        <h4>{subgroup.subgroup}</h4>
+        <ul>
+          {subgroup.techniques.map(technique => (
+            <li><strong>{technique.number}.</strong> {technique.description}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    {group.techniques?.length &&
+      <ul>
+        {group.techniques.map(technique => (
+          <li><strong>{technique.number}.</strong> {technique.description}</li>
+        ))}
+      </ul>
+    }
+  </section>
+))}

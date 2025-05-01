@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ButtonMenu from '../components/ButtonMenu.astro';
+---
+
+<Layout>  
+  <section class="p-2 flex flex-col h-screen">
+    <article class="flex items-center justify-between">
+
+      <ButtonMenu title="Back" href="/"  />
+      <h1 class="text-3xl font-bold ">Ho Shin Sul</h1>
+    </article>
+    <div class="bg-zinc-800 my-2 rounded-md p-2">
+      <p class="mt-4 text-center">Here you can find all the Ho Shin Sul of the LQH program.</p>
+    </div>
+    
+    <article class="flex flex-col gap-3">
+      <ButtonMenu title="Joong Do" href="/poomsaes/joongDo" />
+      <ButtonMenu title="Won" href="/poomsaes/won" />
+      <ButtonMenu title="Ki Hap" href="/poomsaes/kiHap" />
+    </article>
+  </section>
+</Layout>

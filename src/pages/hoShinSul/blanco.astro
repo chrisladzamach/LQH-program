@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import ButtonMenu from "../../components/ButtonMenu.astro";
+import TechniquesByGrade from "../../components/TechniquesByGrade.astro"
+---
+<Layout>
+  <section class="flex flex-col h-screen p-2">
+    <article class="flex items-center justify-between">
+      <ButtonMenu title="Back" href="/"  />
+      <h1 class="text-3xl font-bold ">Blanco</h1>
+    </article>
+
+    <hr class="my-4 text-zinc-600" />
+
+    <article class="flex flex-col gap-3">
+      <TechniquesByGrade grade="Blanco" />
+    </article>
+  </section>
+</Layout>

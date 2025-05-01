@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import ButtonMenu from '../components/ButtonMenu.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
 <Layout>
-	<Welcome />
+	<section class="flex flex-col h-screen p-2">
+		<h1 class="text-2xl font-bold text-center">Welcome to the LQH program website</h1>
+		<p class="mt-4 text-center">You can find all items of program here, select and option that you need see to learn.</p>
+		<hr class="my-4 text-zinc-600" />
+		<article class="flex flex-col gap-2 mt-4">
+			<ButtonMenu title="Ho Shin Sul" href="/hoShinSul" />
+			<ButtonMenu title="Poomsaes" href="/poomsaes" />
+			<ButtonMenu title="Mugi Poomsaes" href="/mugiPoomsaes" />
+			<ButtonMenu title="Chase" href="/chase" />
+			<ButtonMenu title="Mugi Chase" href="/mugiChase" />
+		</article>
+	</section>
 </Layout>
