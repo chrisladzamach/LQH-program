@@ -7,11 +7,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "vercel-build": "astro build"
+    "vercel-build": "astro build",
+    "start": "astro dev"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.5",
     "astro": "^5.7.10",
     "tailwindcss": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
