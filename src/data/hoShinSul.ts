@@ -61,7 +61,37 @@ export const hoShinSulData: GradeHoShinSul[] = [
             techniques: [
               { number: 16, description: "Agarra la mano por los metacarpos, y la tuerce hacia afuera." },
               { number: 17, description: "Agarra la mano por la muñeca y la tuerce hacia adentro y hace presión en el codo extendido." },
-              { number: 18, description: "Agarra la muñeca y gira por dentro hacia afuera ejecutando 16." }
+              { number: 18, description: "Agarra la muñeca y gira por dentro hacia afuera ejecutando 16." },
+              { number: 19, description: "Misma 5 pero atrayendo al plexo y asestando un codazo descendente en el codo." },
+              { number: 20, description: "Hace presión en el musculo lateral del codo y gira por dentro, agarra del cinturón y el cabello y ejecuta chokto doligi en la parte anterior de la rodilla." },
+            ]
+          },
+          {
+            subgroup: "Contra agarre de muñeca/manga de la casaca",
+            techniques: [
+              { number: 21, description: "Agarra los metacarpos, torsión hacia adentro y pam chumok a la axila." },
+              { number: 22, description: "Péndulo a la par con batang son el plexo." }
+            ]
+          },
+          {
+            subgroup: "Contra agarre de codo",
+            techniques: [
+              { number: 23, description: "Sujeta los metacarpos para asegurar la mano, y ejecuta pion son por dentro y hacia abajo." },
+              { number: 24, description: "Misma 23 pero continua el movimiento pasando por debajo del brazo y hace presión en el codo con el antebrazo." },
+            ]
+          },
+          {
+            subgroup: "Contra agarre de hombro",
+            techniques: [
+              { number: 25, description: "Igual que 21." },
+              { number: 26, description: "Igual que 17." }
+            ]
+          },
+          {
+            subgroup: "Contra agarre de nuca",
+            techniques: [
+              { number: 27, description: "Con las dos manos rodeando el codo ejecuta presión hacia abajo. (partir el codo)" },
+              { number: 28, description: "Tango." }
             ]
           }
         ]
