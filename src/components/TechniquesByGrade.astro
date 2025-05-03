@@ -9,19 +9,19 @@ const selected = hoShinSulData.find(item => item.grade === grade);
     <h3 class="font-bold text-xl mb-2">{group.group}</h3>
     {group.subgroups?.map(subgroup => (
       <div class="">
-        <h4 class="font-bold mb-1">{subgroup.subgroup}</h4>
-        <ul>
+        <h4 class="font-bold my-4">{subgroup.subgroup}</h4>
+        <ul class="flex flex-col gap-2">
           {subgroup.techniques.map(technique => (
-            <li><strong class="mr-2">{technique.number}.</strong> {technique.description}</li>
+            <li class=""><strong class="mr-4">{technique.number}.</strong> <i>{technique.description}</i></li>
           ))}
         </ul>
       </div>
     ))}
 
     {group.techniques?.length &&
-      <ul>
+      <ul class="flex flex-col gap-2">
         {group.techniques.map(technique => (
-          <li><strong class="mr-2">{technique.number}.</strong> {technique.description}</li>
+          <li><strong class="mr-4">{technique.number}.</strong> <i>{technique.description}</i></li>
         ))}
       </ul>
     }
