@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ButtonMenu from '../components/ButtonMenu.astro';
-
 ---
 <Layout>
 	<section class="flex flex-col h-screen p-2">
-		<figure class="flex items-center justify-center my-4 ">
-			<img src="/public/logoJDK.png" alt="Logo of LQH" class="w-40 h-40 mx-auto" />
+		<figure class="flex items-center justify-center my-4">
+			<img src="/src/assets/logoJDK.png" alt="Logo of LQH" class="size-40 mx-auto rounded-full border-4 border-black" />
 		</figure>
 		<h1 class="text-2xl font-bold text-center">Welcome to the LQH program website</h1>
 		<p class="mt-4 text-center">You can find all items of program here, select and option that you need see to learn.</p>
@@ -14,9 +13,9 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 		<article class="flex flex-col gap-2 mt-4">
 			<ButtonMenu title="Ho Shin Sul" href="/hoShinSul" />
 			<ButtonMenu title="Poomsaes" href="/poomsaes" />
-			<ButtonMenu title="Mugi Poomsaes" href="/mugiPoomsaes" />
-			<ButtonMenu title="Chase" href="/chase" />
-			<ButtonMenu title="Mugi Chase" href="/mugiChase" />
+			<ButtonMenu title="Mugi Poomsaes" href="/mugiPoomsaes/mugiPoomsaes" />
+			<ButtonMenu title="Chase" href="/chase/chase" />
+			<ButtonMenu title="Mugi Chase" href="/mugiChase/mugiChase" />
 		</article>
 	</section>
-</Layout>
+</Layout>3

@@ -7,8 +7,9 @@ const selected = hoShinSulData.find(item => item.grade === grade);
 {selected && selected.groups.map(group => (
   <section class="flex flex-col mb-8">
     <h3 class="font-bold text-xl mb-2">{group.group}</h3>
+    <hr class="my-2 text-zinc-600" />
     {group.subgroups?.map(subgroup => (
-      <div class="">
+      <div>
         <h4 class="font-bold my-4">{subgroup.subgroup}</h4>
         <ul class="flex flex-col gap-2">
           {subgroup.techniques.map(technique => (

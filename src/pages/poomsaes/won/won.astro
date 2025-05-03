@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ButtonMenu from '../../../components/ButtonMenu.astro';
+// import TechniquesByGrade from '../components/TechniquesByGrade.astro';
+import Header from '../../../components/Header.astro';
+---
+
+<Layout>  
+  <section class="">
+    <Header name="Won Poomsaes" href='/poomsaes' />
+    <article class="flex flex-col gap-3">
+      <ButtonMenu title="Won Il Dan" href="/poomsaes/won/wonIlDan" />
+      <ButtonMenu title="Won I Dan" href="/poomsaes/won/wonIDan" />
+      <ButtonMenu title="Won Sam Dan" href="/poomsaes/won/wonSamDan" />
+      <ButtonMenu title="Won Sa Dan" href="/poomsaes/won/wonSaDan" />
+      <ButtonMenu title="Won O Dan" href="/poomsaes/won/wonODan" />
+    </article>
+  </section>
+</Layout>
+

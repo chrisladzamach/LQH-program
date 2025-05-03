@@ -1,18 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ButtonMenu from '../components/ButtonMenu.astro';
-import TechniquesByGrade from '../components/TechniquesByGrade.astro';
+// import TechniquesByGrade from '../components/TechniquesByGrade.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout>  
-  <section class="p-2">
-    <article class="flex items-center justify-between">
-      <ButtonMenu title="Back" href="/"  />
-      <h1 class="text-3xl font-bold ">Ho Shin Sul</h1>
-    </article>
-
-    <hr class="my-4 text-zinc-600" />
-    
+  <section class="">
+    <Header name="Ho Shin Sul" href='/' />
     <article class="flex flex-col gap-3">
       <ButtonMenu title="Blanco" href="/hoShinSul/blanco" />
       <ButtonMenu title="Amarillo" href="/hoShinSul/amarillo" />
@@ -24,7 +19,7 @@ import TechniquesByGrade from '../components/TechniquesByGrade.astro';
       <ButtonMenu title="Rojo Marrón" href="/hoShinSul/rojoMarron" />
       <ButtonMenu title="Marrón" href="/hoShinSul/marron" />
       <ButtonMenu title="Marrón Negro" href="/hoShinSul/marronNegro" />
-      <ButtonMenu title="Negro 1 Dan" href="/hoShinSul/negro1Dan" />
+      <!-- <ButtonMenu title="Negro 1 Dan" href="/hoShinSul/negro1Dan" /> -->
     </article>
   </section>
 </Layout>
