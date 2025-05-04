@@ -1,14 +1,30 @@
 ---
 import { poomsaesData } from '../data/poomsaes';
+import { mugiPoomsaesData } from '../data/mugiPoomsaes';
 
-const { name } = Astro.props;
-const selected = poomsaesData.find(item => item.name === name);
+const { name, type } = Astro.props;
+const selected = poomsaesData.find(item => item.name === name) || mugiPoomsaesData.find(item => item.name === name);
 ---
 {selected && (
   <section class="flex flex-col mb-8">
-    <h3 class="font-bold text-xl mb-2">Poomsae: {selected.name}</h3>
+    {/* <h3 class="font-bold text-xl mb-2">{selected.name}</h3> */}
     <p class="italic text-sm text-zinc-500 mb-4">Línea: {selected.type}</p>
-    <hr class="my-2 text-zinc-600" />
+    <hr class="text-zinc-600" />
+
+    {selected.type === "ICholBong" && (
+      <article class="my-2">
+        <p class="text-[11px] text-zinc-500">
+          <strong class="mr-2">Nota: </strong>
+          <i>
+            Mientras no se especifique lo contrario, 
+            las transiciones entre posiciones de las figuras con 
+            I Chol Bong debes ser realizadas en Koap Sogi.
+          </i>
+        </p>
+      </article>
+    )}
+
+    <hr class="mb-2 text-zinc-600" />
 
     <ul class="flex flex-col gap-2 mt-4">
       {selected.steps.map(step => (
