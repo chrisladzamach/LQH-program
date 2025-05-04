@@ -1,7 +1,11 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import ButtonMenu from "../../../components/ButtonMenu.astro";
+import Header from "../../../components/Header.astro";
+import PoomsaeByName from '../../../components/PoomsaeByName.astro';
 ---
 <Layout>
-  <h1>Joong Do O Dan</h1>
+  <Header name="Joong Do O' Dan" href="/poomsaes/joongDo/joongDo" />
+  <section class="pb-2">
+    <PoomsaeByName name="Joong Do O' Dan" />
+  </section>
 </Layout>

@@ -1,13 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import PoomsaeByName from '../../components/PoomsaeByName.astro';
 ---
-
-<Layout>  
-  <section class="p-2 ">
-    <h1 class="text-3xl font-bold ">Ki Hap</h1>
-    <hr class="my-4 text-zinc-600" />
-    <article>
-      <p>here you can find all the Ki Hap of the LQH program</p>
-    </article>
+<Layout>
+  <Header name="Ki Hap" href="/poomsaes" />
+  <section class="pb-2">
+    <PoomsaeByName name="Ki Hap" />
   </section>
 </Layout>

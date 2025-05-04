@@ -1,17 +1,17 @@
 ---
 import { poomsaesData } from '../data/poomsaes';
 
-const { grade } = Astro.props;
-const selected = poomsaesData.find(item => item.grade === grade);
+const { name } = Astro.props;
+const selected = poomsaesData.find(item => item.name === name);
 ---
 {selected && (
   <section class="flex flex-col mb-8">
-    <h3 class="font-bold text-xl mb-2">Poomsae: {selected.poomsae.name}</h3>
-    <p class="italic text-sm text-zinc-500 mb-4">Tipo: {selected.poomsae.type}</p>
+    <h3 class="font-bold text-xl mb-2">Poomsae: {selected.name}</h3>
+    <p class="italic text-sm text-zinc-500 mb-4">Línea: {selected.type}</p>
     <hr class="my-2 text-zinc-600" />
 
     <ul class="flex flex-col gap-2 mt-4">
-      {selected.poomsae.steps.map(step => (
+      {selected.steps.map(step => (
         <li>
           <strong class="mr-2">Paso {step.step}:</strong> <i>{step.description}</i>
         </li>
