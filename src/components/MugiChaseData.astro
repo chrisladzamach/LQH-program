@@ -1,0 +1,28 @@
+---
+import { mugiData } from '../data/mugiGibeom';
+import type { MugiData, MugiChase } from '../data/mugiGibeom';
+
+const { name } = Astro.props as { name: keyof MugiData };
+
+// Validamos que exista esa categoría
+const selectedList: MugiChase[] = mugiData[name] ?? [];
+
+const titles: Record<keyof MugiData, string> = {
+  NunchakusSencillo: "Nunchakus Sencillo",
+  NunchakusDobles: "Nunchakus Dobles",
+  JangBong: "Jang Bong",
+};
+
+const title = titles[name] ?? "Aún no hay datos disponibles para esta categoría.";
+---
+<section>
+  {selectedList.length > 0 ? (
+    <ul class="flex flex-col gap-2">
+      {selectedList.map(({ num, description }) => (
+        <li><strong>{num}.</strong> {description}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>No hay datos disponibles.</p>
+  )}
+</section>
