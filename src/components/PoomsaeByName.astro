@@ -1,9 +1,10 @@
 ---
 import { poomsaesData } from '../data/poomsaes';
 import { mugiPoomsaesData } from '../data/mugiPoomsaes';
+import { gibeomsData } from '../data/gibeom';
 
-const { name, type } = Astro.props;
-const selected = poomsaesData.find(item => item.name === name) || mugiPoomsaesData.find(item => item.name === name);
+const { name } = Astro.props;
+const selected = poomsaesData.find(item => item.name === name) || mugiPoomsaesData.find(item => item.name === name) || gibeomsData.find(item => item.name === name);
 ---
 {selected && (
   <section class="flex flex-col mb-8">
