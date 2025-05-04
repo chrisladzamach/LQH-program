@@ -1,0 +1,18 @@
+{
+  "name": "Nombre de tu App",
+  "short_name": "MiApp",
+  "description": "Descripción breve de tu aplicación",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d47a1",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
