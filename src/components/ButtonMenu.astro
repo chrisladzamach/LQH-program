@@ -1,8 +1,6 @@
 ---
-// Importa tu ícono
 import Arrow from "../icons/Arrow.astro";
 
-// Tipado de props
 interface ButtonMenuProps {
   title: string;
   koreanTitle: string;
@@ -11,13 +9,11 @@ interface ButtonMenuProps {
   class?: string;
 }
 
-const { title, koreanTitle, icon, href, class: userClass } = Astro.props;
+const { title, koreanTitle, icon, href, class: className } = Astro.props;
 
-// Clases por defecto
-const defaultClass = "w-full justify-between items-center py-6 px-4 text-left hover:bg-blue-700/50 transition-colors rounded-none bg-blue-500 text-white font-medium";
-const finalClass = userClass ?? defaultClass;
+const defaultClass = "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium py-1 pl-2 rounded-sm";
+const finalClass = className ?? defaultClass;
 ---
-<!-- Botón tipo técnica -->
 <a class={`relative overflow-hidden flex items-center justify-between ${finalClass}`} href={href}>
   <div class="flex items-center gap-3 z-10">
     <div class="bg-yellow-500/20 p-2 rounded-full text-yellow-500">
@@ -29,6 +25,6 @@ const finalClass = userClass ?? defaultClass;
     </div>
   </div>
   <span class="pr-3 z-10">
-    <Arrow class="size-5 text-zinc-200" />
+    <Arrow class="size-5 text-zinc-600" />
   </span>
 </a>
