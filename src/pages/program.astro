@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import GradeCard from "../components/GradeCard.astro"
+
+const links = [
+  { title: "Blanco", href: "/grades/blanco" },
+  { title: "Amarillo", href: "/grades/amarillo" },
+  { title: "Naranja", href: "/grades/naranja" },
+  { title: "Verde", href: "/grades/verde" },
+  { title: "Azul", href: "/grades/azul" },
+  { title: "Purpura", href: "/grades/purpura" },
+  { title: "Rojo", href: "/grades/rojo" },
+  { title: "Rojo Marrón", href: "/grades/rojoMarron" },
+  { title: "Marrón", href: "/grades/marron" },
+  { title: "Marrón Negro", href: "/grades/marronNegro" },
+  { title: "Negro", href: "/grades/negro1Dan" },
+]
+
+---
+<Layout>  
+  <Header name="Program" href="/" />
+  <section class="pb-2 grid grid-cols-2 grid-rows-5 gap-4">
+    <!-- {
+      links.map((link) => (
+        <GradeCard title={link.title} href={link.href} />
+      ))
+    } -->
+
+    <GradeCard title="Blanco" href="/grades/blanco" />
+    <GradeCard title="Amarillo" href="/grades/amarillo" />
+    <GradeCard title="Naranja" href="/grades/naranja" />
+    <GradeCard title="Verde" href="/grades/verde" />
+    <GradeCard title="Azul" href="/grades/azul" />
+    <GradeCard title="Purpura" href="/grades/purpura" />
+    <GradeCard title="Rojo" href="/grades/rojo" />
+    <GradeCard title="Rojo Marrón" href="rojoMarron" />
+    <GradeCard title="Marrón" href="/grades/marron" />
+    <GradeCard title="Marrón Negro" href="/grades/marronNegro" />
+    <GradeCard title="Negro |" href="/grades/negro" />
+  </section>
+
+</Layout>
