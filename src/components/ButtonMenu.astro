@@ -4,7 +4,7 @@ import Arrow from "../icons/Arrow.astro";
 interface ButtonMenuProps {
   title: string;
   koreanTitle: string;
-  icon: string;
+  icon: string | any;
   href: string;
   class?: string;
 }
@@ -13,11 +13,16 @@ const { title, koreanTitle, icon, href, class: className } = Astro.props;
 
 const defaultClass = "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium py-1 pl-2 rounded-sm";
 const finalClass = className ?? defaultClass;
+const isStringIcon = typeof icon === "string";
 ---
 <a class={`relative overflow-hidden flex items-center justify-between ${finalClass}`} href={href}>
   <div class="flex items-center gap-3 z-10">
     <div class="bg-yellow-500/20 p-2 rounded-full text-yellow-500">
-      <span class="text-xl">{icon}</span>
+      {isStringIcon ? (
+        <span class="text-xl">{icon}</span>
+      ) : (
+        icon
+      )}
     </div>
     <div>
       <p>{title}</p>

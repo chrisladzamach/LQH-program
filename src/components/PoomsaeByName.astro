@@ -16,7 +16,7 @@ const selected = poomsaesData.find(item => item.name === name) || mugiPoomsaesDa
       <article class="my-2">
         <p class="text-[11px] text-zinc-500">
           <strong class="mr-2">Nota: </strong>
-          <i>
+          <i class="text-zinc-400">
             Mientras no se especifique lo contrario, 
             las transiciones entre posiciones de las figuras con 
             I Chol Bong debes ser realizadas en Koap Sogi.
@@ -30,7 +30,7 @@ const selected = poomsaesData.find(item => item.name === name) || mugiPoomsaesDa
     <ul class="flex flex-col gap-2 mt-4">
       {selected.steps.map(step => (
         <li>
-          <strong class="mr-2">Paso {step.step}:</strong> <i>{step.description}</i>
+          <strong class="mr-2 text-zinc-300">Paso {step.step}:</strong> <i class="text-zinc-400">{step.description}</i>
         </li>
       ))}
     </ul>

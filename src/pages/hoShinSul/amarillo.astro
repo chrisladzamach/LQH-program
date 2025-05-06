@@ -1,15 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro"
-import BackButton from "../../components/BackButton.astro";
 import TechniquesByGrade from "../../components/TechniquesByGrade.astro"
-import Header from "../../components/Header.astro";
-
+import Header from "../../components/Header.astro"
 ---
 <Layout>
-  <section class="min-h-screen">
-    <Header name="Amarillo" href='/hoShinSul' />
-    <article class="flex flex-col gap-3">
-      <TechniquesByGrade grade="Amarillo" />
-    </article>
+  <section class="flex flex-col h-screen">
+    <Header name="Amarillo" href="/hoShinSul" />
+    <TechniquesByGrade grade="Amarillo" />
   </section>
 </Layout>

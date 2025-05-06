@@ -1,19 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro"
-import ButtonMenu from "../../components/ButtonMenu.astro";
 import TechniquesByGrade from "../../components/TechniquesByGrade.astro"
+import Header from "../../components/Header.astro"
 ---
 <Layout>
-  <section class="flex flex-col h-screen p-2">
-    <article class="flex items-center justify-between">
-      <ButtonMenu title="Back" href="/hoShinSul"  />
-      <h1 class="text-3xl font-bold ">Blanco</h1>
-    </article>
-
-    <hr class="my-4 text-zinc-600" />
-
-    <article class="flex flex-col gap-3">
-      <TechniquesByGrade grade="Blanco" />
-    </article>
+  <section class="flex flex-col h-screen">
+    <Header name="Blanco" href="/hoShinSul" />
+    <TechniquesByGrade grade="Blanco" />
   </section>
 </Layout>

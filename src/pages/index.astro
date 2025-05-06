@@ -7,8 +7,7 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 		<figure class="flex items-center justify-center my-4">
 			<img src="/logoJDK.png" alt="Logo of LQH" class="size-40 rounded-full" />
 		</figure>
-		<!-- <h1 class="text-2xl font-bold text-center">Welcome to the LQH program website</h1>
-		<p class="mt-4 text-center">You can find all items of program here, select and option that you need see to learn.</p> -->
+		
 		<div class="text-center space-y-2">
 			<h1 class="text-3xl md:text-4xl font-bold tracking-tight">
 				Programa <span class="text-yellow-300">LQH</span>
@@ -17,14 +16,8 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 				Explora todas las técnicas y figuras del programa. Selecciona una opción para comenzar tu aprendizaje o recordar lo que necesites.
 			</p>
 		</div>
+		
 		<hr class="my-4 text-zinc-600" />
-		<!-- <article class="flex flex-col gap-2">
-			<ButtonMenu title="Ho Sin Sul (호신술)" href="/hoShinSul" />
-			<ButtonMenu title="Poomsaes (품새)" href="/poomsaes" />
-			<ButtonMenu title="Mugi Poomsaes (무기 품새)" href="/mugiPoomsaes" />
-			<ButtonMenu title="Chase (기본)" href="/chases" />
-			<ButtonMenu title="Mugi Chase (기본 무기)" href="/mugiChase" />
-		</article> -->
 
 		<div class="grid divide-y divide-gray-700">
 			<ButtonMenu
@@ -32,7 +25,7 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 				koreanTitle="호신술"
 				icon="🛡️"
 				href="/hoShinSul"
-				class="bg-gray-800/50 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black rounded-t-md"
+				class="bg-gray-800/50 hover:bg-gray-600 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-600 focus:border-black rounded-t-md"
 			/>
 
 			<ButtonMenu
@@ -40,14 +33,14 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 				koreanTitle="품새"
 				icon="🥋"
 				href="/poomsaes"
-				class="bg-gray-800/50 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black"
+				class="bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-600 focus:border-black"
 			/>
 			<ButtonMenu
 				title="Mugi Poomsaes"
 				koreanTitle="무기 품새"
 				icon="⚔️"
-				href="/mugi-poomsaes"
-				class="bg-gray-800/50 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black"
+				href="/mugiPoomsaes"
+				class="bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-600 focus:border-black"
 			/>
 
 			<ButtonMenu
@@ -55,32 +48,16 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 				koreanTitle="기본"
 				icon="👊"
 				href="/chases"
-				class="bg-gray-800/50 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black"
+				class="bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-600 focus:border-black"
 			/>
 
 			<ButtonMenu
 				title="Mugi Chase"
 				koreanTitle="무기 기본"
 				icon="🔪"
-				href="/mugiChases"
-				class="bg-gray-800/50 border-gray-700 border-b-1 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black rounded-b-md"
+				href="/mugiChase"
+				class="bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-b-1 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-600 focus:border-black rounded-b-md"
 			/>
-			<!-- <ButtonMenu title="Ho Sin Sul (호신술)" href="/hoShinSul" 
-			 class="bg-gray-800/50 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black rounded-t-md" /> -->
-			<!-- <ButtonMenu title="Poomsaes (품새)" href="/poomsaes" 
-			 class="bg-gray-800/50 border-gray-700 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black " /> -->
-			<!-- <ButtonMenu 
-			title="Mugi Poomsaes (무기 품새)" 
-			href="/mugiPoomsaes" 
-			class="bg-gray-800/50 border-gray-700 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black " /> -->
-			<!-- <ButtonMenu 
-			title="Chase (기본)" 
-			href="/chases" 
-			class="bg-gray-800/50 border-gray-700 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black " />
-			<ButtonMenu 
-			title="Mugi Chase (기본 무기)" 
-			href="/mugiChase" 
-			class="bg-gray-800/50 border-gray-700 border-b-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 pl-3 font-bold focus:bg-gray-700 focus:border-black rounded-b-md" /> -->
 		</div>
 	</section>
 </Layout>

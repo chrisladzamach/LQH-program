@@ -19,7 +19,7 @@ const title = titles[name] ?? "Aún no hay datos disponibles para esta categorí
   {selectedList.length > 0 ? (
     <ul class="flex flex-col gap-2">
       {selectedList.map(({ num, description }) => (
-        <li><strong>{num}.</strong> {description}</li>
+        <li class="text-zinc-300"><strong>{num}.</strong> <i class="text-zinc-400">{description}</i></li>
       ))}
     </ul>
   ) : (
