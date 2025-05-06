@@ -11,7 +11,7 @@ interface ButtonMenuProps {
 
 const { title, koreanTitle, icon, href, class: className } = Astro.props;
 
-const defaultClass = "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium py-1 pl-2 rounded-sm";
+const defaultClass = "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium pl-2 py-2 px-2 rounded-sm";
 const finalClass = className ?? defaultClass;
 const isStringIcon = typeof icon === "string";
 ---
