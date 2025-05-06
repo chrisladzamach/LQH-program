@@ -1,5 +1,3 @@
-// Interfaces
-
 export interface GradeItem {
   item: number;
   description: string;
@@ -86,45 +84,366 @@ export const gradeProgramData: GradeProgram[] = [
       {
         title: "Llaves",
         items: [
-          { item: 1, description: "Llave de muñeca hacia afuera" },
-          { item: 2, description: "Proyección circular" }
+          { item: 1, description: "28 Técnicas de defensa personal mano igual." },
         ]
       },
       {
         title: "Básicos sin armas",
         items: [
-          { item: 1, description: "Puño doble con paso cruzado" }
+          { item: 1, description: "2do Básico en cuadrado." },
+          { item: 2, description: "1er Básico de respiración (2/3)." },
+
         ]
       },
       {
         title: "Básicos con armas",
         items: [
-          { item: 1, description: "Corte lateral con bastón corto" }
+          { item: 1, description: "20 móvimientos básicos con nunchakus." }
         ]
       },
       {
         title: "Figuras",
         items: [
-          { item: 1, description: "Figura básica 2 – Dan Gun" }
-        ]
-      },
-      {
-        title: "Figuras sin armas",
-        items: [
-          { item: 1, description: "Desarme frontal sin armas" }
+          { item: 1, description: "Joong Do Il Dan" }
         ]
       },
       {
         title: "Gimnasia",
         items: [
-          { item: 1, description: "Rollo atrás" },
-          { item: 2, description: "Caída frontal" }
+          { item: 1, description: "Rollos y caidas desde la posición de pie." },
+          { item: 2, description: "Media luna por derecha y por izquierda." },
+          { item: 3, description: "Rondo." },
         ]
       },
       {
         title: "Patadas",
         items: [
-          { item: 1, description: "Dollyo Chagui (Patada circular)" }
+          { item: 1, description: "Todas las patadas saltando." }
+        ]
+      }
+    ]
+  },
+
+  {
+    color: "naranja",
+    duration: "4 meses",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+        ]
+      },
+      {
+        title: "Básicos sin armas",
+        items: [
+          { item: 1, description: "3er Básico en cuadrado." },
+          { item: 2, description: "1er Básico de respiración." },
+          { item: 3, description: "Básico de Hak Dary" }
+        ]
+      },
+      {
+        title: "Básicos con armas",
+        items: [
+          { item: 1, description: "25 Movimientos básicos con nunchakus" }
+        ]
+      },
+      {
+        title: "Figuras sin armas",
+        items: [
+          { item: 1, description: "Won Il Dan" }
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación" },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con giro." },
+        ]
+      }
+    ]
+  },
+
+  {
+    color: "verde",
+    duration: "4 meses",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+          { item: 2, description: "10 Técnicas de puño contra puño." },
+          { item: 3, description: "12 Técnicas de defensa contra agarres por la espalda." },
+        ]
+      },
+      {
+        title: "Básicos sin armas",
+        items: [
+          { item: 1, description: "1er Básico en cuadrado." },
+          { item: 2, description: "2er Básico en cuadrado." },
+          { item: 3, description: "3er Básico en cuadrado." },
+          { item: 4, description: "1er Básico de respiración." },
+          { item: 5, description: "Básico de Hak Dary" },
+          { item: 6, description: "1er Básico de GeumGang" },
+          { item: 7, description: "2do Básico de GeumGang" }
+        ]
+      },
+      {
+        title: "Básicos con armas",
+        items: [
+          { item: 1, description: "30 Movimientos básicos con nunchakus" }
+        ]
+      },
+      {
+        title: "Figuras sin armas",
+        items: [
+          { item: 1, description: "Joong Do Il Dan" },
+          { item: 2, description: "Won Il Dan" },
+          { item: 3, description: "Joong Do I Dan" }
+        ]
+      },
+      {
+        title: "Figuras con armas",
+        items: [
+          { item: 1, description: "I Chol bong Il Dan" }
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación, kit de nuca." },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con salto y giro." },
+        ]
+      }
+    ]
+  },
+  {
+    color: "azul",
+    duration: "4 meses",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+          { item: 2, description: "10 Técnicas de puño contra puño." },
+          { item: 3, description: "12 Técnicas de defensa contra agarres por la espalda." },
+          { item: 4, description: "10 Técnicas de Patada contra puño." },
+          { item: 5, description: "14 Técnicas de defensa contra abrazos." },
+        ]
+      },
+      {
+        title: "Básicos sin armas",
+        items: [
+          { item: 1, description: "1er Básico en cuadrado." },
+          { item: 2, description: "2er Básico en cuadrado." },
+          { item: 3, description: "3er Básico en cuadrado." },
+          { item: 4, description: "1er Básico de respiración." },
+          { item: 5, description: "Básico de Hak Dary" },
+          { item: 6, description: "1er Básico de GeumGang" },
+          { item: 7, description: "2do Básico de GeumGang" },
+          { item: 8, description: "3er Básico de GeumGang" },
+          { item: 9, description: "4to Básico de GeumGang" },
+          { item: 10, description: "2do Básico de respiración. (1/2)" }
+        ]
+      },
+      {
+        title: "Básicos con armas",
+        items: [
+          { item: 1, description: "35 Movimientos básicos con nunchakus." },
+          { item: 2, description: "10 Movimientos básicos con Jang Bong." }
+        ]
+      },
+      {
+        title: "Figuras sin armas",
+        items: [
+          { item: 1, description: "Joong Do Il Dan" },
+          { item: 2, description: "Won Il Dan" },
+          { item: 3, description: "Joong Do I Dan" },
+          { item: 4, description: "Won I Dan" }
+        ]
+      },
+      {
+        title: "Figuras con armas",
+        items: [
+          { item: 1, description: "I Chol bong Il Dan" },
+          { item: 2, description: "Jang bong Il Dan" }
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación, kit de nuca." },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con salto y giro." },
+        ]
+      }
+    ]
+  },
+  {
+    color: "purpura",
+    duration: "4 meses",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+          { item: 2, description: "10 Técnicas de puño contra puño." },
+          { item: 3, description: "12 Técnicas de defensa contra agarres por la espalda." },
+          { item: 4, description: "10 Técnicas de Patada contra puño." },
+          { item: 5, description: "14 Técnicas de defensa contra abrazos." },
+          { item: 6, description: "16 Técnicas de defensa de sentados." }
+        ]
+      },
+      {
+        title: "Básicos sin armas",
+        items: [
+          { item: 1, description: "1er Básico en cuadrado." },
+          { item: 2, description: "2er Básico en cuadrado." },
+          { item: 3, description: "3er Básico en cuadrado." },
+          { item: 4, description: "1er Básico de respiración." },
+          { item: 5, description: "Básico de Hak Dary" },
+          { item: 6, description: "1er Básico de GeumGang" },
+          { item: 7, description: "2do Básico de GeumGang" },
+          { item: 8, description: "3er Básico de GeumGang" },
+          { item: 9, description: "4to Básico de GeumGang" },
+          { item: 10, description: "2do Básico de respiración." },
+        ]
+      },
+      {
+        title: "Básicos con armas",
+        items: [
+          { item: 1, description: "40 Movimientos básicos con nunchakus." },
+          { item: 2, description: "20 Movimientos básicos con Jang Bong." }
+        ]
+      },
+      {
+        title: "Figuras sin armas",
+        items: [
+          { item: 1, description: "Joong Do Il Dan" },
+          { item: 2, description: "Won Il Dan" },
+          { item: 3, description: "Joong Do I Dan" },
+          { item: 4, description: "Won I Dan" },
+          { item: 5, description: "Joong Do Sam Dan" }
+        ]
+      },
+      {
+        title: "Figuras con armas",
+        items: [
+          { item: 1, description: "I Chol bong Il Dan" },
+          { item: 2, description: "Jang bong Il Dan" }, 
+          { item: 3, description: "I Chol Bong I Dan" }
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación, kit de nuca." },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con salto y giro." },
+          { item: 2, description: "Sa Bal Chagi." },
+        ]
+      }
+    ]
+  },
+  {
+    color: "rojo",
+    duration: "6 meses",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+          { item: 2, description: "10 Técnicas de puño contra puño." },
+          { item: 3, description: "12 Técnicas de defensa contra agarres por la espalda." },
+          { item: 4, description: "10 Técnicas de Patada contra puño." },
+          { item: 5, description: "14 Técnicas de defensa contra abrazos." },
+          { item: 6, description: "16 Técnicas de defensa de sentados." },
+          { item: 7, description: "10 Técnicas de defensa contra agarre a dos brazos" }
+        ]
+      },
+      {
+        title: "Básicos sin armas",
+        items: [
+          { item: 1, description: "1er Básico en cuadrado." },
+          { item: 2, description: "2er Básico en cuadrado." },
+          { item: 3, description: "3er Básico en cuadrado." },
+          { item: 4, description: "1er Básico de respiración." },
+          { item: 5, description: "Básico de Hak Dary" },
+          { item: 6, description: "1er Básico de GeumGang" },
+          { item: 7, description: "2do Básico de GeumGang" },
+          { item: 8, description: "3er Básico de GeumGang" },
+          { item: 9, description: "4to Básico de GeumGang" },
+          { item: 10, description: "2do Básico de respiración." },
+          { item: 11, description: "4to Básico en cuadrado." }
+        ]
+      },
+      {
+        title: "Básicos con armas",
+        items: [
+          { item: 1, description: "40 Movimientos básicos con nunchakus." },
+          { item: 2, description: "22 Movimientos básicos con Jang Bong." },
+          { item: 3, description: "10 Movimientos básicos con Nunchakus dobles." }
+        ]
+      },
+      {
+        title: "Figuras sin armas",
+        items: [
+          { item: 1, description: "Joong Do Il Dan" },
+          { item: 2, description: "Won Il Dan" },
+          { item: 3, description: "Joong Do I Dan" },
+          { item: 4, description: "Won I Dan" },
+          { item: 5, description: "Joong Do Sam Dan" },
+          { item: 6, description: "Won Sam Dan" },
+        ]
+      },
+      {
+        title: "Figuras con armas",
+        items: [
+          { item: 1, description: "I Chol bong Il Dan" },
+          { item: 2, description: "Jang bong Il Dan" }, 
+          { item: 3, description: "I Chol Bong I Dan" },
+          { item: 4, description: "Jang Bong I Dan" },
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación, kit de nuca." },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con salto y giro." },
+          { item: 2, description: "Sa Bal Chagi." },
         ]
       }
     ]

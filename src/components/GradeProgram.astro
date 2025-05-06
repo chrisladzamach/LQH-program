@@ -1,4 +1,31 @@
 ---
+import type { GradeProgram } from '../data/gradeProgram';
+import { gradeProgramData } from '../data/gradeProgram';
 
+export interface Props {
+  color: string;
+}
 
+const { color } = Astro.props;
+
+const selectedProgram: GradeProgram | undefined = gradeProgramData.find(
+  (program) => program.color === color
+);
 ---
+{selectedProgram ? (
+  <section class="rounded-lg p-2 flex flex-col gap-2">
+    <p class="text-zinc-500"><strong>Tiempo: </strong> <i>{selectedProgram.duration}</i></p>
+    {selectedProgram.sections.map((section) => (
+      <article class="border-b-1 border-gray-700 rounded-md p-2 mb-2">
+        <h3 class="text-xl text-zinc-400 font-bold tracking-wider">{section.title}</h3>
+        <ul>
+          {section.items.map((item) => (
+            <li class="list-disc ml-4 text-zinc-400"> <i class="tracking-wide">{item.description}</i></li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+) : (
+  <p class="text-red-500">No se encontró información para el color: {color}</p>
+)}
