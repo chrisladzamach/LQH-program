@@ -1,5 +1,4 @@
 ---
-// import './src/styles/global.css';
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 ---
@@ -10,15 +9,15 @@ import { ClientRouter } from 'astro:transitions';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" href="/logoJDK.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>LQH Program</title>
+		<title>LQHApp</title>
+
 		<!-- PWA manifest -->
 		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="theme-color" content="#000" />
 		<ClientRouter />
-
 	</head>
-	<body class="lg:max-w-screen lg:flex flex-col items-center" transition:name="anim" transition:animate="fade">
-		<slot transition:name="anim" transition:animate="fade" />
+	<body class="lg:max-w-screen lg:flex flex-col items-center">
+		<slot /> 
 	</body>
 </html>
 
