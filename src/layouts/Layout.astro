@@ -1,6 +1,7 @@
 ---
 // import './src/styles/global.css';
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 ---
 <!doctype html>
 <html lang="en">
@@ -13,9 +14,11 @@ import '../styles/global.css';
 		<!-- PWA manifest -->
 		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="theme-color" content="#0d47a1" />
+		<ClientRouter />
+
 	</head>
-	<body class="lg:max-w-screen lg:flex flex-col items-center">
-		<slot />
+	<body class="lg:max-w-screen lg:flex flex-col items-center" transition:name="anim" transition:animate="slide">
+		<slot transition:name="anim" transition:animate="slide" />
 	</body>
 </html>
 
