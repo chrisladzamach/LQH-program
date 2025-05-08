@@ -5,7 +5,7 @@ export interface PoomsaeStep {
 
 export interface Poomsae {
   name: string;
-  type: "ICholBong" | "JangBong" | "DanBong" | "Puche" | "Chan";
+  type: "ICholBong" | "JangBong" | "DanBong" | "Puche" | "Chang";
   steps: PoomsaeStep[];
 }
 
@@ -75,15 +75,16 @@ export const mugiPoomsaesData: Poomsae[] = [
     name: "I Chol Bong Sam Dan",
     type: "ICholBong",
     steps: [
-      { step: 1, description: "3 veces 3 (básica), 3 veces 15 (básica)." },
-      { step: 2, description: "Doble 8 simultáneo, desde abajo 7, 27." },
-      { step: 3, description: "3 veces 5 por lado y lado intercalados." },
-      { step: 4, description: "3 veces 'X' hacia adelante y 3 veces hacia atrás." },
-      { step: 5, description: "Avanza derecho en Ap Kubi al frente y ejecuta 15, 13." },
-      { step: 6, description: "Recoge y desplaza Ap Kubi a la izquierda, y vuelve a ejecutar 15, 13." },
-      { step: 7, description: "Recoge y repite el paso 5." },
-      { step: 8, description: "Recoge y abre en Ap Kubi con la pierna izquierda al frente hacia la derecha y ejecuta 15, 13." },
-      { step: 9, description: "Recoge y ejecuta el paso 5 con la pierna izquierda al frente en Ap Kubi." }
+      { step: 1, description: "3 veces giros de 3, termina sobre los hombros (simultáneos)" },
+      { step: 2, description: "3 veces giros de 15, termina en las axilas (simultáneos)" },
+      { step: 3, description: "8 simultáneo izquierda por encima, termina en el hombro y 13 termina en la axila. 8 simultáneo derecha por encima, terminando en los hombros." },
+      { step: 4, description: "6, termina en los hombros, golpe vertical hacia abajo, devuelve con 27 termina en los hombros, (todo simultáneo)." },
+      { step: 5, description: "3 pares de 5 alternado, empezando con la mano derecha, termina en los hombros." },
+      { step: 6, description: "3 veces equis hacia adelante, promero mano izquierda por encima, rebota en la axila (sin agarrar), 3 veces equis hacia atrás, primero mano izquierda por encima, termina en los hombros." },
+      { step: 7, description: "3 pares de medio 24 aleternado, empieza mano derecha, termina en las axilas." },
+      { step: 8, description: "En Ap Sogi al frente, adelanta pie izquierdo 15, 13 simultáneo, termina en la axila. A la izquierda pie izquierdo adelante, 15, 13 simultáno. Luego al frente pie derecho, adelante, 15, 13 simultáneo. A la derecha pie derecho adelante, 15, 13 simultáneo. Y al frente pie izquierdo adelante 15, 13 simultáneo, termina en la axila." },
+      { step: 9, description: "Sube a los hombros, 3 pares de 5 alternado empezando con la mano derecha, termina en los hombros." },
+      { step: 10, description: "Un giro de 15 simultáneo y agarra al frente los nunchakus en Beom Sogi. (Grito)" }
     ]    
   },
   {
@@ -139,10 +140,10 @@ export const mugiPoomsaesData: Poomsae[] = [
     ]    
   },
   {
-    name: "Chan Il Dan",
-    type: "Chan",
+    name: "Chang Il Dan",
+    type: "Chang",
     steps: [
-      { step: 1, description: "" },
+      { step: 1, description: "Realiza el mismo esquema de la Jang Bong Sa Dan, pero en el paso 2 se modifica el siguiente movimiento: '... levanta con el Bong guardado de forma vertical tras el brazo, derecho, Hack Dary Sogi y Uen Olgul Sonal Makki. Avanza en Koap Sogi (izquierdo por delante), remo. Ap Sogi, remo. Ap Kubi Sogi Uen Montong Batang Son Chigi con el Bong guardado de forma diagonal tras el brazo. Sin desplazarse, pasa a ChumChum Sogi y lleva el Bong adelante verticalmente' cambia el Bong de posición (la punta de abajo, la pone arriba)." },
     ]
   },
   {

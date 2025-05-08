@@ -593,7 +593,7 @@ export const gradeProgramData: GradeProgram[] = [
           { item: 2, description: "Jang bong Il Dan" }, 
           { item: 3, description: "I Chol Bong I Dan" },
           { item: 4, description: "Jang Bong I Dan" },
-          { item: 5, description: "Jang Bong Sam Dan" },
+          { item: 5, description: "I Chol Bong Sam Dan" },
         ]
       },
       {
@@ -679,8 +679,8 @@ export const gradeProgramData: GradeProgram[] = [
           { item: 2, description: "Jang bong Il Dan" }, 
           { item: 3, description: "I Chol Bong I Dan" },
           { item: 4, description: "Jang Bong I Dan" },
-          { item: 5, description: "Jang Bong Sam Dan" },
-          { item: 6, description: "I Chol Bong Sam Dan" },
+          { item: 5, description: "I Chol Bong Sam Dan" },
+          { item: 6, description: "Jang Bong Sam Dan" },
         ]
       },
       {
