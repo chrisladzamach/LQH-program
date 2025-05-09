@@ -4,7 +4,7 @@
   "description": "Aplicación del programa LQH",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000",
+  "background_color": "#333",
   "theme_color": "#000",
   "orientation": "portrait",
   "scope": "/",
