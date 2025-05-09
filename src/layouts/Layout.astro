@@ -7,10 +7,18 @@ import { ClientRouter } from 'astro:transitions';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/logoJDK.png" />
+		<link rel="icon" type="image/webp" href="/src/assets/logoJDK.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<title>LQHApp</title>
 
+		<!-- Preload -->
+		<link rel="prefetch" href="/program" />
+		<link rel="prefetch" href="/hoShinSul" />
+		<link rel="prefetch" href="/poomsaes" />
+		<link rel="prefetch" href="/mugiPoomsaes" />
+		<link rel="prefetch" href="/chases" />
+		<link rel="prefetch" href="/mugiChase" />
+		
 		<!-- PWA manifest -->
 		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="theme-color" content="#000" />
