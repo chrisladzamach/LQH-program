@@ -789,7 +789,8 @@ export const gradeProgramData: GradeProgram[] = [
         title: "Patadas",
         items: [
           { item: 1, description: "Todas las patadas, con salto y giro." },
-          { item: 2, description: "Sa Bal Chagi." },
+          { item: 2, description: "Todas las patadas se harán avanzando y con obstáculos."},
+          { item: 3, description: "Sa Bal Chagi." },
         ]
       }
     ]
