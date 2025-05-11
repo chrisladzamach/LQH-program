@@ -20,6 +20,6 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "vite-plugin-pwa": "^1.0.0"
+    "vite-plugin-pwa": "1.0.0"
   }
 }
