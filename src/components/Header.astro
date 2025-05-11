@@ -1,5 +1,4 @@
 ---
-import ButtonMenu from "../components/ButtonMenu.astro";
 
 interface Props {
   name: string;
@@ -9,10 +8,9 @@ interface Props {
 const { name, href } = Astro.props
 ---
 <article class="flex items-center justify-between pt-2 px-2">
-  <!-- <ButtonMenu title="Back" href={href}  /> -->
   <a
     href={href}
-    class="flex gap-2 h-full py-2 px-3 items-center justify-center rounded-xl bg-zinc-600 text-white transition hover:bg-neutral-800 font-bolt"
+    class="sticky top-0 flex gap-2 h-full py-2 px-3 items-center justify-center rounded-xl bg-zinc-600 text-white transition hover:bg-neutral-800 font-bolt"
   >
     <svg viewBox="0 0 16 6" aria-hidden="true" class="w-4 transform rotate-180">
       <path

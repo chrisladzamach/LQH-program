@@ -1,6 +1,4 @@
 ---
-import Marron from '../pages/hoShinSul/marron.astro';
-
 interface Props {
   title: string;
   href: string;
@@ -20,11 +18,30 @@ const colorList: { [key: string]: string } = {
   Marrón: "bg-[#78350f]",
   "Marrón Negro": "bg-[linear-gradient(to_bottom,#78350f_50%,#000000_50%)]",
   "Negro |": "bg-black",
+  "Negro ||": "bg-black",
 };
 
 const color = colorList[title] ?? "bg-gray-200";
 ---
 <a href={href} class={`block max-w-sm p-3 ${color} border border-gray-200 rounded-lg shadow-sm`}>
-  <h5 class=`mb-2 text-2xl font-bold tracking-tight ${title === "Negro |" ? "text-yellow-300" : "text-gray-900"}`>{title}</h5>
-  <i class=`mb-2 text-sm font-normal tracking-tight ${title === "Negro |" ? "text-yellow-300" : title === "Marrón Negro" ? "text-yellow-300" : "text-black"}`>Aquí está el programa del grado <span class="font-bold tracking-wide">{title}</span> .</i>
+  <h5 class=`mb-2 text-2xl font-bold tracking-tight 
+    ${title === "Negro |" ? "text-yellow-300" 
+    : title === "Negro ||" ? "text-yellow-300" 
+    : title === "Negro |||" ? "text-yellow-300"
+    : title === "Negro ||||" ? "text-yellow-300"
+    : title === "Negro |||||" ? "text-yellow-300"
+    : "text-gray-900"}`>
+    {title}
+  </h5>
+  <i class=`mb-2 text-sm font-normal tracking-tight 
+    ${title === "Negro |" ? "text-yellow-300" 
+    : title === "Negro ||" ? "text-yellow-300" 
+    : title === "Negro |||" ? "text-yellow-300" 
+    : title === "Negro ||||" ? "text-yellow-300" 
+    : title === "Negro |||||" ? "text-yellow-300" 
+    : title === "Marrón Negro" ? "text-yellow-300" 
+    : "text-black"}`>
+    Aquí está el programa del grado 
+    <span class="font-bold tracking-wide">{title}</span> .
+  </i>
 </a>

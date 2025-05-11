@@ -703,7 +703,7 @@ export const gradeProgramData: GradeProgram[] = [
   {
     color: "negro1",
     duration: "2 años",
-        sections: [
+    sections: [
       {
         title: "Llaves",
         items: [
@@ -795,5 +795,31 @@ export const gradeProgramData: GradeProgram[] = [
       }
     ]
   },
-  // Continúa agregando más colores: naranja, verde, azul, etc.
+  {
+    color: "negro2",
+    duration: "2 años",
+    sections: [
+      {
+        title: "Llaves",
+        items: [
+          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
+          { item: 2, description: "10 Técnicas de puño contra puño." },
+          { item: 3, description: "12 Técnicas de defensa contra agarres por la espalda." },
+          { item: 4, description: "10 Técnicas de Patada contra puño." },
+          { item: 5, description: "14 Técnicas de defensa contra abrazos." },
+          { item: 6, description: "16 Técnicas de defensa de sentados." },
+          { item: 7, description: "14 Técnicas de defensa contra agarre a dos brazos." },
+          { item: 8, description: "10 Técnicas de llave contra puño."},
+          { item: 9, description: "16 Técnicas de saludo y conducción."},
+          { item: 10, description: "26 Técnicas de defensa contra agarres de Judo." },
+          { item: 11, description: "16 Técnicas de defensa acostado." },
+          { item: 12, description: "16 Técnicas de llave contra patada." },
+          { item: 13, description: "60 Técnicas de defensa contra cuchillo." },
+          { item: 14, description: "15 Técnicas de defensa con palo corto." },
+          { item: 15, description: "20 Técnicas de defensa de mano vacía contra armas de fuego cortas y largas." },
+          { item: 16, description: "10 Técnicas de defensa sentado en silla." },
+        ]
+      }
+    ]
+  }
 ];
