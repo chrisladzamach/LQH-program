@@ -14,8 +14,9 @@ export default defineConfig({
           'favicon.ico',
           'robots.txt',
           'apple-touch-icon.png',
-          'icons/icon-192x192.png',
-          'icons/icon-512x512.png'
+          'icons/*.{png,svg}',
+          'images/**/*',
+          'fonts/**/*'
         ],
         manifest: {
           name: 'LQH App',
@@ -41,34 +42,66 @@ export default defineConfig({
           ]
         },
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,woff2,json}'],
+          globPatterns: [
+            '**/*.{js,css,html,ico,png,svg,webp,woff2,json,jpg,jpeg,gif,webm,mp4,mp3,pdf,doc,docx}'
+          ],
           runtimeCaching: [
             {
               urlPattern: ({ request }) => request.destination === 'document',
               handler: 'NetworkFirst',
               options: {
                 cacheName: 'html-cache',
+                networkTimeoutSeconds: 10,
+                expiration: {
+                  maxEntries: 50,
+                  maxAgeSeconds: 60 * 60 * 24 * 7 // 1 semana
+                }
               },
             },
             {
               urlPattern: ({ request }) =>
                 ['style', 'script', 'worker'].includes(request.destination),
-              handler: 'CacheFirst',
+              handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'assets-cache',
+                expiration: {
+                  maxEntries: 100,
+                  maxAgeSeconds: 60 * 60 * 24 * 30 // 30 días
+                }
               },
             },
             {
               urlPattern: ({ request }) =>
-                ['image', 'font'].includes(request.destination),
+                ['image', 'font', 'audio', 'video'].includes(request.destination),
               handler: 'CacheFirst',
               options: {
                 cacheName: 'static-resources',
+                expiration: {
+                  maxEntries: 200,
+                  maxAgeSeconds: 60 * 60 * 24 * 365 // 1 año
+                }
               },
+            },
+            {
+              urlPattern: ({ url }) => url.pathname.startsWith('/api/'),
+              handler: 'NetworkFirst',
+              options: {
+                cacheName: 'api-cache',
+                networkTimeoutSeconds: 5,
+                expiration: {
+                  maxEntries: 50,
+                  maxAgeSeconds: 60 * 60 * 24 // 1 día
+                },
+                cacheableResponse: {
+                  statuses: [0, 200]
+                }
+              }
             }
           ],
           skipWaiting: true,
-          clientsClaim: true
+          clientsClaim: true,
+          offlineGoogleAnalytics: true,
+          cleanupOutdatedCaches: true
         }
       })
     ]
