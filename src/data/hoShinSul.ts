@@ -541,10 +541,15 @@ export const hoShinSulData: GradeHoShinSul[] = [
       }
     ]
   },
-  // {
-  //   grade: "Negro 1 Dan",
-  //   groups: [
-      
-  //   ]
-  // }
+  {
+    grade: "Negro 1 Dan",
+    groups: [
+      {
+        group: "Defensa de acostado",
+        subgroups: [
+          
+        ]
+      }
+    ]
+  }
 ];
