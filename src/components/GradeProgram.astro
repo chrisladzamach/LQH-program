@@ -20,8 +20,7 @@ const selectedProgram: GradeProgram | undefined = gradeProgramData.find(
         <h3 class="text-xl text-zinc-400 font-bold tracking-wider">{section.title}</h3>
         <ul>
           {section.items.map((item) => (
-            <li class="list-none ml-4 text-zinc-400"> 
-              <input type="checkbox" class="mr-2" />
+            <li class="list-disc ml-4 text-zinc-400"> 
               <i class="tracking-wide">{item.description}</i>
             </li>
           ))}
