@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
+import SpeedInsights from "@vercel/speed-insights/astro";
 ---
 <!doctype html>
 <html lang="es">
@@ -20,7 +21,8 @@ import { ClientRouter } from 'astro:transitions';
 		<ClientRouter />
 	</head>
 	<body class="lg:max-w-screen lg:flex flex-col items-center">
-		<slot /> 
+		<slot />
+		<SpeedInsights /> 
 	</body>
 </html>
 

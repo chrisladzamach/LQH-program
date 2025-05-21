@@ -10,6 +10,7 @@ A Progressive Web Application (PWA) designed to serve as a comprehensive guide f
 - 🎯 Detailed step-by-step techniques.
 - 🌐 Available in Spanish.
 - 📱 Installable on any device.
+- 📊 Performance monitoring with Vercel Speed Insights.
 
 ## Usage
 
@@ -33,6 +34,7 @@ Built with:
 - Astro
 - TailwindCSS
 - PWA capabilities
+- Vercel Speed Insights for performance monitoring
 
 ---
 
@@ -48,6 +50,7 @@ Una Aplicación Web Progresiva (PWA) diseñada para servir como guía completa d
 - 🎯 Técnicas detalladas paso a paso.
 - 🌐 Disponible en español.
 - 📱 Instalable en cualquier dispositivo.
+- 📊 Monitoreo de rendimiento con Vercel Speed Insights.
 
 ## Uso
 
@@ -71,3 +74,4 @@ Construido con:
 - Astro
 - TailwindCSS
 - Capacidades PWA
+- Vercel Speed Insights para monitoreo de rendimiento
