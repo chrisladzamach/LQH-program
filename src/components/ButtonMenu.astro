@@ -16,20 +16,17 @@ const finalClass = className ?? defaultClass;
 const isStringIcon = typeof icon === "string";
 ---
 <a class={`relative overflow-hidden flex items-center justify-between ${finalClass}`} href={href}>
-  <div class="flex items-center gap-3 z-10">
-    <div class="bg-yellow-500/20 p-2 rounded-full text-yellow-500">
+  <div class="flex flex-col items-center gap-3">
+    <div class=" flex items-center justify-center rounded-full text-yellow-500">
       {isStringIcon ? (
-        <span class="text-xl">{icon}</span>
+        <span class="text-6xl">{icon}</span>
       ) : (
         icon
       )}
     </div>
-    <div>
-      <p>{title}</p>
+    <div class="flex flex-col px-2 text-center">
+      <p class="text-wrap">{title}</p>
       <i class="text-sm text-gray-400">{koreanTitle}</i>
     </div>
   </div>
-  <span class="pr-3 z-10">
-    <Arrow class="size-5 text-zinc-600" />
-  </span>
 </a>
