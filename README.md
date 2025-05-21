@@ -27,6 +27,10 @@ A Progressive Web Application (PWA) designed to serve as a comprehensive guide f
    - Navigate through forms and techniques using the intuitive interface.
    - All content remains accessible even without internet connection.
 
+## Contributing
+
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
+
 ## Technical Information
 
 Built with:
@@ -66,6 +70,10 @@ Una Aplicación Web Progresiva (PWA) diseñada para servir como guía completa d
    - Utiliza el menú principal para acceder a las diferentes secciones.
    - Navega por las formas y técnicas usando la interfaz intuitiva.
    - Todo el contenido permanece accesible incluso sin conexión a internet.
+
+## Contribuir
+
+¡Damos la bienvenida a las contribuciones! Por favor, lee nuestras [Guías de Contribución](CONTRIBUTING.md) para obtener detalles sobre cómo enviar pull requests, reportar problemas y contribuir al proyecto.
 
 ## Información Técnica
 
