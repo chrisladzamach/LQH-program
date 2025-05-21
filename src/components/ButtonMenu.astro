@@ -16,7 +16,7 @@ const finalClass = className ?? defaultClass;
 const isStringIcon = typeof icon === "string";
 ---
 <a class={`relative overflow-hidden flex items-center justify-between ${finalClass}`} href={href}>
-  <div class="flex flex-col items-center gap-3">
+  <div class="flex flex-col items-center gap-3 z-10">
     <div class=" flex items-center justify-center rounded-full text-yellow-500">
       {isStringIcon ? (
         <span class="text-6xl">{icon}</span>
