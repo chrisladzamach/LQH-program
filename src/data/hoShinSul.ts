@@ -115,7 +115,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             subgroup: "Contra agarre elevando de solapas (centro pecho)",
             techniques: [
               { number: 31, description: "(subiendo) dedo" },
-              { number: 32, description: "Golpe con el antebrazo al codo." }
+              { number: 32, description: "Gira la cabeza hacia el lado de la mano que está agarrando, para desnucar." }
             ]
           },
           {
