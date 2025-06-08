@@ -1185,7 +1185,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         subgroups: [
 
         ]
-      }
+      },
     ],
   },
   {
@@ -1336,6 +1336,64 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
+        ]
+      },
+      {
+        group: "15 Tang Bong Sul (Defensa con palo corto",
+        techniques: [
+
+        ]
+      },
+      {
+        group: "20 Kwon Chang Bang Ho Sul (Defensa de mano vacía contra armas de fuego cortas y largas)",
+        techniques: [
+
+        ]
+      },
+      {
+        group: "10 defensa sentado en silla.",
+        techniques: [
+
+        ]
+      }
+    ]
+  },
+  {
+    grade: "Negro 3 Dan",
+    groups: [
+      {
+        group: "14 Dan Jan Sul (Defensa con bastón)",
+        techniques: [
+
+        ]
+      },
+      {
+        group: "10 Desarmes de Tang Bong contra Chuk Kun (defensa palo corto contra sable de bambú)",
+        techniques: [
+
+        ]
+      },
+    ]
+  },
+  {
+    grade: "Negro 4 Dan",
+    groups: [
+      {
+        group: "10 Ti Sul (Técnicas con cinturón)",
+        techniques: [
+
+        ]
+      },
+      {
+        group: "10 Defensa de Chuk Kun contra mano vacía.",
+        techniques: [
+
+        ]
+      },
+      {
+        group: "10 Tang Kun Sul - Tang Bong Sul (Defensa contra cuchillo con palo corto)",
+        techniques: [
+          
         ]
       }
     ]
