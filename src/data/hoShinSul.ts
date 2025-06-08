@@ -24,7 +24,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Blanco",
     groups: [
       {
-        group: "46 llaves básicas",
+        group: "15 llaves básicas",
         subgroups: [
           {
             subgroup: "Contra agarre de muñeca",
@@ -109,7 +109,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Amarillo",
     groups: [
       {
-        group: "46 llaves básicas",
+        group: "28 llaves básicas",
         subgroups: [
           {
             subgroup: "Contra agarre de muñeca",
@@ -1017,7 +1017,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Negro 1 Dan",
     groups: [
       {
-        group: "Defensa contra cuchillo",
+        group: "30 Defensa contra cuchillo",
         subgroups: [
           {
             subgroup: "Defensa de ataque frontal medio con bloqueo.",
@@ -1175,6 +1175,16 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
+        ],
+      },
+    ],
+  },
+  {
+    grade: "Negro 2 Dan",
+    groups: [
+      {
+        group: "60 Defensa contra cuchillo",
+        subgroups: [
           {
             subgroup: "Defenza de ataque horizontal hacia adentro con bloqueo.",
             techniques: [
@@ -1317,8 +1327,8 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
-        ],
-      },
-    ],
-  },
+        ]
+      }
+    ]
+  }
 ];
