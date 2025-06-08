@@ -1076,14 +1076,33 @@ export const hoShinSulData: GradeHoShinSul[] = [
                 description:
                   "Son Nal Okkoru Are Maki gira la  muñeca en 'U' y patea al abdomen.",
               },
-              { number: 12, description: "." },
-              { number: 13, description: "." },
-              { number: 15, description: "" },
+              {
+                number: 12,
+                description:
+                  "Son Nal Okkoru Are Maki y #18 de tecnicas basicas.",
+              },
+              {
+                number: 13,
+                description:
+                  "Son Nal Okkoru Are Maki y #9 de tecicas basicas (enterrando el cuchillo y/o lanzando).",
+              },
+              {
+                number: 14,
+                description:
+                  "Dul Pal Neryo Batang Maki, Chapki y hala un un poco y luego empuja la mano atacante hacia sus piernas (o diagonal hacia adentro) para hacerlo caer.",
+              },
+              {
+                number: 15,
+                description:
+                  "Mano igual Neryo Na Batang Maki, la mano libre hace flexcionar el codo y lo gira como 18 para lanzar como #7 puño con llave.",
+              },
             ],
           },
           {
             subgroup: "",
-            techniques: [{ number: 16, description: "" }],
+            techniques: [{ number: 16, description: "" }
+              
+            ],
           },
         ],
       },
