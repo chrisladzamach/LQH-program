@@ -1249,9 +1249,44 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup:"",
-            techniques: []
-          }
+            subgroup: "Defensa de apache horizontal hacia afuera con bloqueo.",
+            techniques: [
+              { number: 46, description: "An Batang Maki." },
+              { number: 47, description: "Aguila por fuera. Mano igual." },
+              { number: 48, description: "Olgul Son Nal Bakat Maki." },
+              { number: 49, description: "Dul Pal Batang Maki." },
+              { number: 50, description: "Tenaza" },
+            ],
+          },
+          {
+            subgroup: "Defensa de apache horizontal hacia afuera con golpes.",
+            techniques: [
+              {
+                number: 51,
+                description:
+                  "Sale por fuera a 45°, tenaza golpeando al triceps.",
+              },
+              {
+                number: 52,
+                description:
+                  "Sale por fuera a 45°, mano igual bloquea y la otra Son Nal Dun, Mok o Tok Chigi.",
+              },
+              {
+                number: 53,
+                description:
+                  "sale por fuera a 45°, mano igual bloquea y la otra Pion Son Ji a la axila.",
+              },
+              {
+                number: 54,
+                description:
+                  "Sale por afuera a 45°, mano igual bloquea a la otra Son Nal Galbi Chigi.",
+              },
+              {
+                number: 55,
+                description: "Sale por fuera a 45°, Pal Kup Galbi Chigi.",
+              },
+            ],
+          },
         ],
       },
     ],
