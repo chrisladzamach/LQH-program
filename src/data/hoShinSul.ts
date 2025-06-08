@@ -1175,9 +1175,26 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
-          {subgroup:"",
+          {
+            subgroup: "Defenza de ataque horizontal hacia adentro con bloqueo.",
             techniques: [
-              
+              { number: 31, description: "¨Por dentro An Batang Maki." },
+              {
+                number: 32,
+                description: "Por dentro Olgul Son Nal Bakat Maki.",
+              },
+              { number: 33, description: "Por dentro Dul Pal An Batang Maki." },
+              { number: 34, description: "Agila por dentro." },
+              { number: 35, description: "Sale a 45° por dentro y tenaza." },
+            ],
+          },
+          {subgroup: "Defenza de ataque horizontal hacia adentro con golpe.",
+            techniques: [
+              {number: 36, description: ""},
+              {number: 37, description: ""},
+              {number: 38, description: ""},
+              {number: 39, description: ""},
+              {number: 40, description: ""},
             ]
           }
         ],
