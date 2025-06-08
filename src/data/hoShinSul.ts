@@ -1188,15 +1188,36 @@ export const hoShinSulData: GradeHoShinSul[] = [
               { number: 35, description: "Sale a 45° por dentro y tenaza." },
             ],
           },
-          {subgroup: "Defenza de ataque horizontal hacia adentro con golpe.",
+          {
+            subgroup: "Defenza de ataque horizontal hacia adentro con golpe.",
             techniques: [
-              {number: 36, description: ""},
-              {number: 37, description: ""},
-              {number: 38, description: ""},
-              {number: 39, description: ""},
-              {number: 40, description: ""},
-            ]
-          }
+              {
+                number: 36,
+                description:
+                  "Por dentro Batang Maki a la muñeca y el otro brazo Son Nal Dun Oligi al triceps",
+              },
+              {
+                number: 37,
+                description:
+                  "Por dentro Montong Son Nal Bakat Maki, y con esa misma mano Batang Son Ko Chigi",
+              },
+              {
+                number: 38,
+                description:
+                  "Por fuera sale a 45°, esquiva el ataque. Mano igual con aguila, agarra la muñeca del cuchillo y el antebrazo libre, rompe el codo del oponente.",
+              },
+              {
+                number: 39,
+                description:
+                  "De forma simultanea, bloque de aguila por dentro (mano contraria), y la otra mano (mano igual) Agun Son Mok Chigi.",
+              },
+              {
+                number: 40,
+                description:
+                  "Por fuera sale a 45°, esquiva el ataque, y Bandal Chigi",
+              },
+            ],
+          },
         ],
       },
     ],
