@@ -599,7 +599,7 @@ export const gradeProgramData: GradeProgram[] = [
       {
         title: "Figuras con armas",
         items: [
-          { item: 1, description: "Chan Il Dan" },
+          { item: 1, description: "Chang Il Dan" },
           { item: 2, description: "Puche Il Dan" },
         ]
       },

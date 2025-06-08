@@ -23,7 +23,6 @@ export const mugiPoomsaesData: Poomsae[] = [
         description: "A la cintura 4 veces empezando por izquierda con el palo invertido y arriba como 4 y vuelve a ejecutar 2 movimientos más a la cintura y 4 dos veces. 8, 13, 15 en diagonal y en Ap Kubi, cambia con 4 a mano izquierda y 13, 15. Cambia al lado derecho en Ap Kubi 8, 13, 15, cambia de mano con 4 y ejecuta 13, 15. En Koap Sogi, gira 3 veces por el cuello desde la mano derecha como 19 sin golpe, luego 3 veces por el otro lado. 19, 25, 22, 25, 22, 15. Engancha en la axila, agarra por la espalda el Nunchaku enganchado, con la mano izquierda, 13, devuelve el Nunchaku pegándole con la mano derecha y pone los Nunchakus rectos. (Grito)."
       }
     ]
-    
   },
   {
     name: "I Chol Bong I Dan",
