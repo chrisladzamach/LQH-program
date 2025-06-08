@@ -128,15 +128,15 @@ export const hoShinSulData: GradeHoShinSul[] = [
           {
             subgroup: "Contra agarre de cinturón mano mirando hacia abajo",
             techniques: [
-              { number: 35, description: "Pan chumok a los metacarpos." },
+              { number: 35, description: "Pam chumok a los metacarpos." },
               { number: 36, description: "Aplauso al codo." }
             ]
           },
           {
             subgroup: "Contra agarre de cinturón mano mirando hacia arriba",
             techniques: [
-              { number: 37, description: "(invertido) dedo." },
-              { number: 38, description: "(invertido) asegura y presión hacia arriba agarrado de la casaca." }
+              { number: 37, description: "Presión en dedo pulgar." },
+              { number: 38, description: "Asegura y presión hacia arriba agarrado de la casaca." }
             ]
           },
           {
