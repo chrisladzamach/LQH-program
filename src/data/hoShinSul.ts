@@ -375,7 +375,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 11,
                 description:
-                  "montong nulo bakatt makki y batang son a las costillas.",
+                  "montong nulo Batangt makki y batang son a las costillas.",
               },
               { number: 12, description: "codazo a la cara." },
             ],
@@ -1069,32 +1069,32 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 10,
                 description:
-                  "POr fuera, Neryo Batang Maki y #16 de tecnicas basicas.",
+                  "POr fuera, Neryo Batang Makki y #16 de tecnicas basicas.",
               },
               {
                 number: 11,
                 description:
-                  "Son Nal Okkoru Are Maki gira la  muñeca en 'U' y patea al abdomen.",
+                  "Son Nal Okkoru Are Makki gira la  muñeca en 'U' y patea al abdomen.",
               },
               {
                 number: 12,
                 description:
-                  "Son Nal Okkoru Are Maki y #18 de tecnicas basicas.",
+                  "Son Nal Okkoru Are Makki y #18 de tecnicas basicas.",
               },
               {
                 number: 13,
                 description:
-                  "Son Nal Okkoru Are Maki y #9 de tecicas basicas (enterrando el cuchillo y/o lanzando).",
+                  "Son Nal Okkoru Are Makki y #9 de tecicas basicas (enterrando el cuchillo y/o lanzando).",
               },
               {
                 number: 14,
                 description:
-                  "Dul Pal Neryo Batang Maki, Chapki y hala un un poco y luego empuja la mano atacante hacia sus piernas (o diagonal hacia adentro) para hacerlo caer.",
+                  "Dul Pal Neryo Batang Makki, Chapki y hala un un poco y luego empuja la mano atacante hacia sus piernas (o diagonal hacia adentro) para hacerlo caer.",
               },
               {
                 number: 15,
                 description:
-                  "Mano igual Neryo Na Batang Maki, la mano libre hace flexcionar el codo y lo gira como 18 para lanzar como #7 puño con llave.",
+                  "Mano igual Neryo Na Batang Makki, la mano libre hace flexcionar el codo y lo gira como 18 para lanzar como #7 puño con llave.",
               },
             ],
           },
@@ -1102,12 +1102,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
             subgroup:
               "Defensa de apache vertical decendente con bloqueo: Los bloqueos deben realizarse antes que el brazo empiece a decender o extenderse.",
             techniques: [
-              { number: 16, description: "Ogul  Son Nal Maki." },
-              { number: 17, description: "Okkoru Olgul Maki." },
-              { number: 18, description: "Batang Son Olgul Chukhyo Maki." },
+              { number: 16, description: "Ogul  Son Nal Makki." },
+              { number: 17, description: "Okkoru Olgul Makki." },
+              { number: 18, description: "Batang Son Olgul Chukhyo Makki." },
               {
                 number: 19,
-                description: "Olgul An Batang Maki. (Mano conatraria).",
+                description: "Olgul An Batang Makki. (Mano conatraria).",
               },
               {
                 number: 20,
@@ -1141,12 +1141,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 24,
                 description:
-                  "Mano contraria, Olgul Batang Maki. La otra preciona el pronador para desequilibrar y tumbar llevando el mango del cuchillo a la mandibula del enemigo.",
+                  "Mano contraria, Olgul Batang Makki. La otra preciona el pronador para desequilibrar y tumbar llevando el mango del cuchillo a la mandibula del enemigo.",
               },
               {
                 number: 25,
                 description:
-                  "Por fuera, mano contraria Batang Son Olgul Chukhyo Maki, usa la mano libre para hacer como # 7 de puño con llave.",
+                  "Por fuera, mano contraria Batang Son Olgul Chukhyo Makki, usa la mano libre para hacer como # 7 de puño con llave.",
               },
               {
                 number: 26,
@@ -1156,7 +1156,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 27,
                 description:
-                  "Montong Bakat Maki y # 9 de tecnicas basicas lanzando.",
+                  "Montong Batang Makki y # 9 de tecnicas basicas lanzando.",
               },
               {
                 number: 28,
@@ -1171,19 +1171,19 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 30,
                 description:
-                  "Por fuera con mano igual, Olgul Bakat Maki y agarra, gira por la espalda cambia de mano y lanza hacia el costado.",
+                  "Por fuera con mano igual, Olgul Batang Makki y agarra, gira por la espalda cambia de mano y lanza hacia el costado.",
               },
             ],
           },
           {
             subgroup: "Defenza de ataque horizontal hacia adentro con bloqueo.",
             techniques: [
-              { number: 31, description: "¨Por dentro An Batang Maki." },
+              { number: 31, description: "¨Por dentro An Batang Makki." },
               {
                 number: 32,
-                description: "Por dentro Olgul Son Nal Bakat Maki.",
+                description: "Por dentro Olgul Son Nal Batang Makki.",
               },
-              { number: 33, description: "Por dentro Dul Pal An Batang Maki." },
+              { number: 33, description: "Por dentro Dul Pal An Batang Makki." },
               { number: 34, description: "Agila por dentro." },
               { number: 35, description: "Sale a 45° por dentro y tenaza." },
             ],
@@ -1194,12 +1194,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 36,
                 description:
-                  "Por dentro Batang Maki a la muñeca y el otro brazo Son Nal Dun Oligi al triceps",
+                  "Por dentro Batang Makki a la muñeca y el otro brazo Son Nal Dun Oligi al triceps",
               },
               {
                 number: 37,
                 description:
-                  "Por dentro Montong Son Nal Bakat Maki, y con esa misma mano Batang Son Ko Chigi",
+                  "Por dentro Montong Son Nal Batang Makki, y con esa misma mano Batang Son Ko Chigi",
               },
               {
                 number: 38,
@@ -1244,17 +1244,17 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 45,
                 description:
-                  "De forma simultanea, por dentro de Montog Batang Maki, y la otra mano Batang Son Chigi a la cara, mete un pie por detras del oponente y lanza la cadera.",
+                  "De forma simultanea, por dentro de Montog Batang Makki, y la otra mano Batang Son Chigi a la cara, mete un pie por detras del oponente y lanza la cadera.",
               },
             ],
           },
           {
             subgroup: "Defensa de apache horizontal hacia afuera con bloqueo.",
             techniques: [
-              { number: 46, description: "An Batang Maki." },
+              { number: 46, description: "An Batang Makki." },
               { number: 47, description: "Aguila por fuera. Mano igual." },
-              { number: 48, description: "Olgul Son Nal Bakat Maki." },
-              { number: 49, description: "Dul Pal Batang Maki." },
+              { number: 48, description: "Olgul Son Nal Batang Makki." },
+              { number: 49, description: "Dul Pal Batang Makki." },
               { number: 50, description: "Tenaza" },
             ],
           },
@@ -1308,12 +1308,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 59,
                 description:
-                  "Por fuera Montong Bakat Maki, la mano que bloquea de desplaza para agarrar garganta o cuello, estrangular y lazar de cadera.",
+                  "Por fuera Montong Batang Makki, la mano que bloquea de desplaza para agarrar garganta o cuello, estrangular y lazar de cadera.",
               },
               {
                 number: 60,
                 description:
-                  "Por fuera Montong Batak Maki, la otra mano palanquea el codo para lanzar por palanca el codo y de cadera.",
+                  "Por fuera Montong Batak Makki, la otra mano palanquea el codo para lanzar por palanca el codo y de cadera.",
               },
             ],
           },
