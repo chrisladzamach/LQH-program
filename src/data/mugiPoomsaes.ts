@@ -16,10 +16,26 @@ export const mugiPoomsaesData: Poomsae[] = [
     steps: [
       {
         step: 1,
-        description: "10 derecha, 10 izquierda, 19 a la izquierda, ½ 19 a la derecha. Baja 6 y al subir 4, lanza por entre las piernas y saca por detrás con medio 6, 7, 7, 7, luego 9, 5 (cambiando de mano), 20, 20, 20 y 21. Nunchakus por derecha, cambia con 4 por izquierda y ejecuta 21 terminando en Koap Sogi. (Grito). Pone los Nunchakus rectos."
+        description: "Movimiento básico #10 con mano derecha, posteriormente, realiza el mismo movimiento pero con la mano izquierda,"
       },
       {
         step: 2,
+        description: "Realiza el movimiento básico #19 hacia la izquierda con la mano derecha, luego, pasa el nunchaku por el cuello hacia la derecha."
+      },
+      {
+        step: 3,
+        description: "Con la mano derecha, ejecuta el movimiento básico #6, al terminar movimiento, realiza cambio de lado con el básico #4, posteriormente, lanza por entre las piernas y saca por detrás, realizando la última mitad del básico #6, "
+      },
+      {
+        step: 4,
+        description: "Realiza 3 cambios de mano, usando el movimiento básico #7, luego realiza el movimiento básico #9, al terminar cambia de mano, lleva al hombro de la mano que recibe el nunchaku y realiza el movimiento básico #5, "
+      },
+      {
+        step: 5,
+        description: "Ahora realiza 3 cambios de mano, usando el movimiento básico #20, finalizando con el movimiento #21. Nunchakus por derecha, cambia con 4 por izquierda y ejecuta 21 terminando en Koap Sogi. (Grito). Pone los Nunchakus rectos de forma vertical por detrás del hombro."
+      },
+      {
+        step: 6,
         description: "A la cintura 4 veces empezando por izquierda con el palo invertido y arriba como 4 y vuelve a ejecutar 2 movimientos más a la cintura y 4 dos veces. 8, 13, 15 en diagonal y en Ap Kubi, cambia con 4 a mano izquierda y 13, 15. Cambia al lado derecho en Ap Kubi 8, 13, 15, cambia de mano con 4 y ejecuta 13, 15. En Koap Sogi, gira 3 veces por el cuello desde la mano derecha como 19 sin golpe, luego 3 veces por el otro lado. 19, 25, 22, 25, 22, 15. Engancha en la axila, agarra por la espalda el Nunchaku enganchado, con la mano izquierda, 13, devuelve el Nunchaku pegándole con la mano derecha y pone los Nunchakus rectos. (Grito)."
       }
     ]
