@@ -545,7 +545,24 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Negro 1 Dan",
     groups: [
       {
-        group: "Defensa de acostado",
+        group: "Defensa contra cuchillo",
+        subgroups: [
+          {
+            subgroup: "A una sola mano",
+            techniques: [
+              
+            ]
+          },
+          {
+            subgroup: "A dos manos",
+            techniques: [
+              
+            ]
+          }
+        ]
+      },
+      {
+        group: "Llave contra patada.",
         subgroups: [
           
         ]
