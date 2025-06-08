@@ -24,10 +24,10 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Blanco",
     groups: [
       {
-        group: "15 llaves básicas",
+        group: "1-15 Son Mok Sul (Agarres de mano contraria)",
         subgroups: [
           {
-            subgroup: "Contra agarre de muñeca",
+            subgroup: "Son Mok Sul (Agarres de mano contraria)",
             techniques: [
               {
                 number: 1,
@@ -103,16 +103,19 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "5 An Son Mok Sul (Agarres de mano igual",
+      }
     ],
   },
   {
     grade: "Amarillo",
     groups: [
       {
-        group: "28 llaves básicas",
+        group: "16-28 Son Mok Sul (Agarres de mano contraria)",
         subgroups: [
           {
-            subgroup: "Contra agarre de muñeca",
+            subgroup: "Son Mok Sul (agarres de muñeca)",
             techniques: [
               {
                 number: 16,
@@ -142,7 +145,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de muñeca/manga de la casaca",
+            subgroup: "Some Chapki (Agarre de manga a la altura de la muñeca de la casaca)",
             techniques: [
               {
                 number: 21,
@@ -156,7 +159,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de codo",
+            subgroup: "Pal Kub Chapki (Agarre de codo)",
             techniques: [
               {
                 number: 23,
@@ -171,14 +174,14 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de hombro",
+            subgroup: "Okke Chapki (Agarre de hombro)",
             techniques: [
               { number: 25, description: "Igual que 21." },
               { number: 26, description: "Igual que 17." },
             ],
           },
           {
-            subgroup: "Contra agarre de nuca",
+            subgroup: "Mokdolmi Chapki (Agarre de nuca)",
             techniques: [
               {
                 number: 27,
@@ -196,17 +199,17 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Naranja",
     groups: [
       {
-        group: "46 llaves básicas",
+        group: "29-46 Son Mok Sul (Agarres de mano contraria)",
         subgroups: [
           {
-            subgroup: "Contra agarre de muñeca",
+            subgroup: "Sewo Myoksal Chapki Sul (Agarre de solapas)",
             techniques: [
               { number: 29, description: "Saludo chino." },
               { number: 30, description: "Igual que 17." },
             ],
           },
           {
-            subgroup: "Contra agarre elevando de solapas (centro pecho)",
+            subgroup: "Olyeo Sewo Myoksal Chapki Sul (Agarre elevando de solapas)",
             techniques: [
               { number: 31, description: "(subiendo) dedo" },
               {
@@ -217,21 +220,21 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre invertido de solapas (centro pecho)",
+            subgroup: "Bituro Sewo Myoksal Chapki Sul (Agarre invertido de solapas)",
             techniques: [
               { number: 33, description: "(invertida) cocodrilo." },
               { number: 34, description: "Golpe con el antebrazo al codo." },
             ],
           },
           {
-            subgroup: "Contra agarre de cinturón mano mirando hacia abajo",
+            subgroup: "Oppok Ti Chapki Sul (Agarre de cinturón mano mirando hacia abajo)",
             techniques: [
               { number: 35, description: "Pam chumok a los metacarpos." },
               { number: 36, description: "Aplauso al codo." },
             ],
           },
           {
-            subgroup: "Contra agarre de cinturón mano mirando hacia arriba",
+            subgroup: "Jecho Ti Chapki Sul (Contra agarre de cinturón mano mirando hacia arriba)",
             techniques: [
               { number: 37, description: "Presión en dedo pulgar." },
               {
@@ -242,7 +245,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de cinturón mano mirando hacia el lado",
+            subgroup: "Sewo Yop Ti Chapki Sul (Contra agarre de cinturón mano mirando hacia el lado)",
             techniques: [
               {
                 number: 39,
@@ -256,7 +259,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de pecho (lado)",
+            subgroup: "Gasum Chapki Sul (Contra agarre de pecho (izq/der))",
             techniques: [
               { number: 41, description: "29" },
               {
@@ -267,7 +270,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "Contra agarre de cabello/cabeza",
+            subgroup: "Meory Chapki Sul (Contra agarre de cabello/cabeza)",
             techniques: [
               { number: 43, description: "Toalla." },
               { number: 44, description: "Saludo chino." },
@@ -286,7 +289,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Verde",
     groups: [
       {
-        group: "Puño contra puño",
+        group: "10 Kwon Dae Kwon (Puño contra puño)",
         techniques: [
           {
             number: 1,
@@ -325,7 +328,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "Contra agarres por la espalda",
+        group: "12 Oht Sul (Contra agarres por la espalda)",
         subgroups: [
           {
             subgroup: "Contra agarre de la nuca",
@@ -388,7 +391,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Azul",
     groups: [
       {
-        group: "Patada contra puño",
+        group: "10 Chagi Dae Kwon Sul (Patada contra puño)",
         techniques: [
           { number: 1, description: "Antari." },
           { number: 2, description: "Bakkatari." },
@@ -406,7 +409,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "Contra abrazos",
+        group: "14 Mon Chapki Sul (Contra abrazos)",
         subgroups: [
           {
             subgroup: "Contra Urracarrana",
@@ -504,7 +507,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Purpura",
     groups: [
       {
-        group: "Sentados",
+        group: "14 Chioa Sul (Defensa sentado)",
         subgroups: [
           {
             subgroup: "Contra agarre de muñeca",
@@ -575,7 +578,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Rojo",
     groups: [
       {
-        group: "Contra agarre a dos brazos",
+        group: "10 Dul Pal Chapki Sul (Contra agarre a dos brazos)",
         techniques: [
           {
             number: 1,
@@ -623,7 +626,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Rojo Marrón",
     groups: [
       {
-        group: "Contra agarre a dos brazos",
+        group: "11-14 Sul Pal Chapki Sul (Contra agarre a dos brazos)",
         subgroups: [
           {
             subgroup: "Contra agarre de los codos",
@@ -650,7 +653,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "Lave contra puño",
+        group: "10 Koki Sul Bang Kwon Sul (Lave contra puño)",
         techniques: [
           {
             number: 1,
@@ -705,7 +708,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "Saludo y conducción",
+        group: "10 gyeongnye Sul (Saludo y conducción)",
         techniques: [
           {
             number: 1,
@@ -780,7 +783,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Marrón",
     groups: [
       {
-        group: "Contra agarre de Judo",
+        group: "26 Yudo Sul (Contra agarre de Judo)",
         subgroups: [
           {
             subgroup: "Defensa con bloqueo",
@@ -931,7 +934,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Marrón Negro",
     groups: [
       {
-        group: "Defensa de acostado",
+        group: "14 Koncho Sul (Defensa de acostado)",
         subgroups: [
           {
             subgroup: "A una sola mano",
@@ -1017,7 +1020,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Negro 1 Dan",
     groups: [
       {
-        group: "30 Defensa contra cuchillo",
+        group: "30 Dangom Sul (Defensa contra cuchillo)",
         subgroups: [
           {
             subgroup: "Defensa de ataque frontal medio con bloqueo.",
@@ -1177,13 +1180,19 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "20 Pang Chok Sul (Llave contra patada)",
+        subgroups: [
+
+        ]
+      }
     ],
   },
   {
     grade: "Negro 2 Dan",
     groups: [
       {
-        group: "60 Defensa contra cuchillo",
+        group: "60 Dangom Sul (Defensa contra cuchillo)",
         subgroups: [
           {
             subgroup: "Defenza de ataque horizontal hacia adentro con bloqueo.",
