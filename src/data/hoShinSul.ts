@@ -1218,6 +1218,40 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
+          {
+            subgroup: "defensa de ataque horizontal hacia adentro con llave.",
+            techniques: [
+              {
+                number: 41,
+                description:
+                  "Por fuera sale a 45° esquiva el ataque y hace tenaza.",
+              },
+              {
+                number: 42,
+                description:
+                  "Por dentro sale a 45° esuqviva el ataque y hace tenaza para hacer como # 7 de puño con llave.",
+              },
+              {
+                number: 43,
+                description:
+                  "Por dentro hace tenaza (con las palmas), y lanza de cadera.",
+              },
+              {
+                number: 44,
+                description:
+                  "De forma simultanea, bloquea Aguila por dentro (mano contraria), y la otra mano (mano igual) Agun Son Mok Chigi. Ambas manos agarran la del cuchillo y hace como # 9 de tecnicas basicas lanzando.",
+              },
+              {
+                number: 45,
+                description:
+                  "De forma simultanea, por dentro de Montog Batang Maki, y la otra mano Batang Son Chigi a la cara, mete un pie por detras del oponente y lanza la cadera.",
+              },
+            ],
+          },
+          {
+            subgroup:"",
+            techniques: []
+          }
         ],
       },
     ],
