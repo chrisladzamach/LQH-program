@@ -1287,6 +1287,36 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
             ],
           },
+          {
+            subgroup: "Defensa de apache horizontal hacia afuera con llave.",
+            techniques: [
+              {
+                number: 56,
+                description:
+                  "Mano igual bloquea y la otra Son Nal Galbi Chigi, mas # 8 puño con llave.",
+              },
+              {
+                number: 57,
+                description:
+                  "Mano igual bloquea y la otra va al codo para seguir el flujo rotando el codo, hacer rodar o lanzar al oponente.",
+              },
+              {
+                number: 58,
+                description:
+                  "Bloquea con ambas manos como tenaza (una por fuera, otra por dentro) sigue el flujo en forma circular y lo va bajando. Pone la rodilla sobre el codo hasta tumbar al oponente y para rematarlo en el piso.",
+              },
+              {
+                number: 59,
+                description:
+                  "Por fuera Montong Bakat Maki, la mano que bloquea de desplaza para agarrar garganta o cuello, estrangular y lazar de cadera.",
+              },
+              {
+                number: 60,
+                description:
+                  "Por fuera Montong Batak Maki, la otra mano palanquea el codo para lanzar por palanca el codo y de cadera.",
+              },
+            ],
+          },
         ],
       },
     ],
