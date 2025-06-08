@@ -1099,11 +1099,87 @@ export const hoShinSulData: GradeHoShinSul[] = [
             ],
           },
           {
-            subgroup: "",
-            techniques: [{ number: 16, description: "" }
-              
+            subgroup:
+              "Defensa de apache vertical decendente con bloqueo: Los bloqueos deben realizarse antes que el brazo empiece a decender o extenderse.",
+            techniques: [
+              { number: 16, description: "Ogul  Son Nal Maki." },
+              { number: 17, description: "Okkoru Olgul Maki." },
+              { number: 18, description: "Batang Son Olgul Chukhyo Maki." },
+              {
+                number: 19,
+                description: "Olgul An Batang Maki. (Mano conatraria).",
+              },
+              {
+                number: 20,
+                description: "Por fuera, bloqueo de agila al brazo.",
+              },
             ],
           },
+          {
+            subgroup: "Defensa de apache vertical decendente con golpe.",
+            techniques: [
+              {
+                number: 21,
+                description:
+                  "Ogul Son Nal Mako, Chumok Galbi Chigi. (Simultaneo).",
+              },
+              {
+                number: 22,
+                description:
+                  "la mano contraria Batang Son Olgul Chukhyo Mako. Mano igual Pal Cup Chigi (Simultaneo).",
+              },
+              {
+                number: 23,
+                description:
+                  "Batang Son Olgul Chukhyo Mako Son Nal Dun Chigi a la nuca.",
+              },
+            ],
+          },
+          {
+            subgroup: "Defensa de apache vertical decendente con llave.",
+            techniques: [
+              {
+                number: 24,
+                description:
+                  "Mano contraria, Olgul Batang Maki. La otra preciona el pronador para desequilibrar y tumbar llevando el mango del cuchillo a la mandibula del enemigo.",
+              },
+              {
+                number: 25,
+                description:
+                  "Por fuera, mano contraria Batang Son Olgul Chukhyo Maki, usa la mano libre para hacer como # 7 de puño con llave.",
+              },
+              {
+                number: 26,
+                description:
+                  "Bloquea con ambas manos como tenaza (una por fuera otra por dentro) sigue el flujo en forma circular y le va bajando. Pone la rrodilla sobre el codo hasta tumbar el oponente y para rematarlo en el piso",
+              },
+              {
+                number: 27,
+                description:
+                  "Montong Bakat Maki y # 9 de tecnicas basicas lanzando.",
+              },
+              {
+                number: 28,
+                description:
+                  "Se mete hacia el atacante y lanza de cadera por dentro.",
+              },
+              {
+                number: 29,
+                description:
+                  "Se mete hacia el atacante y lanza de cadera por fuera.",
+              },
+              {
+                number: 30,
+                description:
+                  "Por fuera con mano igual, Olgul Bakat Maki y agarra, gira por la espalda cambia de mano y lanza hacia el costado.",
+              },
+            ],
+          },
+          {subgroup:"",
+            techniques: [
+              
+            ]
+          }
         ],
       },
     ],
