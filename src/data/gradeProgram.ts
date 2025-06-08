@@ -630,7 +630,6 @@ export const gradeProgramData: GradeProgram[] = [
         items: [
           { item: 1, description: "14 Técnicas de defensa con bastón." },
           { item: 2, description: "10 Técnicas de desarmes de Tang Bong contra Chuk Kun." },
-          { item: 3, description: "" }
         ]
       },
       {
@@ -638,7 +637,29 @@ export const gradeProgramData: GradeProgram[] = [
         items: [
           { item: 1, description: "Enfundes y desenfundes de sable." }
         ]
-      }
+      },
+      {
+        title: "Figuras con armas",
+        items: [
+          { item: 2, description: "Puche I Dan" },
+        ]
+      },
+      {
+        title: "Gimnasia",
+        items: [
+          { item: 1, description: "Todos los rollos y caidas, saltantando" },
+          { item: 2, description: "Recuperación, kit de nuca." },
+          { item: 3, description: " Parada de manos de frente y hacia atrás." },
+        ]
+      },
+      {
+        title: "Patadas",
+        items: [
+          { item: 1, description: "Todas las patadas, con salto y giro." },
+          { item: 2, description: "Todas las patadas se harán avanzando y con obstáculos."},
+          { item: 3, description: "Sa Bal Chagi." },
+        ]
+      },
     ] 
   },
   {
@@ -658,19 +679,13 @@ export const gradeProgramData: GradeProgram[] = [
         items: [
           { item: 1, description: "Manejo básico de sable." }
         ]
-      }
+      },
     ]
   },
   {
     color: "negro5",
     duration: "5 años",
     sections: [
-      {
-        title: "Llaves",
-        items: [
-
-        ]
-      },
       {
         title: "Básicos con armas",
         items: [
