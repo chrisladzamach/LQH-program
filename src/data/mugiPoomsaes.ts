@@ -163,19 +163,28 @@ export const mugiPoomsaesData: Poomsae[] = [
     name: "Puche Il Dan",
     type: "Puche",
     steps: [
-      { step: 1, description: "" },
+      { step: 1, description: "Eleva el Bong para cargar el movimiento, se desplaza al lado izquierdo en Ap Chuchum Sogui, a la vez que punza abajo, abre el pie a Ap Kubi Sogui, golpe abajo, al medio, golpe descendente arriba con el Bong en la axila del brazo que pega.\n\nDa un giro completo por el frente mientras hace hélice por encima de la cabeza cambiando las manos de posición, cae en Ap Kubi Sogui con golpe al medio." },
+      { step: 2, description: "Da media vuelta en el puesto a la vez que gira el Bong por encima de la cabeza cambia las manos de posición, realiza el paso 1 al otro lado." },
+      { step: 3, description: "Por el callejón: Desplaza el pie izquierdo para meterse al callejón, girando el Bong por encima de la cabeza cambia las manos de posición para golpear abajo, al medio, golpe descendente arriba con el Bong en la axila del brazo que pega.\n\nHace 2 remos caminando. Agarra el Bong con la mano derecha por el extremo a la vez que haciéndolo girar, da un paso adelante, luego otro adelante, da media vuelta por el frente y uno para atrás para golpear el suelo con el Bong. (Ki Hap)." },
+      { step: 4, description: "Se levanta arrastrando la punta del Bong como remando levantando polvo para quedar en Ap Kubi Sogui con golpe al medio ascendente." },
+      { step: 5, description: "Gira por la espalda para quedar en Ap Kubi Sogui y bloqueo horizontal alto. Ap Chagui. Se arrodilla para barrer de adentro hacia fuera. Se levanta y avanza en Koap Sogui, para golpear de forma descendente al piso." },
+      { step: 6, description: "Hacia el otro lado da un paso en Ap Sogui para quedar en Ap Kubi Sogui y realizar el paso 4 por el otro lado. Moviendo la pierna derecha, se desplaza a Chuchum Sogui y chuzá de forma horizontal hacia el costado derecho (cogiendo el Bong como un bebe)." },
+      { step: 7, description: "Por el callejón de regreso: Da media vuelta, desenfunda el Bong con una vuelta de más por encima de la cabeza a la vez que se desplaza por el callejón en Ap Sogui (guarda el Bong a la espalda). Enfunda el Bong. Lo agarra en la cadera.\n\nGira el cuerpo 360° saltando con el Bong en la mano derecha (desenvaina el Bong, más una vuelta por encima de la cabeza). Termina el movimiento en Ap Sogui pie derecho adelante, mano izquierda en guardia y el Bong en la mano derecha guardándolo en la espalda." },
+      { step: 8, description: "Desplaza el pie izquierdo por el frente al lado derecho. Hace 2 remos caminando. Agarra el Bong con la mano derecha por el extremo a la vez que haciéndolo girar, da un paso adelante, luego otro adelante, da media vuelta por el frente y uno para atrás para golpear el suelo con el Bong. (Ki Hap)." },
+      { step: 9, description: "Recoge la pierna izquierda para levantarse. Chumbi." }
     ]
   },
   {
     name: "Puche I Dan",
     type: "Puche",
     steps: [
-      { step: 1, description: "" },
+      { step: 1, description: "Saludo con los 2 abanicos al frente como Chumbí de Taekwondo." },
+      { step: 2, description: "Avanza hacia el lado, pie izquierdo adelante, abanico abierto en diagonal y al frente, doble golpe izquierdo-derecho. Ap Chagui, descarga adelante, gira por la espalda, abre al frente recoge pie izquierdo como saludo." },
+      { step: 3, description: "Repite el paso 2 hacia la derecha." },
+      { step: 4, description: "Por el callejón: Vuelve al frente con pie izq, golpea abajo en diagonal, arriba doble con abanico cerrado recoge y luego al frente Ap Chago Ap Chago Tio Ap Chagui. Chong Bang Fe Yon Nak Bop al frente y desde arrodillado golpe horizontal abierto con ambas manos simultáneamente (Ki Hap)." },
+      { step: 5, description: "Recoge el pie atrasado, gira por la espalda en Ap Kubi Sogui y chuza doble con abanicos cerrados a las costillas, avanza en Hak Dary sogui con golpe doble al medio en diagonal descendente, con abanicos abiertos. Cae en Ap Kubi Sogui, doble golpe vertical abriendo los abanicos." },
+      { step: 6, description: "Gira por la espalda, repite el paso 5 hacia la derecha." },
+      { step: 7, description: "Por el callejón de regreso: Uen Bantang Son Montong Bakat Nullo aki (abanico abierto), luego derecho con abanico cerrado, codazo con derecha. Barrido, queda al frente izquierdo, Feñon Chagui descargando pierna atrás, posición Ap Chuchum Sogui, abanico atrás y arriba izquierdo en are (Ki Hap)." }
     ]
-  },
+  }
 ];
-
-
-/*
-
-*/
