@@ -1375,14 +1375,77 @@ export const hoShinSulData: GradeHoShinSul[] = [
       },
       {
         group: "20 Kwon Chang Bang Ho Sul (Defensa de mano vacía contra armas de fuego cortas y largas)",
-        techniques: [
-
+        subgroups: [
+          {
+            subgroup: "ARMA CORTA - Apunta por el frente.",
+            techniques: [
+              { number: 1, description: "Agarra el carro/cañón por dentro, lo baja y sale a 45°." },
+              { number: 2, description: "Agarra el carro/cañón por fuera, lo baja y sale a 45°." },
+              { number: 3, description: "Agarra el carro/cañón por debajo y eleva el arma y el brazo que la sostiene." },
+              { number: 4, description: "Agarra el carro/cañón por dentro, gia el arma de adentro hacia afuera en el plano horizontal, engarza el pulgar con el guardamonte y rompe el pulgar." },
+              { number: 5, description: "Agarra el carro/cañón por fuera con la mano contraria (ataca derecha defiende izquierda), gira el arma hacia el pecho del atacante poniendo la mano en 'U' en el plano horizontal." },
+              { number: 6, description: "Agarra el carro/cañón por fuera con la mano contraria (ataca derecha defiende izquierda), la otra mano toma el cañón por debajo. Empuja el arma hacia arriba para desarmar (hacer soltar el arma). Complementa lanzando como #16 de técnicas básicas." },
+              { number: 7, description: "Agarra el carro/cañón por fuera con la mano contraria y #16 de técnicas básicas." },
+              { number: 8, description: "Agarra el carro/cañón por fuera con mano igual. La mano libre envuelve el brazo portador del arma para hacer como técnica de conducción haciendo apuntar el arma hacia el atacante." },
+              { number: 9, description: "Agarra el carro/cañón por dentro con la mano contraria y hace como #9 de llave contra puño." },
+              { number: 10, description: "Agarra el carro/cañón por dentro con mano contraria. Hace como #8 de llave contra puño haciendo golpear al oponente en la cabeza con el arma. Complemento." },
+            ]
+          },
+          {
+            subgroup: "ARMA CORTA - Apunta por la espalda.",
+            techniques: [
+              {number: 11, description: "Gira en sentido horario para dar el frente al arma. Sale de la línea de fuego. Con mano igual agarra la mano portadora del arma. Con el brazo libre rompe/palanquea el codo del brazo que sostiene el arma." },
+              {number: 12, description: "Gira en sentido horario para dar el frente al arma. Sale en la línea de fuego. Con mano igual agarra la mano portadora del arma. Mete el brazo libre por dentro para palanquear el codo a la vez que la mano que agarra el arma gira la mano atacante palma arriba. Y conduce o fractura. Como #7 de saludo y conducción." },              
+              {number: 13, description: "Girando en sentido horario, mete el brazo derecho por debajo del brazo portador del arma (derecho). Y gace candado al cuello. Tumba." },
+              {number: 14, description: "Gira en sentido horario para dar el frente al arma. Sale de la línea de fuego. Con mano igual agarra la mano portadora del arma. La mano libre presiona el pronador. Gira la mano atacante para hacer apuntar al pecho del agresor." },
+              {number: 15, description: "Levanta los brazos. Gira en sentido anti horario. Con el brazo izquierdo de afuera hacia adentro envuelve la mano atacante y la aprisiona en la axila, con la mano libre ejecuta Batang Son Tok Chigi." },
+              {number: 16, description: "Levanta los brazos. Gira en sentido anti horario. Mete el brazo izquierdo por debajo del atacante, lo pone encima del bíceps para flexionarlo. Con la mano libre aprisiona la cabeza del atacante contra el pecho del defensor. Continúa el giro." },
+            ]
+          }, 
+          {
+            subgroup: "ARMA LARGA - Apunta por el frente.",
+            techniques: [
+              {number: 17, description: "Hacia adentro, la mano derecha retira el cañón hacia abajo, Uen Sewo Chumok Chigi a la cara. Levanta el arma, Mureup Chigi a los genitales. Con la mano izquierda agarra la culata y quita el arma." },
+              {number: 18, description: "La mano izquierda agarra y retira el cañón hacia adentro. El borde radial del brazo derecho, Golpea/empuja la garganta (como Bakkat Son Nal Chigi) para tumbar (ayuda con Suroh Chagi)." },
+            ]
+          },
+          {
+            subgroup: "ARMA LARGA - Apunta por la espalda.",
+            techniques: [
+              {number: 19, description: "Gira en sentido horario, mete la mano derecha por debajo del arma (parecido al agarre de #6 de llave contra puño) la levanta y talla (la mano izquierda del oponente) con el hombro haciendo presión con los brazos." },
+              {number: 20, description: "Gira en sentido anti horario. Con ambas manos controla el arma. Chokto Cha Doligi Chagi a la rodilla. De forma ascendente golpea la cara del atacante con el arma." },
+            ]
+          }
         ]
       },
       {
         group: "10 defensa sentado en silla.",
-        techniques: [
-
+        subgroups: [
+          {
+            subgroup: "Ataque de puño.",
+            techniques: [
+              { number: 1, description: "Con mano igual, y por fuera, hace bloqueo de águila. Sigue el flujo para hacer como #17 de técnicas básicas. Se levanta de la silla y luego #16 de técnicas básicas." },
+              { number: 2, description: "" },
+              { number: 3, description: "" },
+              { number: 4, description: "" },
+              { number: 5, description: "" },
+            ]
+          },
+          {
+            subgroup: "Agarres simples o dobles por el frente a los brazos y/o tronco.",
+            techniques: [
+              { number: 6, description: "" },
+              { number: 7, description: "" },
+              { number: 8, description: "" }
+            ]
+          },
+          {
+            subgroup: "Agarres por dentrás.",
+            techniques: [
+              { number: 9, description: "" },
+              { number: 10, description: "" }
+            ]
+          }
         ]
       }
     ]
