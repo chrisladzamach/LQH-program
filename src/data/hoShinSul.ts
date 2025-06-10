@@ -1425,25 +1425,25 @@ export const hoShinSulData: GradeHoShinSul[] = [
             subgroup: "Ataque de puño.",
             techniques: [
               { number: 1, description: "Con mano igual, y por fuera, hace bloqueo de águila. Sigue el flujo para hacer como #17 de técnicas básicas. Se levanta de la silla y luego #16 de técnicas básicas." },
-              { number: 2, description: "" },
-              { number: 3, description: "" },
-              { number: 4, description: "" },
-              { number: 5, description: "" },
+              { number: 2, description: "Igual a #6 de llave contra puño, haciendo estrellar la cara contra la silla. Ataque de patada." },
+              { number: 3, description: "Ataca Dolyeo Chagi. Por dentro Montong Bakkat Makki. La mano libre engancha la corva de la pierna que patea, gira la rodilla hacia adentro, para tumbar al oponente y al caer boca abajo, lastimarle la columna con la pierna que pateó." },
+              { number: 4, description: "Ataca Tikumchi Chanerigi Chagi. Al iniciarse el ataque, se levanta y por fuera ejecuta Son Nal Bio Makki. Simultáneamente hace Dwichuk Miro Chagi." },
+              { number: 5, description: "Ataca Dolyeo Chagi. Anticipa el ataque. Agarra en 'V' la pierna que patea. An Dary Chanoki a la pierna de apoyo." },
             ]
           },
           {
             subgroup: "Agarres simples o dobles por el frente a los brazos y/o tronco.",
             techniques: [
-              { number: 6, description: "" },
-              { number: 7, description: "" },
-              { number: 8, description: "" }
+              { number: 6, description: "(Ataque agarrando ambos hombros) Hace como #12 de sentado y sumultáneamente empuja con Dul Pal Batang Son Milop Chigi. Al caer el oponente, se le pone el extremo superior de la silla sobre la garganta." },
+              { number: 7, description: "(Ataque estrangulando) Con la mano contraria agarra una de las manos del oponente. El brazo libre, se mete por entre los del oponente extendido en su totalidad, para hacer una especie de 'Are Makki'. El oponente cae de espaldas en regazo del atacado. Se remata con golpe al tronco o cara." },
+              { number: 8, description: "Agarre de solapas. Toalla. Se levanta de la silla cambia de mano y hace el giro de #9 de técnicas básicas pero no hacia atrás, sino hacia adentro." }
             ]
           },
           {
             subgroup: "Agarres por dentrás.",
             techniques: [
-              { number: 9, description: "" },
-              { number: 10, description: "" }
+              { number: 9, description: "(Ataque estrangulando) Acomoda los pies para darse apoyo (Koap Sogi). Gira el cuerpo (agarrando el brazo que estrangula) hacia el lado contrario del brazo que agarra para palanquear parecido a #23 de técnicas básicas." },
+              { number: 10, description: "(Ataque agarrando ambos hombros) Con mano igual se agarran las manos del oponente. Se levanta de la silla y avanza para hacerlo caer de barriga y sobre la silla. Rematar en el piso con patada." }
             ]
           }
         ]
