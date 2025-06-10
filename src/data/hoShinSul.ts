@@ -1455,8 +1455,22 @@ export const hoShinSulData: GradeHoShinSul[] = [
     groups: [
       {
         group: "14 Dan Jan Sul (Defensa con bastón)",
-        techniques: [
-
+        subgroups: [
+          {
+            subgroup: "Ataque de puño.",
+            techniques: [
+              { number: 1, description: "Bloquea por dentro con el bastón, luego con el asa golpea en la nuca hacia abajo." },
+              { number: 2, description: "La mano libre bloquea por dentro, mete el bastón por la axila con la punta hacia la espalda y hace media #18 de técnicas básicas." },
+              { number: 3, description: "La mano libre bloquea por dentro, mete el bastón por la axila con la punta hacia el pecho y hace #9 de técnicas básicas." },
+              { number: 4, description: "Mete el bastón por entre las piernas del oponente a la altura de los muslos y lo gira hacia la pierna adelantada para lanzar." },
+              { number: 5, description: "Bloquea por dentro con el extremo del bastón, apoya el extremo del bastón en la mandíbula o cuello, empuja y lanza." },
+              { number: 6, description: "Bloquea/golpea por fuera con el extremo del bastón, gira por la espalda para barrer con el bastón." },
+              { number: 7, description: "Bloquea por fuera con el extremo del bastón, mete el extremo para flexionar el codo y hacer la misma palanca de #7 de llave contra puño." },
+              { number: 8, description: "Bloquea por fuera con el bastón, mete el extremo del bastón para apoyarlo bajo la axila y el hombo. Empuja y lanza." },
+              { number: 9, description: "La mano libre bloquea por dentro, usando el brazo que golpea como puente, desde aguera apoya el bastón en la garganta. Flexiona el brazo y tumba." },
+              { number: 10, description: "Bloquea como Olgul Makki con el bastón. La mano libre agarra la mano que golpea, gira la muñeca del atacante para poner la palma hacia arriba. Le baja el brazo y usa el bastón para palanquear el codo hacia arriba, luego lo palanquea hacia adentro. Loo hala hacia aguera, para luego volver a palanquearlo hacia adentro, para lanzarlo con el brazo enroscado en el bastón." },
+            ]
+          }
         ]
       },
       {
