@@ -1340,8 +1340,37 @@ export const hoShinSulData: GradeHoShinSul[] = [
       },
       {
         group: "15 Tang Bong Sul (Defensa con palo corto",
-        techniques: [
-
+        subgroups: [
+          {
+            subgroup: "Defensa de Ap Chagi.",
+            techniques: [
+              { number: 1, description: "Por fuera, Son Nal Chigi a la base del pie." },
+              { number: 2, description: "Okkoru Are Makki y hala hacia atrás." },
+              { number: 3, description: "Por dentro, Are Makki, a la vez que la otra mano Sewo Chumok Chigi a la parte interior del muslo." },
+              { number: 4, description: "Por fuera Are Makki y Chapki, la pierna contraria a la mano que bloquea, realiza Neryeo Mureup Chigi al muslo o rodilla." },
+              { number: 5, description: "Sale por fuera, engancha la pierna (como haciendo 'jarra'), Yop Chanoki a la parte interior de la rodilla de la pierna de apollo. " },
+              { number: 6, description: "Batang Son Montong Chukyo Makki, hala un poco mientras la otra mano presiona, con el talón de la mano sobre la canilla." },
+              { number: 7, description: "Batang Son Montong Chukyo Makki, y ayudado con la mano libre gira el tobillo para luxarlo o fracturarlo (Dedos hacia abajo)." },
+              { number: 8, description: "Engancha la pierna por fuera (como haciendo 'jarra'), la mano libre hace girar la pierna al plano horizontal, flexionando la rodilla a la vez que se gira el cuerpo. Lanza." },
+              { number: 9, description: "Engancha la pierna en 'V', con la otra mano, agarra la cintura y barre a la vez que gira el cuerpo." },
+              { number: 10, description: "Deja pasar la patada para agarrarla de la pantorilla con ambas manos, a la vez que pone la corva en el hombro y lanza." }
+            ]
+          },
+          {
+            subgroup: "Defensa de Yop Chagi.",
+            techniques: [
+              { number: 11, description: "Sale hacia atrás y Pal Kub Chigi o Bal Mok." },
+              { number: 12, description: "Sale por dentro, engancha la pierna en 'V' y con la otra mano, Pyon Son Gi al plexo." },
+              { number: 13, description: "Retrocede y, con la pierna de adelante, Ap Chagi a la parte interior del muslo que patea." },
+              { number: 14, description: "Sale por fuera, engancha la pierna en 'V', con la pierna de atrás, Oligi Mureup Chigi a la parte interior del muslo." },
+              { number: 15, description: "Bloquea en 'V', Chapki. Con la pierna engancha la pierna que patea desde la corva, para caer. (Espinilla con corva)" },
+              { number: 16, description: "Por fuera, hace bloqueo de águila agarrando el empeine y soportando la pierna con el brazo y ayudando con la mano libre gira el tobillo para luxarlo o fracturarlo (Dedos hacia abajo)" },
+              { number: 17, description: "Bloqueo de águila por encima, agarra el tobillo, la mano libre agarra el talón y gira el tobillo (Dedos del pie hacia arriba)" },
+              { number: 18, description: "Sale por dentro, engancha la pierna en 'jarra', y barre por detrás, estando en el suelo, gira al oponente para terminar en escorpión." },
+              { number: 19, description: "Sale por fuera, engancha la pienra en 'V' y barre por delante. " },
+              { number: 20, description: "Sale por dentro, agarra en 'V' con la mano de atrás. Gira la pierna que patea (Rodilla hacia abajo). Con Dwi Dollyeo Chagi engancha la pierna que patea (Tibia - corva, pierna de adelante.) tumba. Remata." },
+            ]
+          }
         ]
       },
       {
