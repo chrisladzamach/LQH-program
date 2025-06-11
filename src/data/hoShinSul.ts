@@ -1470,6 +1470,15 @@ export const hoShinSulData: GradeHoShinSul[] = [
               { number: 9, description: "La mano libre bloquea por dentro, usando el brazo que golpea como puente, desde aguera apoya el bastón en la garganta. Flexiona el brazo y tumba." },
               { number: 10, description: "Bloquea como Olgul Makki con el bastón. La mano libre agarra la mano que golpea, gira la muñeca del atacante para poner la palma hacia arriba. Le baja el brazo y usa el bastón para palanquear el codo hacia arriba, luego lo palanquea hacia adentro. Loo hala hacia aguera, para luego volver a palanquearlo hacia adentro, para lanzarlo con el brazo enroscado en el bastón." },
             ]
+          },
+          {
+            subgroup: "Ataque de patada.",
+            techniques: [
+              { number: 11, description: "Ataca Orum Bandal Chagi. Bloquea por dentro con el brazo libre. Y con el asa del bastón barre en contraflujo desde el tobillo." },
+              { number: 12, description: "Ataca Orum Bandal Chagi. Bloquea por dentro con el brazo libre. Y con el asa del bastón lanza desde la nuca." },
+              { number: 13, description: "Ataca Orum Ap Chagi. Bloquea por fuera con el bastón. Mete el bastón por entre las piernas para ponerlo por el frente del oponente y paralelo a su cadera. Levanta y tumba." },
+              { number: 14, description: "Ataca Orum Ap Chagi. Por dentro Uen Are An Makki. Continúa el flujo, gira el cuerpo y barre la pierna de apoyo golpeando con el bastón hacia afuera a la altura del tobillo." },
+            ]
           }
         ]
       },
