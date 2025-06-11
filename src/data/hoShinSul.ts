@@ -1485,9 +1485,18 @@ export const hoShinSulData: GradeHoShinSul[] = [
       {
         group: "10 Desarmes de Tang Bong contra Chuk Kun (defensa palo corto contra sable de bambú)",
         techniques: [
-
+          { number: 1, description: "Ataca golpe vertical descendente. Al cargar el ataque y antes que el Chuk Kun empiece a descender punza la garganta." },
+          { number: 2, description: "Ataca golpe vertical descendente. Al cargar el ataque y antes que el Chuk Kun empiece a descender, con la mano libre retiene la mano que empuña el Chuk Kun, mientras la otra mano punza el pecho del oponente con el mango del Tang Bong." },
+          { number: 3, description: "Ataca golpe horizontal hacia adentro. Se mete por dentro, la mano libre controla el mango del Chuk Kun. Con el extremo largo del Tan Bong se hace girar el codo parecido a #7 de puño con llave." },
+          { number: 4, description: "Ataca golpe horizontal hacia adentro. Se mete por dentro, la mano libre controla el mango del Chuk Kun. Con el extremo largo del Tan Bong y la palma hacia arriba, engarza la nuca para lanzar." },
+          { number: 5, description: "Ataca golpe horizontal hacia fuera. Anticipando un poco el ataque, por fuera, golpea con el mango del Tang Bong en la sien. Esa misma mano la mete por de bajo de los brazos del oponente, agarra su axila o costado, para lanzar de cadera." },
+          { number: 6, description: "Ataca golpe horizontal hacia fuera. Por fuera la mano libre Batang Son Mon Tong Maki, simultáneamente, con el Tang Bong se punzan los genitales. La mano libre Domina el mango del Chuk Kun, barre con Dichuk Miro Chagui. Desarma." },
+          { number: 7, description: "Ataca golpe vertical ascendente por dentro. Al tener el oponente el brazo ya extendido, pero sin empezar el ascenso, con el Tang Bong se golpea la muñeca derecha. La mano libre, agarra la mano derecha del atacante para hacer como #15 de mano igual." },
+          { number: 8, description: "Ataca golpe vertical ascendente. Hace como tenaza. El Tang Bong se mete por debajo de la mano derecha. La mano izquierda va al codo del atacante. Tumba. Remata." },
+          { number: 9, description: "Ataca punzón al tronco. Anticipando un poco el ataque, por fuera, (ayudado un poco por la mano izquierda) golpea con el mango del Tang Bong la muñeca derecha. Luego, entierra el mango del Tang Bong en la garganta a la vez que hace Dichuk Miro Chagui. Remata." },
+          { number: 10, description: "Ataca punzión alta. Se mete por dentro, la mano libre controla el mango del" }
         ]
-      },
+      }
     ]
   },
   {
