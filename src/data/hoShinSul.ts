@@ -1503,15 +1503,93 @@ export const hoShinSulData: GradeHoShinSul[] = [
     grade: "Negro 4 Dan",
     groups: [
       {
-        group: "10 Ti Sul (Técnicas con cinturón)",
+        group: "10 TI SUL - Técnicas de cinturón",
         techniques: [
-
+          {
+            number: 1,
+            description: "Ataca puño derecho. Bloquea por dentro (con el cinturón extendido de forma vertical). Gira el cuerpo y golpea con el cinturón."
+          },
+          {
+            number: 2,
+            description: "Ataca puño derecho. Bloquea por dentro (con el cinturón extendido de forma vertical) mano derecha arriba. Con la mano de arriba amarra la mano del atacante y #18. En el suelo ahorca al atacante con el extremo libre del cinturón."
+          },
+          {
+            number: 3,
+            description: "Ataca puño derecho. Frena con patada al abdomen. Con la mano izquierda lanza el cinturón por la espalda del atacante para envolver nuca y garganta. Con la mano izquierda y por debajo de la derecha agarra la punta lanzada y hace el mismo giro de la #18 de técnicas básicas."
+          },
+          {
+            number: 4,
+            description: "Ataca puño derecho. Bloquea por fuera (con el cinturón extendido de forma vertical) mano izquierda arriba. Con la mano izquierda amarra la mano del atacante y hace el mismo giro de la #9 de técnicas básicas. Remata en el suelo."
+          },
+          {
+            number: 5,
+            description: "Ataca puño derecho. Bloquea por fuera (con el cinturón extendido de forma vertical) mano izquierda arriba. Con la mano izquierda amarra la mano del atacante. Y se mete como 20 de técnicas básicas. Con el extremo libre enlaza la garganta, y espalda con espalda lanza de cadera al oponente. Remata en el suelo."
+          },
+          {
+            number: 6,
+            description: "Ataca puño derecho. Frena con patada a genitales. Bloquea por dentro (con el cinturón extendido de forma vertical) mano derecha arriba. Envuelve la mano del atacante a la vez que con el extremo libre envuelve la garganta y hala para tumbar y estrangular."
+          },
+          {
+            number: 7,
+            description: "Ataca puño derecho. Bloquea por dentro (con el cinturón extendido de forma vertical) mano derecha arriba. Con la mano de arriba amarra la mano del atacante y #18 por encima del hombro y del cuerpo, pero no palanquea el hombro."
+          },
+          {
+            number: 8,
+            description: "Ataca puño derecho. Patea el abdomen. Bloquea por debajo (con el cinturón extendido de forma horizontal). Amarra la mano y hace #16 de técnicas básicas."
+          },
+          {
+            number: 9,
+            description: "Ataca puño derecho. Patea el abdomen. Bloquea por debajo (con el cinturón extendido de forma horizontal). Amarra la mano y hace como la media #18 de técnicas básicas."
+          },
+          {
+            number: 10,
+            description: "Ataca puño derecho. Patea el abdomen. Bloquea por debajo (con el cinturón extendido de forma horizontal). Amarra la mano. Mete la mano agarrante entre las piernas del agresor y lanza. Al caer lo voltea y le amarra la pierna."
+          }
         ]
       },
       {
         group: "10 Defensa de Chuk Kun contra mano vacía.",
         techniques: [
-
+          {
+            number: 1,
+            description: "Ataca golpe vertical descendente. Al cargar el ataque y antes que el Chuk Kun empiece a descender, Ap Chagui a los genitales. Con ambas manos agarra el Chuk Kun. Lanza de cadera por el costado."
+          },
+          {
+            number: 2,
+            description: "Ataca golpe vertical descendente. Al cargar el ataque y antes que el Chuk Kun empiece a descender, Ap Chagui a los genitales. Con ambas manos agarra el Chuk Kun. Barre por la espalda."
+          },
+          {
+            number: 3,
+            description: "Ataca golpe horizontal hacia adentro. Sigue el flujo y hace como media #16 de mano contraria, lanza."
+          },
+          {
+            number: 4,
+            description: "Ataca golpe horizontal hacia adentro. Sigue el flujo. La mano de atrás controla el Chuk Kun, la otra se apoya en la axila izquierda (palma hacia arriba). Lanza."
+          },
+          {
+            number: 5,
+            description: "Ataca golpe horizontal hacia fuera. Hace como #26 de cuchillo."
+          },
+          {
+            number: 6,
+            description: "Ataca golpe horizontal hacia fuera, con giro. Agarra el brazo derecho y lanza por el hombro, de cadera."
+          },
+          {
+            number: 7,
+            description: "Ataca golpe vertical ascendente. Esquiva y deja pasar el ataque para hacer como #1 de técnicas contra agarre a ambos brazos."
+          },
+          {
+            number: 8,
+            description: "Ataca golpe vertical ascendente. Antes que el ataque empiece a ascender, pone una mano sobre la muñeca y la otra sobre el codo, agarra. Palanquea el codo arrastrando hacia el piso."
+          },
+          {
+            number: 9,
+            description: "Ataca punción al tronco. Sale por fuera mientras hace como #5 de puño con llave, pero sin soltar. Remata lanzando con #16 de de mano contraria."
+          },
+          {
+            number: 10,
+            description: "Ataca punción alta. Se defiende haciendo #19 de Judo."
+          }
         ]
       },
       {
