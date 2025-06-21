@@ -120,12 +120,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 16,
                 description:
-                  "Agarra la mano por los metacarpos, y la tuerce hacia afuera.",
+                  "Abre la mano, gira la mano quedando el dorso mirando hacia abajo; con la otra mano agarra la mano del oponente, le gira la mano haciendo llave y con el filo de la mano libre ayuda a la palanca.",
               },
               {
                 number: 17,
                 description:
-                  "Agarra la mano por la muñeca y la tuerce hacia adentro y hace presión en el codo extendido.",
+                  "La mano agarrada hace una 'U' con los dedos pulgar e índice, hacia arriba para sujetar la muñeca del oponente, la mano libre agarra la mano del oponente por los metacarpos, gira hacia adentro llevando a que la mano del oponente quede en 'U' (con los dedos apuntando hacia arriba) mientras hala para extender el brazo del oponente para quedar con el codo del agarre, sobre el codo del oponente a la vez que hace presión hacia al el oponente en la muñeca.",
               },
               {
                 number: 18,
