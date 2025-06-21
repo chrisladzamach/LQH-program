@@ -32,72 +32,72 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 1,
                 description:
-                  "Chuzón a los ojos con la palma hacia arriba, y puño con el nudillo medio a los metacarpos.",
+                  "Abre la mano, hace un chuzón a los ojos con la palma hacia arriba, y luego, pega un puño con el nudillo medio a los metacarpos de la mano que sujeta.",
               },
               {
                 number: 2,
                 description:
-                  "Batang son al plexo y saliendo por el lado de la mano.",
+                  "Saliendo por el lado de la mano agarrada en Ap Kubi, ejecuta Batang Son al esternón.",
               },
               {
                 number: 3,
                 description:
-                  "Pan chumok al plexo y saliendo por el lado de la mano.",
+                  "Saliendo por el lado de la mano agarrada en Ap Kubi, ejecuta Chunji Pam Chumok Chigi al plexo.",
               },
               {
                 number: 4,
                 description:
-                  "Pie por dentro de las piernas del otro, chu chum sogui y codazo a las costillas.",
+                  "Abre la mano, la gira hacia afuera (altura de la cabeza), bloqueo con mi rodilla la rodilla del oponente para desequilibrarlo y que no se mueva, Luego, ejecuta Pal Kup a las costillas.",
               },
               {
                 number: 5,
-                description: "Gira la mano hacia adentro y mantequilla.",
+                description: "Gira la mano hacia adentro para exponer y tensionar el pronador del codo, luego realiza Son Nal Chigi al pronador y luego otro al cuello.",
               },
               {
                 number: 6,
                 description:
-                  "Chuzón hacia atrás en diagonal en ChumChum Sogi y devuelve con codazo.",
+                  "Chuzón hacia atrás en diagonal girando la mano hacia adentro para liberarse en ChumChum Sogi y luego Pal Kup al plexo.",
               },
               {
                 number: 7,
                 description:
-                  "Expone la muñeca, batang son y con la mano liberada golpe al cuello con el filo de la mano.",
+                  "Expone la muñeca, Batang Son y con la mano liberada ejecuta An Son Nal Chigi al cuello.",
               },
               {
                 number: 8,
-                description: "Igual que la 7 pero gira con un codazo al plexo.",
+                description: "Expone la muñeca, Batang Son y con la mano liberada gira por dentro y realiza Pal Kup al plexo.",
               },
               {
                 number: 9,
                 description:
-                  "Levanta el brazo y se mete en chu chum sogui y codazo.",
+                  "Levanta el brazo y se mete por debajo en Chu Chum Sogi y realiza Pal Kup al plexo.",
               },
               {
                 number: 10,
                 description:
-                  "Igual que la 6 pero con un golpe a la cara con la mano abierta.",
+                  "Chuzón hacia atrás en diagonal girando la mano hacia adentro para liberarse en ChumChum Sogi y luego realiza Son Karak a la cara.",
               },
               {
                 number: 11,
-                description: "Con la pierna del mismo lado, chokto dologuí.",
+                description: "Hala al oponente, y ejecuta An Dary Chanoki a la rodilla.",
               },
               {
                 number: 12,
-                description: "Con la pierna contraria, rodillazo.",
+                description: "Hala al oponente, y ejecuta Mureup Chagi a la ingle.",
               },
               {
                 number: 13,
                 description:
-                  "Con la pierna del mismo lado, bal dung a la axila.",
+                  "Levanta el brazo y Chong Kang I Ap Chanoki a las costillas.",
               },
               {
                 number: 14,
                 description:
-                  "Agarra del cabello y golpea con un rodillazo a la cara.",
+                  "Agarra del cabello y ejecuta Mureup Chagi a la cara.",
               },
               {
                 number: 15,
-                description: "Agarra por la nuca y rodillazo en el plexo.",
+                description: "Agarra por la nuca al oponente (con el pulgar hacia abajo por el lado contrario al lado agarrado). Presiona el costado del cuello con el dedo del corazón, para hacerlo bajar. Luego realizaMureup Chagi al plexo.",
               },
             ],
           },
@@ -154,7 +154,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               },
               {
                 number: 22,
-                description: "Péndulo a la par con batang son el plexo.",
+                description: "Péndulo a la par con Batang Son el plexo.",
               },
             ],
           },
@@ -164,7 +164,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 23,
                 description:
-                  "Sujeta los metacarpos para asegurar la mano, y ejecuta pion son por dentro y hacia abajo.",
+                  "Sujeta los metacarpos para asegurar la mano, y ejecuta pion Son por dentro y hacia abajo.",
               },
               {
                 number: 24,
@@ -293,15 +293,15 @@ export const hoShinSulData: GradeHoShinSul[] = [
         techniques: [
           {
             number: 1,
-            description: "Montong bakkat makki y batang son al plexo.",
+            description: "Montong bakkat makki y Batang Son al plexo.",
           },
           {
             number: 2,
-            description: "Montong bakkat makki y pyon son al plexo.",
+            description: "Montong bakkat makki y pyon Son al plexo.",
           },
           {
             number: 3,
-            description: "Montong bakkat makki y agum son al cuello",
+            description: "Montong bakkat makki y agum Son al cuello",
           },
           {
             number: 4,
@@ -336,7 +336,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 1,
                 description:
-                  "Chu chum sogui y golpe con una mano al torso y luego golpe con la otra a la cara.",
+                  "Chu chum Sogi y golpe con una mano al torso y luego golpe con la otra a la cara.",
               },
               { number: 2, description: "Tango." },
             ],
@@ -353,7 +353,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             techniques: [
               {
                 number: 5,
-                description: "chu chum sogui y empujon con el codo.",
+                description: "chu chum Sogi y empujon con el codo.",
               },
               { number: 6, description: "aikido, llave de codo." },
             ],
@@ -378,7 +378,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 11,
                 description:
-                  "montong nulo Batangt makki y batang son a las costillas.",
+                  "montong nulo Batangt makki y Batang Son a las costillas.",
               },
               { number: 12, description: "codazo a la cara." },
             ],
@@ -417,11 +417,11 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 1,
                 description:
-                  "bajo con fuerza, chu chum sogui, y codazo a la cara.",
+                  "bajo con fuerza, chu chum Sogi, y codazo a la cara.",
               },
               {
                 number: 2,
-                description: "bajo con fuerza, chu chum sogui, y 16.",
+                description: "bajo con fuerza, chu chum Sogi, y 16.",
               },
             ],
           },
@@ -431,12 +431,12 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 3,
                 description:
-                  "bajo con fuerza, chu chum sogui, y pion son a la mano.",
+                  "bajo con fuerza, chu chum Sogi, y pion Son a la mano.",
               },
               {
                 number: 4,
                 description:
-                  "bajo con fuerza, chu chum sogui, y codazo infeior por un lado y superior por el otro.",
+                  "bajo con fuerza, chu chum Sogi, y codazo infeior por un lado y superior por el otro.",
               },
             ],
           },
@@ -447,14 +447,14 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 6,
                 description:
-                  "bajo con fuerza, chu chum sogui, y cojo la cabeza del otro y lo lanzo por el frente.",
+                  "bajo con fuerza, chu chum Sogi, y cojo la cabeza del otro y lo lanzo por el frente.",
               },
             ],
           },
           {
             subgroup: "Abrazo bajo: mano muñeca",
             techniques: [
-              { number: 7, description: "pion son a los metacarpos." },
+              { number: 7, description: "pion Son a los metacarpos." },
               {
                 number: 8,
                 description: "torsión y pesion muñeca contra mano.",
@@ -477,7 +477,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
             techniques: [
               {
                 number: 11,
-                description: "presión en la ingle y dual batang son.",
+                description: "presión en la ingle y dual Batang Son.",
               },
               {
                 number: 12,
@@ -544,9 +544,9 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 9,
                 description:
-                  "Coge la rodilla por dentro y pyon-son Kup a la ingle.",
+                  "Coge la rodilla por dentro y pyon-Son Kup a la ingle.",
               },
-              { number: 10, description: "Dual Pyon-son Gi a los metatarsos." },
+              { number: 10, description: "Dual Pyon-Son Gi a los metatarsos." },
               {
                 number: 11,
                 description:
@@ -634,7 +634,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 1,
                 description:
-                  "Dual montong bakkat son nal makki/batang son hacia afuera",
+                  "Dual montong bakkat Son nal makki/Batang Son hacia afuera",
               },
               { number: 2, description: "Como 23 de las básicas." },
             ],
@@ -917,7 +917,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 25,
                 description:
-                  "Empuja el hombro trasero del oponente para desontrolar su giro.",
+                  "Empuja el hombro trasero del oponente para deSontrolar su giro.",
               },
               {
                 number: 26,
