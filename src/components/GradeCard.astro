@@ -44,7 +44,25 @@ const color = colorList[title] ?? "bg-gray-200";
     : title === "Negro |||||" ? "text-yellow-300" 
     : title === "Marrón Negro" ? "text-yellow-300" 
     : "text-black"}`>
-    Aquí está el programa del grado 
-    <span class="font-bold tracking-wide">{title}</span> .
+    
+    <span class="font-bold tracking-wide">
+      {
+        (title === 'Blanco') ? '하얀 띠 (hayan tti)' : 
+        (title === 'Amarillo') ? '노란 띠 (noran tti)' : 
+        (title === 'Naranja') ?  '주황 띠 (juhwang tti)' : 
+        (title === 'Verde') ?  '초록 띠 (chorok tti)' : 
+        (title === 'Azul') ?  '파란 띠 (paran tti)' : 
+        (title === 'Purpura') ?  '보라 띠 (bora tti)' : 
+        (title === 'Rojo') ?  '빨간 띠 (ppalgan tti)' : 
+        (title === 'Rojo Marrón') ?  '빨간 갈색 띠 (ppalgan galsaek tti)' : 
+        (title === 'Marrón') ?  '갈색 띠 (galsaek tti)' : 
+        (title === 'Marrón Negro') ?  '갈색 검정 띠 (galsaek geomjeong tti)' : 
+        (title === 'Negro |') ?  '검은 띠 (geomeun tti)' : 
+        (title === 'Negro ||') ?  '검은 띠 (geomeun tti)' : 
+        (title === 'Negro |||') ?  '검은 띠 (geomeun tti)' : 
+        (title === 'Negro ||||') ?  '검은 띠 (geomeun tti)' : 
+        (title === 'Negro |||||') ?  '검은 띠 (geomeun tti)' : ''
+      }
+    </span> .
   </i>
 </a>
