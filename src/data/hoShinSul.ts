@@ -634,7 +634,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
               {
                 number: 1,
                 description:
-                  "Dual montong bakkat Son nal makki/Batang Son hacia afuera",
+                  "Abre una mano, y la otra, desequilibra empujando con Son Nal al cuello o mandíbula.",
               },
               { number: 2, description: "Como 23 de las básicas." },
             ],
