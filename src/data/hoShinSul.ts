@@ -311,7 +311,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "11-21 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        group: "11-15 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
         subgroups: [
           {
             subgroup: "Con Patada",
@@ -321,12 +321,6 @@ export const hoShinSulData: GradeHoShinSul[] = [
               { number: 13, description: "Contra agarra por fuera y el hombro o antebrazo con la mano libre. Pega rodillazo al torso con pierna igual a la mano agarrada." },
               { number: 14, description: "Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia la zona intercostal cerca de la axila." },
               { number: 15, description: "Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia abajo sobre el codo." },
-              { number: 16, description: "Contra agarra por fuera/dentro el antebrazo. Con la pierna del lado agarrado An Dary Chanoky a la cadera para tumbar al oponente." },
-              { number: 17, description: "Con la mano libre hace como 16 de básicas a la vez que pega (a la pierna del lado atacante) Yop Chanoki a la cara interna de la rodilla, para evitar la discipación del giro de la muñeca." },
-              { number: 18, description: "Contra agarra por fuera/debajo el antebrazo. An Dary Chanoky a la parte interior de la rodilla con la pierna de la mano agarrada. Y con la otra pierna Murup Chagi al muslo de la otra pierna." },
-              { number: 19, description: "Igual a la anterior pero cambia el rodillazo al muslo por Bituro Chagi (a la cara, abdomen o genitales)." },
-              { number: 20, description: "Contra agarra, con la mano contraria a la mano agarrada, Chokto Doligi a la rodilla del oponente. Cuando este cae arrodillado, Murup Chigi a la cara con la otra pierna." },
-              { number: 21, description: "Mete la mano libre por debajo y dentro del agarre, para soltar y contra agarrar el bíceps de la mano atacante. La mano atacada agarra la solapa del oponente. La pierna contraria a la de la solapa, se apoya en la pelvis del oponente para saltar y pegar rodillazo al pecho o cara con la otra pierna." },
             ]
           }
         ]
@@ -434,26 +428,17 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "22-35 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        group: "16-21 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
         subgroups: [
           {
-            subgroup: "Con Llave",
+            subgroup: "Con patada",
             techniques: [
-
-              { number: 22, description: "Contra agarra por dentro, extiende el brazo del oponente y con la mano libre palanquea el codo hacia arriba." },
-              { number: 23, description: "Contra agarra por fuera palanquea el codo con Pal Mok." },
-              { number: 24, description: "Contra agarra por fuera y palanquea codo con codo (como #17 de las técnicas básicas)" },
-              { number: 25, description: "Contra agarra por fuera muñeca y antegraz, hace flexionar el brazo del oponente hacia su pecho y lo baja, con el brazo en el plano horizontal." },
-              { number: 26, description: "Como #17 de técnicas básicas, con la muñeca horizontal (codo del oponente mirando arriba)." },
-              { number: 27, description: "Como #17 de técnicas básicas inversa (codo del oponente mirando abajo) mano en 'U' (Salida del #16 de técnicas básicas, en vertical)." },
-              { number: 28, description: "Contra agarra por fuera con ambas manos para soltar y hacer como 7 de llave contra puño. (con la mano libre como #16 de técnicas básicas y al soltarse, la mano agarrada ayuda a hacer como 7 de llave contra puño)." },
-              { number: 29, description: "Contra agarra por dentro. Mete la mano libre para agarrar la garganta del oponente, palanquear el codo y la muñeca (dedos hacia el codo)." },
-              { number: 30, description: "Contra agarra por fuera la muñeca del oponente con ambas manos, palanquea hacia el lado y abajo (segal) (la mano libre se apoya sobre el dorso del atacante y ambas manos con dedos apuntando en igual dirección)." },
-              { number: 31, description: "Contra agarra por fuera, se desplaza hacia la espalda del adversario a la vez que patea la corva con el mismo pie de la mano agarrada. Al hacerlo arrodillar lo ahorca con su propia mano, agarra la mano libre y sin dejar de pisarle la corva lo hace girar el tronco en el sentido del estangulamiento." },
-              { number: 32, description: "Contra agarra por fuera, la mano libre agarra por la solapa por encima del brazo del oponente para estrangular (pulgar abajo), con la misma pierna de la mano agarrada Yop Chanoki a la corva, mientras el oponente cae se golpea codazo al pecho o cara con la mano agarrada." },
-              { number: 33, description: "16 de técnicas básicas corta, con palanca de apoyo no con la mano sino con el antebrazo." },
-              { number: 34, description: "Palanquea codo, levanta al adversario, flexiona el codo y con su propia muñeca le golpea la cara." },
-              { number: 35, description: "Palanquea codo, levanta al adversario y hace torsión parecido a #7 de llave contra puño." },
+              { number: 16, description: "Contra agarra por fuera/dentro el antebrazo. Con la pierna del lado agarrado An Dary Chanoky a la cadera para tumbar al oponente." },
+              { number: 17, description: "Con la mano libre hace como 16 de básicas a la vez que pega (a la pierna del lado atacante) Yop Chanoki a la cara interna de la rodilla, para evitar la discipación del giro de la muñeca." },
+              { number: 18, description: "Contra agarra por fuera/debajo el antebrazo. An Dary Chanoky a la parte interior de la rodilla con la pierna de la mano agarrada. Y con la otra pierna Murup Chagi al muslo de la otra pierna." },
+              { number: 19, description: "Igual a la anterior pero cambia el rodillazo al muslo por Bituro Chagi (a la cara, abdomen o genitales)." },
+              { number: 20, description: "Contra agarra, con la mano contraria a la mano agarrada, Chokto Doligi a la rodilla del oponente. Cuando este cae arrodillado, Murup Chigi a la cara con la otra pierna." },
+              { number: 21, description: "Mete la mano libre por debajo y dentro del agarre, para soltar y contra agarrar el bíceps de la mano atacante. La mano atacada agarra la solapa del oponente. La pierna contraria a la de la solapa, se apoya en la pelvis del oponente para saltar y pegar rodillazo al pecho o cara con la otra pierna." },
             ]
           }
         ]
@@ -574,6 +559,30 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "22-35 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        subgroups: [
+          {
+            subgroup: "con Llave",
+            techniques: [
+              { number: 22, description: "Contra agarra por dentro, extiende el brazo del oponente y con la mano libre palanquea el codo hacia arriba." },
+              { number: 23, description: "Contra agarra por fuera palanquea el codo con Pal Mok." },
+              { number: 24, description: "Contra agarra por fuera y palanquea codo con codo (como #17 de las técnicas básicas)" },
+              { number: 25, description: "Contra agarra por fuera muñeca y antegraz, hace flexionar el brazo del oponente hacia su pecho y lo baja, con el brazo en el plano horizontal." },
+              { number: 26, description: "Como #17 de técnicas básicas, con la muñeca horizontal (codo del oponente mirando arriba)." },
+              { number: 27, description: "Como #17 de técnicas básicas inversa (codo del oponente mirando abajo) mano en 'U' (Salida del #16 de técnicas básicas, en vertical)." },
+              { number: 28, description: "Contra agarra por fuera con ambas manos para soltar y hacer como 7 de llave contra puño. (con la mano libre como #16 de técnicas básicas y al soltarse, la mano agarrada ayuda a hacer como 7 de llave contra puño)." },
+              { number: 29, description: "Contra agarra por dentro. Mete la mano libre para agarrar la garganta del oponente, palanquear el codo y la muñeca (dedos hacia el codo)." },
+              { number: 30, description: "Contra agarra por fuera la muñeca del oponente con ambas manos, palanquea hacia el lado y abajo (segal) (la mano libre se apoya sobre el dorso del atacante y ambas manos con dedos apuntando en igual dirección)." },
+              { number: 31, description: "Contra agarra por fuera, se desplaza hacia la espalda del adversario a la vez que patea la corva con el mismo pie de la mano agarrada. Al hacerlo arrodillar lo ahorca con su propia mano, agarra la mano libre y sin dejar de pisarle la corva lo hace girar el tronco en el sentido del estangulamiento." },
+              { number: 32, description: "Contra agarra por fuera, la mano libre agarra por la solapa por encima del brazo del oponente para estrangular (pulgar abajo), con la misma pierna de la mano agarrada Yop Chanoki a la corva, mientras el oponente cae se golpea codazo al pecho o cara con la mano agarrada." },
+              { number: 33, description: "16 de técnicas básicas corta, con palanca de apoyo no con la mano sino con el antebrazo." },
+              { number: 34, description: "Palanquea codo, levanta al adversario, flexiona el codo y con su propia muñeca le golpea la cara." },
+              { number: 35, description: "Palanquea codo, levanta al adversario y hace torsión parecido a #7 de llave contra puño." },
+            ]
+          }
+        ]
+      }
     ],
   },
   {
@@ -645,6 +654,27 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "36-46 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        subgroups: [
+          {
+            subgroup: "Con Llave",
+            techniques: [
+              { number: 36, description: "Palanquea codo hacia abajo y arrastra (acuersta boca abajo)." },
+              { number: 37, description: "Golpea lateralmente sobre el codo (como Montong An Maki), mete el brazo del codazo para cuñar el codo, la otra mano flexiona la muñeca (dedos hacia el codo). Palma hacia el bíceps." },
+              { number: 38, description: "La mano libre agarra y #16 de técnicas básicas." },
+              { number: 39, description: "La mano libre agarra y #18 de técnicas básicas." },
+              { number: 40, description: "Contra agarra por fuera y lanza como #9 de técnicas básicas." },
+              { number: 41, description: "#16 de técnicas básicas. Con movimiento parecido a #36 de este grupo." },
+              { number: 42, description: "Contra agarra por fuera. Con la mano libre y por fuera presiona el pronador del codo para pegar codazo (como #7 de esta secuencia). Mete la mano libre por debajo, agarra nuca y lanza." },
+              { number: 43, description: "Contra agarra con ambas manos la mano agarrada, patea genitales y lanza de cadera. (por fuera, espalda con pecho); palanqueando el codo del brazo atacante." },
+              { number: 44, description: "Dung Chumok y por debajo con la mano libre y lanzo por los hombros (como la de #19 de contra agarres de Judo)." },
+              { number: 45, description: "Contra agarra por dentro, la mano libre flexiona el codo del oponente (pulgar por dentro). Gira y lanza como palanqueando el codo (como #7 de llave contra puño)." },
+              { number: 46, description: "Contra agarra con ambas manos. Se gira hacia dadentro vuelta completa y se lanza al oponente con la mano libre." },
+            ],
+          }
+        ]
+      }
     ],
   },
   {
