@@ -22,8 +22,8 @@ export const gradeProgramData: GradeProgram[] = [
       {
         title: "Llaves",
         items: [
-          { item: 1, description: "15 Técnicas de defensa personal mano igual" },
-          { item: 2, description: "5 Técnicas de defensa personal mano diferente" },
+          { item: 1, description: "15 Técnicas de defensa personal contra agarre lineal de muñeca" },
+          { item: 2, description: "5 Técnicas de defensa personal contra agarre cruzado de muñeca" },
         ]
       },
       {
@@ -85,8 +85,8 @@ export const gradeProgramData: GradeProgram[] = [
       {
         title: "Llaves",
         items: [
-          { item: 1, description: "28 Técnicas de defensa personal mano igual." },
-          { item: 2, description: "10 Técnicas de defensa personal mano diferente."}
+          { item: 1, description: "28 Técnicas de defensa personal contra agarre lineal de muñeca." },
+          { item: 2, description: "10 Técnicas de defensa personal contra agarre cruzado de muñeca."}
         ]
       },
       {
@@ -133,8 +133,8 @@ export const gradeProgramData: GradeProgram[] = [
       {
         title: "Llaves",
         items: [
-          { item: 1, description: "46 Técnicas de defensa personal mano igual" },
-          { item: 2, description: "15 Técnicas de defensa personal mano diferente" }
+          { item: 1, description: "46 Técnicas de defensa personal contra agarre lineal de muñeca" },
+          { item: 2, description: "15 Técnicas de defensa personal contra agarre cruzado de muñeca" }
         ]
       },
       {
@@ -183,7 +183,7 @@ export const gradeProgramData: GradeProgram[] = [
         items: [
           { item: 1, description: "10 Técnicas de puño contra puño." },
           { item: 2, description: "12 Técnicas de defensa contra agarres por la espalda." },
-          { item: 3, description: "21 Técnicas de defensa contra agarres por la espalda con llave." }
+          { item: 3, description: "21 Técnicas de defensa personal contra agarre cruzado de muñeca." }
         ]
       },
       {
@@ -236,7 +236,7 @@ export const gradeProgramData: GradeProgram[] = [
         items: [
           { item: 1, description: "10 Técnicas de Patada contra puño." },
           { item: 2, description: "14 Técnicas de defensa contra abrazos." },
-          { item: 3, description: "35 Técnicas de defensa contra agarres por la espalda con llave."}
+          { item: 3, description: "35 Técnicas de defensa personal contra agarre cruzado de muñeca."}
         ]
       },
       {
@@ -290,7 +290,7 @@ export const gradeProgramData: GradeProgram[] = [
         title: "Llaves",
         items: [
           { item: 1, description: "16 Técnicas de defensa de sentados." },
-          { item: 2, description: "46 Técnicas de defensa contra agarres por la espalda." }
+          { item: 2, description: "46 Técnicas de defensa personal contra agarre cruzado de muñeca." }
         ]
       },
       {
