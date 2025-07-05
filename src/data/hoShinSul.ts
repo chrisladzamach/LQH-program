@@ -433,6 +433,31 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "22-35 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        subgroups: [
+          {
+            subgroup: "Con Llave",
+            techniques: [
+
+              { number: 22, description: "Contra agarra por dentro, extiende el brazo del oponente y con la mano libre palanquea el codo hacia arriba." },
+              { number: 23, description: "Contra agarra por fuera palanquea el codo con Pal Mok." },
+              { number: 24, description: "Contra agarra por fuera y palanquea codo con codo (como #17 de las técnicas básicas)" },
+              { number: 25, description: "Contra agarra por fuera muñeca y antegraz, hace flexionar el brazo del oponente hacia su pecho y lo baja, con el brazo en el plano horizontal." },
+              { number: 26, description: "Como #17 de técnicas básicas, con la muñeca horizontal (codo del oponente mirando arriba)." },
+              { number: 27, description: "Como #17 de técnicas básicas inversa (codo del oponente mirando abajo) mano en 'U' (Salida del #16 de técnicas básicas, en vertical)." },
+              { number: 28, description: "Contra agarra por fuera con ambas manos para soltar y hacer como 7 de llave contra puño. (con la mano libre como #16 de técnicas básicas y al soltarse, la mano agarrada ayuda a hacer como 7 de llave contra puño)." },
+              { number: 29, description: "Contra agarra por dentro. Mete la mano libre para agarrar la garganta del oponente, palanquear el codo y la muñeca (dedos hacia el codo)." },
+              { number: 30, description: "Contra agarra por fuera la muñeca del oponente con ambas manos, palanquea hacia el lado y abajo (segal) (la mano libre se apoya sobre el dorso del atacante y ambas manos con dedos apuntando en igual dirección)." },
+              { number: 31, description: "Contra agarra por fuera, se desplaza hacia la espalda del adversario a la vez que patea la corva con el mismo pie de la mano agarrada. Al hacerlo arrodillar lo ahorca con su propia mano, agarra la mano libre y sin dejar de pisarle la corva lo hace girar el tronco en el sentido del estangulamiento." },
+              { number: 32, description: "Contra agarra por fuera, la mano libre agarra por la solapa por encima del brazo del oponente para estrangular (pulgar abajo), con la misma pierna de la mano agarrada Yop Chanoki a la corva, mientras el oponente cae se golpea codazo al pecho o cara con la mano agarrada." },
+              { number: 33, description: "16 de técnicas básicas corta, con palanca de apoyo no con la mano sino con el antebrazo." },
+              { number: 34, description: "Palanquea codo, levanta al adversario, flexiona el codo y con su propia muñeca le golpea la cara." },
+              { number: 35, description: "Palanquea codo, levanta al adversario y hace torsión parecido a #7 de llave contra puño." },
+            ]
+          }
+        ]
+      }
     ],
   },
   {
