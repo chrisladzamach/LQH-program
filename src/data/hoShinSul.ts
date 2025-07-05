@@ -310,6 +310,27 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "11-21 An Son Mok Chapki Sul (Agarres cruzado de muñeca).",
+        subgroups: [
+          {
+            subgroup: "Con Patada",
+            techniques: [
+              { number: 11, description: "Contra agarra por fuera, Yop Chanoki a la corva (misma pierna de la mano agarrada)" },
+              { number: 12, description: "Igual que la anterior pero patea la otra pierna en la parte inferor de la rodilla." },
+              { number: 13, description: "Contra agarra por fuera y el hombro o antebrazo con la mano libre. Pega rodillazo al torso con pierna igual a la mano agarrada." },
+              { number: 14, description: "Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia la zona intercostal cerca de la axila." },
+              { number: 15, description: "Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia abajo sobre el codo." },
+              { number: 16, description: "Contra agarra por fuera/dentro el antebrazo. Con la pierna del lado agarrado An Dary Chanoky a la cadera para tumbar al oponente." },
+              { number: 17, description: "Con la mano libre hace como 16 de básicas a la vez que pega (a la pierna del lado atacante) Yop Chanoki a la cara interna de la rodilla, para evitar la discipación del giro de la muñeca." },
+              { number: 18, description: "Contra agarra por fuera/debajo el antebrazo. An Dary Chanoky a la parte interior de la rodilla con la pierna de la mano agarrada. Y con la otra pierna Murup Chagi al muslo de la otra pierna." },
+              { number: 19, description: "Igual a la anterior pero cambia el rodillazo al muslo por Bituro Chagi (a la cara, abdomen o genitales)." },
+              { number: 20, description: "Contra agarra, con la mano contraria a la mano agarrada, Chokto Doligi a la rodilla del oponente. Cuando este cae arrodillado, Murup Chigi a la cara con la otra pierna." },
+              { number: 21, description: "Mete la mano libre por debajo y dentro del agarre, para soltar y contra agarrar el bíceps de la mano atacante. La mano atacada agarra la solapa del oponente. La pierna contraria a la de la solapa, se apoya en la pelvis del oponente para saltar y pegar rodillazo al pecho o cara con la otra pierna." },
+            ]
+          }
+        ]
+      }
     ],
   },
   {
