@@ -1,0 +1,1 @@
+// Aquí van los conceptos que se utilizan en el ámbito del hapkido (dentro del club Joong Do Kwan y entre otros más generales.)

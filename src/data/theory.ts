@@ -1,0 +1,1 @@
+// Aquí va la teoría del hapkido, historia, filosofía, etc.
