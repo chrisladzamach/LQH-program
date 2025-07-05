@@ -14,6 +14,7 @@ export interface MainGroup {
   techniques?: Technique[];
 }
 
+
 export interface GradeHoShinSul {
   grade: string;
   groups: MainGroup[];
