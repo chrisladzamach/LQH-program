@@ -104,7 +104,19 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "5 An Son Mok Sul (Agarres de mano igual",
+        group: "5 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
+        subgroups: [
+          {
+            subgroup: "Con golpe.",
+            techniques: [
+              { number: 1, description: "Son Nal a la cara con la mano libre." },
+              { number: 2, description: "Son Nal al pronador del codo con la mano libre." },
+              { number: 3, description: "Son Nal Dung a la cara por debajo del brazo agarrado." },
+              { number: 4, description: "Pal Kup similar a la técnica #4 de agarre lineal de muñeca." },
+              { number: 5, description: "Contra agarra por fuera y con la mano libre, Chumok Galbi Chigi." },
+            ]
+          }
+        ]
       }
     ],
   },
