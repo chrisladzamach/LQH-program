@@ -104,7 +104,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "5 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
+        group: "1-5 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
         subgroups: [
           {
             subgroup: "Con golpe.",
@@ -206,7 +206,7 @@ export const hoShinSulData: GradeHoShinSul[] = [
         ],
       },
       {
-        group: "10 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
+        group: "5-10 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
         subgroups: [
           {
             subgroup: "Con golpe.",
