@@ -205,6 +205,21 @@ export const hoShinSulData: GradeHoShinSul[] = [
           },
         ],
       },
+      {
+        group: "10 An Son Mok Chapki Sul (Agarre cruzado de muñeca)",
+        subgroups: [
+          {
+            subgroup: "Con golpe.",
+            techniques: [
+              { number: 6, description: "Contra agarra por fuera y codazo a la cara." },
+              { number: 7, description: "Presiona el pronador del codo con la mano libre y ejecuta Pal Kup a la cara con la otra mano." },
+              { number: 8, description: "Presiona el pronador del codo con la mano libre y con la mano libre, agarra la insersión del pectoral." },
+              { number: 9, description: "Igual a la anterior, pero ejecuta Agum Son Chigi a la garganda." },
+              { number: 10, description: "Contra agarra por fuera, la mano libre baja la mano agarrada y con esa misma mano (la agarrada) Batang Son a la cara." },
+            ]
+          }
+        ]
+      }
     ],
   },
   {
