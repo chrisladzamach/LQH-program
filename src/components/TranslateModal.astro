@@ -86,7 +86,7 @@ const serialized = JSON.stringify(
             content.innerHTML = `
               <div>
                 <strong>${key}</strong>: ${data.translation}
-                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-56 mx-auto" />` : ""}
               </div>
             `;
             modal.style.display = 'flex';

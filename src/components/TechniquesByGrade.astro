@@ -6,7 +6,7 @@ const { grade } = Astro.props;
 const selected = hoShinSulData.find(item => item.grade === grade) || { groups: [] };
 
 const myDict = {
-  Makki:     { translation: 'Bloqueo', image: '/images/makki.png' },
+  'Makki': { translation: 'Bloqueo', image: '/images/makki.png' },
   'Pal Kup': { translation: 'Codo',    image: '/images/codo.png' },
   'Are': { translation: 'Bajo', image: '/images/are.png' },
   'Montong': { translation: 'Medio', image: '/images/montong.png' },
@@ -20,7 +20,6 @@ const myDict = {
   'Neryo': { translation: 'Descendente', image: '/images/neryo.png' },
   'Naeryo': { translation: 'Descendente', image: '/images/neryo.png' },
   'Son Nal': { translation: 'Mano de cuchillo', image: '/images/sonnal.png' },
-  'Sonkeut': { translation: 'Punta de dedos', image: '/images/sonkeut.png' },
   'Jumok': { translation: 'Puño', image: '/images/jumok.png' },
   'Pyeonsonkeut': { translation: 'Dedos horizontales', image: '/images/pyeonsonkeut.png' },
   'Palkup': { translation: 'Codo', image: '/images/codo.png' },
