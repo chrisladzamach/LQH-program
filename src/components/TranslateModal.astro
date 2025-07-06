@@ -1,0 +1,118 @@
+---
+const { text, dictionary } = Astro.props;
+
+const dictObj = Object.fromEntries(
+  Object.entries(dictionary).map(([k, v]) => [
+    k,
+    typeof v === "string" ? { translation: v } : v,
+  ])
+);
+
+const keys = Object.keys(dictObj)
+  .sort((a, b) => b.length - a.length)
+  .map((k) => k.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"));
+const re = new RegExp(`(${keys.join("|")})`, "g");
+const parts = text.split(re);
+
+const instanceId = `tm-${Math.random().toString(36).slice(2, 8)}`;
+
+const serialized = JSON.stringify(
+  Object.fromEntries(
+    Object.entries(dictObj).map(([k, v]) => [k, v])
+  )
+);
+---
+
+<div id={instanceId} class="translate-wrapper relative inline" data-dict={serialized}>
+  <span class="translate-inline">
+    {parts.map((part:any, i:any) => {
+      const key = Object.keys(dictObj).find(
+        (k) => k === part
+      );
+      if (key) {
+        return (
+          <span
+            key={i}
+            class="translate-key cursor-pointer underline text-blue-400"  
+            data-key={key}
+          >
+            {part}
+          </span>
+        );
+      }
+      return <span key={i}>{part}</span>;
+    })}
+  </span>
+
+  <div
+    class="translate-modal fixed inset-0 hidden items-center justify-center z-50"
+  >
+    <div class="translate-overlay absolute inset-0 bg-black/50"></div>
+    <div class="translate-box relative bg-gray-800 rounded-lg p-4 max-w-xs w-11/12 z-10">
+      <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+        &times;
+      </button>
+      <div class="translate-content mt-2"></div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ instanceId }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+</script>

@@ -1,16 +1,21 @@
 {
-  "name": "Nombre de tu App",
-  "short_name": "MiApp",
-  "description": "Descripción breve de tu aplicación",
+  "name": "LQH App",
+  "short_name": "LQH",
+  "description": "Aplicación del programa para presentación de exámenes de ascenso de grado de la LQH",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0d47a1",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "scope": "/",
   "icons": [
     {
-      "src": "icon-512x512.png",
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

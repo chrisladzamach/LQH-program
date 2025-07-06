@@ -1,1 +1,1504 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="/logoJDK.png"><meta name="generator" content="Astro v5.7.10"><title>LQH Program</title><!-- PWA manifest --><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0d47a1"><link rel="stylesheet" href="/_astro/chaseHakDary.-FwM2fNh.css"></head> <body data-astro-cid-sckkx6r4>  <section class="flex flex-col h-screen p-2"> <article class="flex items-center justify-between"> <a class="text-black font-bold py-2 px-2 bg-blue-500 rounded-sm" href="/hoShinSul"> Back </a> <h1 class="text-3xl font-bold ">Naranja</h1> </article> <hr class="my-4 text-zinc-600"> <article> <section class="flex flex-col mb-8"><h3 class="font-bold text-xl mb-2">46 llaves básicas</h3><hr class="my-2 text-zinc-600"><div><h4 class="font-bold my-4">Contra agarre de muñeca</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">29.</strong><i>Saludo chino.</i></li><li class=""><strong class="mr-4">30.</strong><i>Igual que 17.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre elevando de solapas (centro pecho)</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">31.</strong><i>(subiendo) dedo</i></li><li class=""><strong class="mr-4">32.</strong><i>Golpe con el antebrazo al codo.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre invertido de solapas (centro pecho)</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">33.</strong><i>(invertida) cocodrilo.</i></li><li class=""><strong class="mr-4">34.</strong><i>Golpe con el antebrazo al codo.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre de cinturón mano mirando hacia abajo</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">35.</strong><i>Pan chumok a los metacarpos.</i></li><li class=""><strong class="mr-4">36.</strong><i>Aplauso al codo.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre de cinturón mano mirando hacia arriba</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">37.</strong><i>(invertido) dedo.</i></li><li class=""><strong class="mr-4">38.</strong><i>(invertido) asegura y presión hacia arriba agarrado de la casaca.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre de cinturón mano mirando hacia el lado</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">39.</strong><i>(de lado) asegura y ejecuta iop chagui.</i></li><li class=""><strong class="mr-4">40.</strong><i>(de lado) asegura con el antebrazo por debajo, con el otro brazo lo baja y sube haciendo presión en el cuello con los dos brazos.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre de pecho (lado)</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">41.</strong><i>29</i></li><li class=""><strong class="mr-4">42.</strong><i>Codazo al codo, devuelve con otro codazo por dentro y ejecuta un último codazo a la cara.</i></li></ul></div><div><h4 class="font-bold my-4">Contra agarre de cabello/cabeza</h4><ul class="flex flex-col gap-2"><li class=""><strong class="mr-4">43.</strong><i>Toalla.</i></li><li class=""><strong class="mr-4">44.</strong><i>Saludo chino.</i></li><li class=""><strong class="mr-4">45.</strong><i>Cocodrilo.</i></li><li class=""><strong class="mr-4">46.</strong><i>Bloqueo hacia abajo y puño al mentón.</i></li></ul></div></section> </article> </section>  </body></html>
+<!DOCTYPE html><html lang="es" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/webp" href="/logoJDK.webp"><meta name="generator" content="Astro v5.7.10"><title>LQHApp</title><!-- PWA manifest --><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0d47a1"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BZs-2RF_.js"></script><link rel="stylesheet" href="/_astro/chaseHakDary.BZ6JdJvC.css"></head> <body class="lg:max-w-screen lg:flex flex-col items-center" data-astro-cid-sckkx6r4>  <section class="flex flex-col h-screen"> <header class="fixed top-0 left-0 right-0 z-50 px-2 py-3 bg-zinc-950/50 backdrop-blur-sm border-b border-zinc-800"> <div class="max-w-screen-xl mx-auto flex items-center justify-between"> <a href="/hoShinSul" class="flex gap-2 items-center justify-center rounded-lg bg-zinc-600 text-white transition focus:bg-neutral-800 font-bold py-2 px-3"> <svg viewBox="0 0 16 6" aria-hidden="true" class="w-4 transform rotate-180"> <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 3 10 .5v2H0v1h10v2L16 3Z"></path> </svg>
+Back
+</a> <h1 class="text-3xl text-yellow-300 font-light tracking-widest">Naranja</h1> </div> </header> <div class="h-20"></div> <hr class="my-4 text-zinc-600"> <!-- ---
+import { hoShinSulData } from '../data/hoShinSul';
+
+const { grade } = Astro.props;
+const selected = hoShinSulData.find(item => item.grade === grade);
+---
+{selected && selected.groups.map(group => (
+  <section class="flex flex-col">
+    <hr class="my-2 text-zinc-600 mt-4" />
+    <h3 class="font-bold text-xl mb-2 text-zinc-300">{group.group}</h3>
+    {group.subgroups?.map(subgroup => (
+      <div>
+        <h4 class="font-bold my-4 text-zinc-300">{subgroup.subgroup}</h4>
+        <ul class="flex flex-col gap-2">
+          {subgroup.techniques.map(technique => (
+            <li><strong class="mr-4 text-zinc-400">{technique.number}.</strong> <i class="text-zinc-400">{technique.description}</i></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    {group.techniques?.length &&
+      <ul class="flex flex-col gap-2">
+        {group.techniques.map(technique => (
+          <li><strong class="mr-4 text-zinc-400">{technique.number}.</strong> <i class="text-zinc-400">{technique.description}</i></li>
+        ))}
+      </ul>
+    }
+  </section>
+))} --><section class="flex flex-col"><hr class="my-2 text-zinc-600 mt-4"><h3 class="font-bold text-xl mb-2 text-zinc-300">29-46 Son Mok Sul (Agarres de mano contraria)</h3><div><h4 class="font-bold my-4 text-zinc-300">Sewo Myoksal Chapki Sul (Agarre de solapas)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>29.</strong><div id="tm-km58y4" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Saludo chino.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-km58y4";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>30.</strong><div id="tm-3h8nfr" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Igual que 17.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-3h8nfr";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Olyeo Sewo Myoksal Chapki Sul (Agarre elevando de solapas)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>31.</strong><div id="tm-bifyrx" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">(subiendo) dedo</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-bifyrx";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>32.</strong><div id="tm-7zo96t" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Gira la cabeza hacia el lado de la m</span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="2">o que está agarr</span><span key="3" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="4">do, para desnucar.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-7zo96t";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Bituro Sewo Myoksal Chapki Sul (Agarre invertido de solapas)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>33.</strong><div id="tm-u6i6xb" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">(invertida) cocodrilo.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-u6i6xb";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>34.</strong><div id="tm-i96rx1" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Golpe con el </span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="2">tebrazo al codo.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-i96rx1";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Oppok Ti Chapki Sul (Agarre de cinturón mano mirando hacia abajo)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>35.</strong><div id="tm-thghva" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Pam chumok a los metacarpos.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-thghva";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>36.</strong><div id="tm-2e1m0v" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0"></span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="ap"> Ap </span><span key="2">lauso al codo.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-2e1m0v";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Jecho Ti Chapki Sul (Contra agarre de cinturón mano mirando hacia arriba)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>37.</strong><div id="tm-1buv23" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Presión en dedo pulgar.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-1buv23";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>38.</strong><div id="tm-whqpxw" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Asegura y presión hacia arriba agarrado de la casaca.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-whqpxw";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Sewo Yop Ti Chapki Sul (Contra agarre de cinturón mano mirando hacia el lado)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>39.</strong><div id="tm-qu4eo6" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">(de lado) asegura y ejecuta iop chagui.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-qu4eo6";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>40.</strong><div id="tm-rg2fen" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">(de lado) asegura con el </span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="2">tebrazo por debajo, con el otro brazo lo baja y sube haciendo presión en el cuello con los dos brazos.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-rg2fen";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Gasum Chapki Sul (Contra agarre de pecho (izq/der))</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>41.</strong><div id="tm-z4bv7j" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">29</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-z4bv7j";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>42.</strong><div id="tm-u8tgxx" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Codazo al codo, devuelve con otro codazo por dentro y ejecuta un último codazo a la cara.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-u8tgxx";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div><div><h4 class="font-bold my-4 text-zinc-300">Meory Chapki Sul (Contra agarre de cabello/cabeza)</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>43.</strong><div id="tm-t90k0r" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Toalla.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-t90k0r";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>44.</strong><div id="tm-novn7q" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Saludo chino.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-novn7q";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>45.</strong><div id="tm-1fq5p6" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Cocodrilo.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-1fq5p6";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>46.</strong><div id="tm-1mbl6l" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Bloqueo hacia abajo y puño al mentón.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-1mbl6l";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div></section><section class="flex flex-col"><hr class="my-2 text-zinc-600 mt-4"><h3 class="font-bold text-xl mb-2 text-zinc-300">11-15 An Son Mok Chapki Sul (Agarres cruzado de muñeca).</h3><div><h4 class="font-bold my-4 text-zinc-300">Con Patada</h4><ul class="flex flex-col gap-2"><li class="text-zinc-200 flex items-start gap-2"><strong>11.</strong><div id="tm-lk4l7g" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Contra agarra por fuera, </span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="yop"> Yop </span><span key="2"> Ch</span><span key="3" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="4">oki a la corva (misma pierna de la m</span><span key="5" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="6">o agarrada)</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-lk4l7g";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>12.</strong><div id="tm-uwugxp" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Igual que la </span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="2">terior pero patea la otra pierna en la parte inferor de la rodilla.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-uwugxp";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>13.</strong><div id="tm-9ci3vk" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Contra agarra por fuera y el hombro o </span><span key="1" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="2">tebrazo con la m</span><span key="3" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="4">o libre. Pega rodillazo al torso con pierna igual a la m</span><span key="5" class="translate-key cursor-pointer underline text-blue-400" data-key="an"> an </span><span key="6">o agarrada.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-9ci3vk";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>14.</strong><div id="tm-t1nixg" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia la zona intercostal cerca de la axila.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-t1nixg";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li><li class="text-zinc-200 flex items-start gap-2"><strong>15.</strong><div id="tm-5regw5" class="translate-wrapper relative inline" data-dict="{&#34;makki&#34;:{&#34;translation&#34;:&#34;Bloqueo&#34;,&#34;image&#34;:&#34;/images/makki.png&#34;},&#34;pal kup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;are&#34;:{&#34;translation&#34;:&#34;Bajo&#34;,&#34;image&#34;:&#34;/images/are.png&#34;},&#34;montong&#34;:{&#34;translation&#34;:&#34;Medio&#34;,&#34;image&#34;:&#34;/images/montong.png&#34;},&#34;olgul&#34;:{&#34;translation&#34;:&#34;Alto&#34;,&#34;image&#34;:&#34;/images/olgul.png&#34;},&#34;jirugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;chagi&#34;:{&#34;translation&#34;:&#34;Patada&#34;,&#34;image&#34;:&#34;/images/chagi.png&#34;},&#34;seogi&#34;:{&#34;translation&#34;:&#34;Posición&#34;,&#34;image&#34;:&#34;/images/seogi.png&#34;},&#34;jireugi&#34;:{&#34;translation&#34;:&#34;Golpe de puño&#34;,&#34;image&#34;:&#34;/images/jirugi.png&#34;},&#34;ap&#34;:{&#34;translation&#34;:&#34;Frontal&#34;,&#34;image&#34;:&#34;/images/ap.png&#34;},&#34;dollyo&#34;:{&#34;translation&#34;:&#34;Circular&#34;,&#34;image&#34;:&#34;/images/dollyo.png&#34;},&#34;yop&#34;:{&#34;translation&#34;:&#34;Lateral&#34;,&#34;image&#34;:&#34;/images/yop.png&#34;},&#34;dwi&#34;:{&#34;translation&#34;:&#34;Hacia atrás&#34;,&#34;image&#34;:&#34;/images/dwi.png&#34;},&#34;neryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;naeryo&#34;:{&#34;translation&#34;:&#34;Descendente&#34;,&#34;image&#34;:&#34;/images/neryo.png&#34;},&#34;sonnal&#34;:{&#34;translation&#34;:&#34;Mano de cuchillo&#34;,&#34;image&#34;:&#34;/images/sonnal.png&#34;},&#34;sonkeut&#34;:{&#34;translation&#34;:&#34;Punta de dedos&#34;,&#34;image&#34;:&#34;/images/sonkeut.png&#34;},&#34;jumok&#34;:{&#34;translation&#34;:&#34;Puño&#34;,&#34;image&#34;:&#34;/images/jumok.png&#34;},&#34;pyeonsonkeut&#34;:{&#34;translation&#34;:&#34;Dedos horizontales&#34;,&#34;image&#34;:&#34;/images/pyeonsonkeut.png&#34;},&#34;palkup&#34;:{&#34;translation&#34;:&#34;Codo&#34;,&#34;image&#34;:&#34;/images/codo.png&#34;},&#34;murup&#34;:{&#34;translation&#34;:&#34;Rodilla&#34;,&#34;image&#34;:&#34;/images/murup.png&#34;},&#34;pyojeok&#34;:{&#34;translation&#34;:&#34;Objetivo&#34;,&#34;image&#34;:&#34;/images/pyojeok.png&#34;},&#34;mom&#34;:{&#34;translation&#34;:&#34;Cuerpo&#34;,&#34;image&#34;:&#34;/images/mom.png&#34;},&#34;an&#34;:{&#34;translation&#34;:&#34;Interior&#34;,&#34;image&#34;:&#34;/images/an.png&#34;},&#34;bakat&#34;:{&#34;translation&#34;:&#34;Exterior&#34;,&#34;image&#34;:&#34;/images/bakat.png&#34;},&#34;bandae&#34;:{&#34;translation&#34;:&#34;Contrario&#34;,&#34;image&#34;:&#34;/images/bandae.png&#34;},&#34;baro&#34;:{&#34;translation&#34;:&#34;Mismo lado&#34;,&#34;image&#34;:&#34;/images/baro.png&#34;}}"> <span class="translate-inline"> <span key="0">Contra agarra por fuera, extiende el brazo del oponente y golpea rodillazo hacia abajo sobre el codo.</span> </span> <!-- Modal oculto por defecto --> <div class="translate-modal fixed inset-0 hidden items-center justify-center z-50"> <div class="translate-overlay absolute inset-0 bg-black bg-opacity-50"></div> <div class="translate-box relative bg-white rounded-lg p-4 max-w-xs w-11/12 z-10"> <button class="translate-close absolute top-2 right-2 text-gray-600 text-xl">
+&times;
+</button> <div class="translate-content mt-2"></div> </div> </div> </div> <script>(function(){const instanceId = "tm-5regw5";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.getElementById(instanceId);
+    if (!wrapper) {
+      console.error(`No se encontró el wrapper con ID: ${instanceId}`);
+      return;
+    }
+
+    try {
+      const dict = JSON.parse(wrapper.getAttribute('data-dict'));
+      const modal = wrapper.querySelector('.translate-modal');
+      const content = wrapper.querySelector('.translate-content');
+      const closeBtn = wrapper.querySelector('.translate-close');
+      const overlay = wrapper.querySelector('.translate-overlay');
+      
+      if (!modal || !content || !closeBtn || !overlay) {
+        console.error('No se encontraron todos los elementos necesarios para el modal');
+        return;
+      }
+
+      wrapper.querySelectorAll('.translate-key').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const key = el.dataset.key;
+          const data = dict[key];
+          if (data) {
+            content.innerHTML = `
+              <div>
+                <strong>${key}</strong>: ${data.translation}
+                ${data.image ? `<img src="${data.image}" alt="${key}" class="mt-2 max-h-32 mx-auto" />` : ""}
+              </div>
+            `;
+            modal.style.display = 'flex';
+            modal.classList.remove('hidden');
+          } else {
+            console.error(`No se encontró la traducción para la clave: ${key}`);
+          }
+        });
+      });
+      
+      // Función para cerrar el modal
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+        content.innerHTML = '';
+      }
+
+      // Agregar event listeners para cerrar el modal
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      // Opcional: cerrar con Escape
+      document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    } catch (err) {
+      console.error('Error al inicializar el modal:', err);
+    }
+  });
+})();</script></li></ul></div></section> </section>  <vercel-speed-insights data-props="{&#34;data-astro-cid-sckkx6r4&#34;:true}" data-params="{}" data-pathname="/hoShinSul/naranja/"></vercel-speed-insights> <script type="module">var o="@vercel/speed-insights",u="1.2.0",f=()=>{window.si||(window.si=function(...r){(window.siq=window.siq||[]).push(r)})};function l(){return typeof window<"u"}function h(){try{const e="production"}catch{}return"production"}function d(){return h()==="development"}function v(e,r){if(!e||!r)return e;let n=e;try{const t=Object.entries(r);for(const[s,i]of t)if(!Array.isArray(i)){const a=c(i);a.test(n)&&(n=n.replace(a,`/[${s}]`))}for(const[s,i]of t)if(Array.isArray(i)){const a=c(i.join("/"));a.test(n)&&(n=n.replace(a,`/[...${s}]`))}return n}catch{return e}}function c(e){return new RegExp(`/${g(e)}(?=[/?#]|$)`)}function g(e){return e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function m(e){return e.scriptSrc?e.scriptSrc:d()?"https://va.vercel-scripts.com/v1/speed-insights/script.debug.js":e.dsn?"https://va.vercel-scripts.com/v1/speed-insights/script.js":e.basePath?`${e.basePath}/speed-insights/script.js`:"/_vercel/speed-insights/script.js"}function w(e={}){var r;if(!l()||e.route===null)return null;f();const n=m(e);if(document.head.querySelector(`script[src*="${n}"]`))return null;e.beforeSend&&((r=window.si)==null||r.call(window,"beforeSend",e.beforeSend));const t=document.createElement("script");return t.src=n,t.defer=!0,t.dataset.sdkn=o+(e.framework?`/${e.framework}`:""),t.dataset.sdkv=u,e.sampleRate&&(t.dataset.sampleRate=e.sampleRate.toString()),e.route&&(t.dataset.route=e.route),e.endpoint?t.dataset.endpoint=e.endpoint:e.basePath&&(t.dataset.endpoint=`${e.basePath}/speed-insights/vitals`),e.dsn&&(t.dataset.dsn=e.dsn),d()&&e.debug===!1&&(t.dataset.debug="false"),t.onerror=()=>{console.log(`[Vercel Speed Insights] Failed to load script from ${n}. Please check if any content blockers are enabled and try again.`)},document.head.appendChild(t),{setRoute:s=>{t.dataset.route=s??void 0}}}function p(){try{return}catch{}}customElements.define("vercel-speed-insights",class extends HTMLElement{constructor(){super();try{const r=JSON.parse(this.dataset.props??"{}"),n=JSON.parse(this.dataset.params??"{}"),t=v(this.dataset.pathname??"",n);w({route:t,...r,framework:"astro",basePath:p(),beforeSend:window.speedInsightsBeforeSend})}catch(r){throw new Error(`Failed to parse SpeedInsights properties: ${r}`)}}});</script> </body></html>

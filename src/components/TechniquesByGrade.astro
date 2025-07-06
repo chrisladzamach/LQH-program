@@ -1,30 +1,75 @@
 ---
 import { hoShinSulData } from '../data/hoShinSul';
+import TranslateModal from '../components/TranslateModal.astro';
 
 const { grade } = Astro.props;
-const selected = hoShinSulData.find(item => item.grade === grade);
+const selected = hoShinSulData.find(item => item.grade === grade) || { groups: [] };
+
+const myDict = {
+  Makki:     { translation: 'Bloqueo', image: '/images/makki.png' },
+  'Pal Kup': { translation: 'Codo',    image: '/images/codo.png' },
+  'Are': { translation: 'Bajo', image: '/images/are.png' },
+  'Montong': { translation: 'Medio', image: '/images/montong.png' },
+  'Olgul': { translation: 'Alto', image: '/images/olgul.png' },
+  'Jirugi': { translation: 'Golpe de puño', image: '/images/jirugi.png' },
+  'Yop Chagi': { translation: 'Patada lateral', image: '/images/chagi.png' },
+  'Seogi': { translation: 'Posición', image: '/images/seogi.png' },
+  'Jireugi': { translation: 'Golpe de puño', image: '/images/jirugi.png' },
+  'Dollyo': { translation: 'Circular', image: '/images/dollyo.png' },
+  'Dwi': { translation: 'Hacia atrás', image: '/images/dwi.png' },
+  'Neryo': { translation: 'Descendente', image: '/images/neryo.png' },
+  'Naeryo': { translation: 'Descendente', image: '/images/neryo.png' },
+  'Son Nal': { translation: 'Mano de cuchillo', image: '/images/sonnal.png' },
+  'Sonkeut': { translation: 'Punta de dedos', image: '/images/sonkeut.png' },
+  'Jumok': { translation: 'Puño', image: '/images/jumok.png' },
+  'Pyeonsonkeut': { translation: 'Dedos horizontales', image: '/images/pyeonsonkeut.png' },
+  'Palkup': { translation: 'Codo', image: '/images/codo.png' },
+  'Murup': { translation: 'Rodilla', image: '/images/murup.png' },
+  'Pyojeok': { translation: 'Objetivo', image: '/images/pyojeok.png' },
+  'Mom': { translation: 'Cuerpo', image: '/images/mom.png' },
+  'An': { translation: 'Hacia adentro', image: '/images/an.png' },
+  'Bakat': { translation: 'Exterior', image: '/images/bakat.png' },
+  'Bandae': { translation: 'Contrario', image: '/images/bandae.png' },
+  'Baro': { translation: 'Mismo lado', image: '/images/baro.png' },
+  'Ap Kubi': { translation: 'Posición con una pierna adelantada flexionada.', image: '/images/kubi.png' },
+  'An Dary': { translation: 'Pierna hacia adentro', image: '/images/an-darye.png' },
+};
 ---
-{selected && selected.groups.map(group => (
+
+{selected.groups.map(group => (
   <section class="flex flex-col">
     <hr class="my-2 text-zinc-600 mt-4" />
     <h3 class="font-bold text-xl mb-2 text-zinc-300">{group.group}</h3>
+
     {group.subgroups?.map(subgroup => (
       <div>
         <h4 class="font-bold my-4 text-zinc-300">{subgroup.subgroup}</h4>
         <ul class="flex flex-col gap-2">
-          {subgroup.techniques.map(technique => (
-            <li><strong class="mr-4 text-zinc-400">{technique.number}.</strong> <i class="text-zinc-400">{technique.description}</i></li>
+          {subgroup.techniques.map(tech => (
+            <li class="text-zinc-200 flex items-start gap-2">
+              <strong>{tech.number}.</strong>
+              <TranslateModal
+                text={tech.description}
+                dictionary={myDict}
+              />
+            </li>
           ))}
         </ul>
       </div>
     ))}
 
-    {group.techniques?.length &&
+    {group.techniques?.length && (
       <ul class="flex flex-col gap-2">
-        {group.techniques.map(technique => (
-          <li><strong class="mr-4 text-zinc-400">{technique.number}.</strong> <i class="text-zinc-400">{technique.description}</i></li>
+        {group.techniques.map(tech => (
+          <li class="text-zinc-200 flex items-start gap-2">
+            <strong>{tech.number}.</strong>
+            <TranslateModal
+              text={tech.description}
+              dictionary={myDict}
+            />
+          </li>
         ))}
       </ul>
-    }
+    )}
   </section>
 ))}
