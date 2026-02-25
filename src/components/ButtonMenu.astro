@@ -1,28 +1,33 @@
 ---
-import Arrow from "../icons/Arrow.astro";
-
-interface ButtonMenuProps {
+interface Props {
   title: string;
-  koreanTitle: string;
-  icon: string | any;
+  koreanTitle?: string;
+  icon?: string;
   href: string;
   class?: string;
 }
 
 const { title, koreanTitle, icon, href, class: className } = Astro.props;
 
-const defaultClass = "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium pl-2 py-2 px-2 rounded-sm";
+const defaultClass =
+  "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium pl-2 py-2 px-2 rounded-sm";
 const finalClass = className ?? defaultClass;
 const isStringIcon = typeof icon === "string";
 ---
-<a class={`relative overflow-hidden flex items-center justify-between ${finalClass}`} href={href}>
+
+<a
+  class={`relative overflow-hidden flex items-center justify-between ${finalClass}`}
+  href={href}
+>
   <div class="flex flex-col items-center gap-3 z-10">
-    <div class=" flex items-center justify-center rounded-full text-yellow-500">
-      {isStringIcon ? (
-        <span class="text-6xl">{icon}</span>
-      ) : (
-        icon
-      )}
+    <div class="flex items-center justify-center rounded-full text-yellow-500">
+      {
+        isStringIcon ? (
+          <img src={icon} alt={title} class="w-12 h-12 object-contain" />
+        ) : (
+          icon
+        )
+      }
     </div>
     <div class="flex flex-col px-2 text-center">
       <p class="text-wrap">{title}</p>

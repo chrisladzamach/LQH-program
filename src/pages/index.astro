@@ -1,30 +1,34 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ButtonMenu from '../components/ButtonMenu.astro';
+import Layout from "../layouts/Layout.astro";
+import ButtonMenu from "../components/ButtonMenu.astro";
 ---
+
 <Layout>
 	<section class="flex flex-col max-h-screen p-0">
 		<figure class="flex items-center justify-center my-4">
 			<img src="/logoJDK.webp" alt="Logo of LQH" class="size-40 rounded-full" />
 		</figure>
-		
+
 		<div class="text-center space-y-2">
-			<h1 class="text-3xl md:text-4xl font-light tracking-widest flex w-full items-center justify-center">
+			<h1
+				class="text-3xl md:text-4xl font-light tracking-widest flex w-full items-center justify-center"
+			>
 				<span class="text-yellow-300 font-semibold">LQH</span>
 				<span class="bg-yellow-300">App</span>
 			</h1>
 			<p class="text-gray-400 max-w-md mx-auto text-sm tracking-widest">
-				Aquí se encuentra todo lo que se necesita saber basado en el programa de Joong Do Kwan.
+				Aquí se encuentra todo lo que se necesita saber basado en el programa de
+				Joong Do Kwan.
 			</p>
 		</div>
-		
+
 		<hr class="my-4 text-zinc-600" />
 
 		<div class="grid grid-cols-2 gap-4 p-2 divide-y divide-gray-700">
 			<ButtonMenu
 				title="Gwajeong (Programa)"
 				koreanTitle="과정"
-				icon="📖"
+				icon="/icons/icon-pack/libro.png"
 				href="/program"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black rounded-t-md"
 			/>
@@ -32,15 +36,15 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 			<ButtonMenu
 				title="Ho Sin Sul (Técnicas de defensa)"
 				koreanTitle="호신술"
-				icon="🛡️"
+				icon="/icons/icon-pack/blancoLanzamiento.png"
 				href="/hoShinSul"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black"
-				/>
+			/>
 
 			<ButtonMenu
 				title="Poomsaes (Figuras sin armas)"
 				koreanTitle="품새"
-				icon="🥋"
+				icon="/icons/icon-pack/patada.png"
 				href="/poomsaes"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black"
 			/>
@@ -48,7 +52,7 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 			<ButtonMenu
 				title="Mugi Poomsaes (Figuras con armas)"
 				koreanTitle="무기 품새"
-				icon="⚔️"
+				icon="/icons/icon-pack/nunchakuBlancos.png"
 				href="/mugiPoomsaes"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black"
 			/>
@@ -56,7 +60,7 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 			<ButtonMenu
 				title="Chase (Básicos sin armas)"
 				koreanTitle="기본"
-				icon="👊🏽"
+				icon="/icons/icon-pack/poomsae_icon-bl.png"
 				href="/chases"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black"
 			/>
@@ -64,7 +68,7 @@ import ButtonMenu from '../components/ButtonMenu.astro';
 			<ButtonMenu
 				title="Mugi Chase (Básicos con armas)"
 				koreanTitle="무기 기본"
-				icon="🔪"
+				icon="/icons/icon-pack/nunchakus-bl.png"
 				href="/mugiChase"
 				class="text-zinc-300 bg-gray-800/50 hover:bg-gray-600 transition duration-200 border-gray-700 border-b-1 border-t-1 border-l-1 border-r-1 overflow-hidden shadow-xl py-3 font-semibold focus:bg-gray-600 focus:border-black rounded-b-md"
 			/>
