@@ -1,0 +1,50 @@
+---
+import Belt from "./Belt.astro";
+
+interface Props {
+  title: string;
+  href: string;
+}
+
+const { title, href } = Astro.props;
+
+const colorList: { [key: string]: string } = {
+  Blanco: "bg-white",
+  Amarillo: "bg-yellow-300",
+  Naranja: "bg-orange-500",
+  Verde: "bg-green-500",
+  Azul: "bg-blue-700",
+  Purpura: "bg-purple-700",
+  Rojo: "bg-red-700",
+  "Rojo Marrón": "bg-[linear-gradient(to_bottom,_#c10007_50%,_#78350f_50%)]",
+  Marrón: "bg-[#78350f]",
+  "Marrón Negro": "bg-[linear-gradient(to_bottom,#78350f_50%,#000000_50%)]",
+  "Negro |": "bg-black",
+  "Negro ||": "bg-black",
+  "Negro |||": "bg-black",
+  "Negro ||||": "bg-black",
+  "Negro |||||": "bg-black",
+};
+
+const color = colorList[title] ?? "bg-gray-200";
+
+const isBlackBelt = title.startsWith("Negro");
+const danCount = isBlackBelt ? (title.match(/\|/g)?.length ?? 0) : 0;
+---
+
+<a
+  href={href}
+  class="flex justify-between h-18 items-center p-2 w-full bg-gray-800/50 hover:bg-gray-600 border-gray-700 border-1 rounded-lg"
+>
+  <p
+    class=`font-bold ${title === "Negro |" ? "text-yellow-300" 
+    : title === "Negro ||" ? "text-yellow-300" 
+    : title === "Negro |||" ? "text-yellow-300"
+    : title === "Negro ||||" ? "text-yellow-300"
+    : title === "Negro |||||" ? "text-yellow-300"
+    : "text-zinc-300"}`
+  >
+    {title}
+  </p>
+  <Belt color={color} dan={danCount} />
+</a>

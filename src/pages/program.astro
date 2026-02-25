@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Header from "../components/Header.astro"
-import GradeCard from "../components/GradeCard.astro"
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import AltGradeCard from "../components/AltGradeCard.astro";
 
 const links = [
   { title: "Blanco", href: "/grades/blanco" },
@@ -19,16 +19,14 @@ const links = [
   { title: "Negro |||", href: "/grades/negro3Dan" },
   { title: "Negro ||||", href: "/grades/negro4Dan" },
   { title: "Negro |||||", href: "/grades/negro5Dan" },
-]
-
+];
 ---
-<Layout>  
+
+<Layout>
   <Header name="Program" href="/" />
-  <section class="pb-2 grid grid-cols-2 grid-rows-5 gap-4">
-    {
-      links.map((link) => (
-        <GradeCard title={link.title} href={link.href} />
-      ))
-    }
+  <section class="flex flex-col gap-2">
+    {links.map((link) => <AltGradeCard title={link.title} href={link.href} />)}
+    <hr />
+    <hr />
   </section>
 </Layout>

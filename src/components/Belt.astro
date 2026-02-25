@@ -1,0 +1,18 @@
+---
+interface Props {
+  color: string;
+  dan?: number;
+}
+
+const { color, dan = 0 } = Astro.props;
+---
+
+<div class={`flex ${color} h-6 w-50 rounded-sm justify-end pr-2 items-center pb-1`}>
+  {dan > 0 && (
+    <div class="flex">
+      {Array.from({ length: dan }).map(() => (
+        <span class="text-yellow-300 font-extrabold p-0 m-0">|</span>
+      ))}
+    </div>
+  )}
+</div>

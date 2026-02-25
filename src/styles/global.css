@@ -12,6 +12,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'prist';
+  src: url('/fonts/PRISTINA.TTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-hykor: 'hykor';
+  --font-prist: 'prist';
 }

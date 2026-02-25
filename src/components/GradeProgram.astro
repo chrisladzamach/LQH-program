@@ -13,7 +13,7 @@ const selectedProgram: GradeProgram | undefined = gradeProgramData.find(
 );
 ---
 {selectedProgram ? (
-  <section class="rounded-lg p-2 flex flex-col gap-2">
+  <section class="rounded-lg px-2 flex flex-col gap-2">
     <p class="text-zinc-500"><strong>Tiempo: </strong> <i>{selectedProgram.duration}</i></p>
     {selectedProgram.sections.map((section) => (
       <article class="border-b-2 border-r-2 border-gray-700 bg-gray-800/40 rounded-md p-2 mb-2">
