@@ -1,37 +1,47 @@
 ---
 interface Props {
   title: string;
+  subtitle?: string;
   koreanTitle?: string;
   icon?: string;
   href: string;
   class?: string;
 }
 
-const { title, koreanTitle, icon, href, class: className } = Astro.props;
+const {
+  title,
+  subtitle,
+  koreanTitle,
+  icon,
+  href,
+  class: className,
+} = Astro.props;
 
 const defaultClass =
   "justify-between items-center text-left hover:bg-blue-700/50 transition-colors rounded-none bg-yellow-400 text-black font-medium pl-2 py-2 px-2 rounded-sm";
 const finalClass = className ?? defaultClass;
 const isStringIcon = typeof icon === "string";
 ---
-
 <a
-  class={`relative overflow-hidden flex items-center justify-between ${finalClass}`}
+  class={`relative rounded-lg size-47 overflow-hidden grid place-content-center ${finalClass}`}
   href={href}
 >
-  <div class="flex flex-col items-center gap-3 z-10">
+  <div class="">
     <div class="flex items-center justify-center rounded-full text-yellow-500">
       {
         isStringIcon ? (
-          <img src={icon} alt={title} class="w-12 h-12 object-contain" />
+          <img src={icon} alt={title} class="size-12 object-contain" />
         ) : (
           icon
         )
       }
     </div>
     <div class="flex flex-col px-2 text-center">
-      <p class="text-wrap">{title}</p>
-      <i class="text-sm text-gray-400">{koreanTitle}</i>
+      <p class="font-bold text-lg">{title}</p>
+      <p class="font-extralight text-sm text-zinc-400 tracking-wide trak">
+        {subtitle}
+      </p>
+      <i class="text-sm text-gray-400 font-hykor">{koreanTitle}</i>
     </div>
   </div>
 </a>
