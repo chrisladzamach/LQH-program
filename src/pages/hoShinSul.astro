@@ -2,82 +2,63 @@
 import Layout from "../layouts/Layout.astro";
 import ButtonMenu from "../components/ButtonMenu.astro";
 import Header from "../components/Header.astro";
+import SubmenuButton from "../components/SubmenuButton.astro";
+import Blanco from "./grades/blanco.astro";
+
+const menuOptions = [
+  { title: "Blanco", path: "/hoShinSul/blanco" },
+  { title: "Amarillo", path: "/hoShinSul/amarillo" },
+  { title: "Naranja", path: "/hoShinSul/naranja" },
+  { title: "Verde", path: "/hoShinSul/verde" },
+  { title: "Azul", path: "/hoShinSul/azul" },
+  { title: "Púrpura", path: "/hoShinSul/purpura" },
+  { title: "Rojo", path: "/hoShinSul/rojo" },
+  { title: "Rojo Marrón", path: "/hoShinSul/rojoMarron" },
+  { title: "Marrón", path: "/hoShinSul/marron" },
+  { title: "Marrón Negro", path: "/hoShinSul/marronNegro" },
+  { title: "Negro 1er Dan", path: "/hoShinSul/negro1Dan" },
+  { title: "Negro 2er Dan", path: "/hoShinSul/negro2Dan" },
+  { title: "Negro 3er Dan", path: "/hoShinSul/negro3Dan" },
+  { title: "Negro 4er Dan", path: "/hoShinSul/negro4Dan" },
+  { title: "Negro 5er Dan", path: "/hoShinSul/negro5Dan" },
+];
+
+const menu = [
+  {title: "contra garre lineal de muñeca", path: ""},
+  {title: "contra agarre cruzado de muñeca", path: ""},
+  {title: "puño contra puño", path: ""},
+  {title: "contra agarres por la espalda", path: ""},
+  {title: "patada contra puño", path: ""},
+  {title: "contra abrazos", path: ""},
+  {title: "sentado", path: ""},
+  {title: "contra agarre a dos brazos", path: ""},
+  {title: "llave contra puño", path: ""},
+  {title: "saludo y conducción", path: ""},
+  {title: "contra agarres de judo", path: ""},
+  {title: "acostado", path: ""},
+  {title: "contra patada", path: ""},
+  {title: "mano vacía contra cuchillo", path: ""},
+  {title: "con palo corto", path: ""},
+  {title: "contra armas de fuego", path: ""},
+  {title: "sentado en silla", path: ""},
+  {title: "con bastón", path: ""},
+  {title: "palo corto contra sable de bambú", path: ""},
+  {title: "con cinturón", path: ""},
+  {title: "mokkum contra mano vacía", path: ""},
+  {title: "de palo corto contra cuchillo", path: ""},
+]
 ---
 
 <Layout>
-  <section class="">
+  <section>
     <Header name="Ho Sin Sul" href="/" />
+
     <article class="flex flex-col gap-3 pb-4">
-      <ButtonMenu
-        title="Blanco"
-        href="/hoShinSul/blanco"
-        class="text-black font-bold py-2 px-2 bg-white rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Amarillo"
-        href="/hoShinSul/amarillo"
-        class="text-black font-bold py-2 px-2 bg-yellow-300 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Naranja"
-        href="/hoShinSul/naranja"
-        class="text-black font-bold py-2 px-2 bg-orange-500 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Verde"
-        href="/hoShinSul/verde"
-        class="text-black font-bold py-2 px-2 bg-green-500 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Azul"
-        href="/hoShinSul/azul"
-        class="text-black font-bold py-2 px-2 bg-blue-700 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Purpura"
-        href="/hoShinSul/purpura"
-        class="text-black font-bold py-2 px-2 bg-purple-700 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Rojo"
-        href="/hoShinSul/rojo"
-        class="text-black font-bold py-2 px-2 bg-red-700 rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Rojo Marrón"
-        href="/hoShinSul/rojoMarron"
-        class="relative z-10 overflow-hidden text-black font-bold py-2 px-2 rounded-sm transition duration-300 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[linear-gradient(to_bottom,_#b91c1c_50%,_#78350f_50%)] before:z-0"
-      />
-      <ButtonMenu
-        title="Marrón"
-        href="/hoShinSul/marron"
-        class="text-black font-bold py-2 px-2 bg-[#78350f] rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Marrón Negro"
-        href="/hoShinSul/marronNegro"
-        class="relative z-10 overflow-hidden text-white border-1 border-zinc-400 font-bold py-2 px-2 rounded-sm transition duration-300 ease-in-out before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[linear-gradient(to_bottom,#78350f_50%,#000000_50%)] before:z-0"
-      />
-      <ButtonMenu
-        title="Negro |"
-        href="/hoShinSul/negro1Dan"
-        class="text-yellow-300 font-bold py-2 px-2 border-1 border-zinc-400 bg-black rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Negro ||"
-        href="/hoShinSul/negro2Dan"
-        class="text-yellow-300 font-bold py-2 px-2 border-1 border-zinc-400 bg-black rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Negro |||"
-        href="/hoShinSul/negro3Dan"
-        class="text-yellow-300 font-bold py-2 px-2 border-1 border-zinc-400 bg-black rounded-sm transition duration-300 ease-in-out"
-      />
-      <ButtonMenu
-        title="Negro ||||"
-        href="/hoShinSul/negro4Dan"
-        class="text-yellow-300 font-bold py-2 px-2 border-1 border-zinc-400 bg-black rounded-sm transition duration-300 ease-in-out"
-      />
+      {
+        menuOptions.map(({ title, path }) => (
+          <SubmenuButton title={title} href={path} />
+        ))
+      }
     </article>
   </section>
 </Layout>

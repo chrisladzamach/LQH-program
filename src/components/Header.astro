@@ -11,26 +11,12 @@ const { name, href } = Astro.props;
   class="fixed top-0 left-0 right-0 z-50 px-2 py-3 bg-zinc-950/50 backdrop-blur-sm border-b border-zinc-800"
 >
   <div class="max-w-screen-xl mx-auto flex items-center justify-between">
-    <a
-      href={href}
-      class="flex gap-2 items-center justify-center rounded-lg bg-zinc-600 text-white transition focus:bg-neutral-800 font-bold py-2 px-3"
-    >
-      <svg
-        viewBox="0 0 16 6"
-        aria-hidden="true"
-        class="w-4 transform rotate-180"
-      >
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M16 3 10 .5v2H0v1h10v2L16 3Z"
-        >
-        </path>
-      </svg>
-      Back
+    <h1 class="text-3xl text-yellow-300 font-light tracking-widest font-prist">
+      {name}
+    </h1>
+    <a href={href} class="size-10 mr-1">
+      <img src="/icons/icon-pack/libro.png" alt="" />
     </a>
-    <h1 class="text-3xl text-yellow-300 font-light tracking-widest font-prist">{name}</h1>
   </div>
 </header>
 <div class="h-20"></div>

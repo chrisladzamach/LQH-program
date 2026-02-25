@@ -1,0 +1,39 @@
+---
+interface Props {
+  name: string;
+  href: string;
+}
+
+const { name, href } = Astro.props;
+---
+
+<header
+  class="fixed top-0 left-0 right-0 z-50 px-2 py-3
+         bg-zinc-950/50 backdrop-blur-sm
+         border-b border-zinc-800"
+>
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between">
+    <h1 class="text-3xl text-yellow-300 font-light tracking-widest font-prist">
+      {name}
+    </h1>
+
+    <a href={href} class="size-10 mr-1 shrink-0">
+      <img src="/icons/icon-pack/libro.png" alt="" />
+    </a>
+  </div>
+</header>
+
+<!-- Spacer del header fijo -->
+<div class="h-20"></div>
+
+<!-- CONTENIDO -->
+<main
+  class="min-h-[calc(100vh-5rem)]
+    px-2
+    pb-[env(safe-area-inset-bottom)]"
+>
+  <slot />
+</main>
+
+<!-- SAFE ZONE EXTRA (gesture bar / iOS / Android) -->
+<div class="h-[env(safe-area-inset-bottom)]"></div>

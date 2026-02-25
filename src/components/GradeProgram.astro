@@ -1,6 +1,6 @@
 ---
-import type { GradeProgram } from '../data/gradeProgram';
-import { gradeProgramData } from '../data/gradeProgram';
+import type { GradeProgram } from "../data/gradeProgram";
+import { gradeProgramData } from "../data/gradeProgram";
 
 export interface Props {
   color: string;
@@ -9,25 +9,34 @@ export interface Props {
 const { color } = Astro.props;
 
 const selectedProgram: GradeProgram | undefined = gradeProgramData.find(
-  (program) => program.color === color
+  (program) => program.color === color,
 );
 ---
-{selectedProgram ? (
-  <section class="rounded-lg px-2 flex flex-col gap-2">
-    <p class="text-zinc-500"><strong>Tiempo: </strong> <i>{selectedProgram.duration}</i></p>
-    {selectedProgram.sections.map((section) => (
-      <article class="border-b-2 border-r-2 border-gray-700 bg-gray-800/40 rounded-md p-2 mb-2">
-        <h3 class="text-xl text-zinc-400 font-bold tracking-wider">{section.title}</h3>
-        <ul>
-          {section.items.map((item) => (
-            <li class="list-disc ml-4 text-zinc-400"> 
-              <i class="tracking-wide">{item.description}</i>
-            </li>
-          ))}
-        </ul>
-      </article>
-    ))}
-  </section>
+
+{
+  selectedProgram ? (
+    <section class="rounded-lg px-2 flex flex-col gap-2">
+      <p class="text-zinc-500">
+        <strong>Tiempo: </strong> <i>{selectedProgram.duration}</i>
+      </p>
+      {selectedProgram.sections.map((section) => (
+        <article class="border-b-2 border-r-2 border-gray-700 bg-gray-800/40 rounded-md p-2 mb-2">
+          <h3 class="text-xl text-zinc-400 font-bold tracking-wider">
+            {section.title}
+          </h3>
+          <ul>
+            {section.items.map((item) => (
+              <li class="list-disc ml-4 text-zinc-400">
+                <i class="tracking-wide">{item.description}</i>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </section>
   ) : (
-    <i class="text-red-500">No se encontró información para el color: {color}</i>
-)}
+    <i class="text-red-500">
+      No se encontró información para el color: {color}
+    </i>
+  )
+}
