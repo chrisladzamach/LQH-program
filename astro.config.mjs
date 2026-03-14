@@ -42,13 +42,15 @@ export default defineConfig({
           ]
         },
         workbox: {
+          navigateFallback: '/index.html',
           globPatterns: [
             '**/*.{js,css,html,ico,png,svg,webp,woff2,json,jpg,jpeg,gif,webm,mp4,mp3,pdf,doc,docx}'
           ],
           runtimeCaching: [
             {
               urlPattern: ({ request }) => request.destination === 'document',
-              handler: 'NetworkFirst',
+              // handler: 'NetworkFirst',
+              handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'html-cache',
                 networkTimeoutSeconds: 10,
@@ -73,7 +75,8 @@ export default defineConfig({
             {
               urlPattern: ({ request }) =>
                 ['image', 'font', 'audio', 'video'].includes(request.destination),
-              handler: 'CacheFirst',
+              // handler: 'CacheFirst',
+              handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'static-resources',
                 expiration: {
@@ -84,7 +87,8 @@ export default defineConfig({
             },
             {
               urlPattern: ({ url }) => url.pathname.startsWith('/api/'),
-              handler: 'NetworkFirst',
+              // handler: 'NetworkFirst',
+              handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'api-cache',
                 networkTimeoutSeconds: 5,
